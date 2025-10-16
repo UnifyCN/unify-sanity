@@ -63,7 +63,8 @@ export default defineType({
             defineField({
               name: 'questionText',
               title: 'Question Text',
-              type: 'text',
+              type: 'array',
+              of: [{ type: 'block' }],
               validation: (rule) => rule.required(),
             }),
             defineField({
@@ -79,7 +80,8 @@ export default defineType({
                     {
                       name: 'text',
                       title: 'Option Text',
-                      type: 'string',
+                      type: 'array',
+                      of: [{ type: 'block' }],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -97,21 +99,22 @@ export default defineType({
                     {
                       name: 'explanation',
                       title: 'Explanation (if selected)',
-                      type: 'text',
+                      type: 'array',
+                      of: [{ type: 'block' }],
                     },
                   ],
                 },
               ],
               hidden: ({ parent }) => !['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(parent?.questionType),
               validation: (rule) => rule.custom((options, context) => {
-                const questionType = context.parent?.questionType;
+                const questionType = (context.parent as any)?.questionType;
                 
                 if (['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(questionType)) {
                   if (!options || options.length < 2) {
                     return 'At least 2 options are required';
                   }
                   
-                  const correctOptions = options.filter(opt => opt.isCorrect);
+                  const correctOptions = options.filter((opt: any) => opt.isCorrect);
                   
                   if (questionType === 'multiple_choice_single' && correctOptions.length !== 1) {
                     return 'Single choice questions must have exactly 1 correct answer';
@@ -136,16 +139,38 @@ export default defineType({
               fields: [
                 {
                   name: 'value',
-                  title: 'Answer Value',
-                  type: 'string',
+                  title: 'Answer Value(s)',
+                  type: 'array',
+                  of: [{ type: 'string' }],
+                  description: 'For single choice: one value. For multiple choice: multiple values.',
                 },
                 {
                   name: 'explanation',
-                  title: 'Explanation',
-                  type: 'text',
+                  title: 'General Explanation',
+                  type: 'array',
+                  of: [{ type: 'block' }],
+                  description: 'Overall explanation for the correct answer(s)',
+                },
+                {
+                  name: 'points',
+                  title: 'Points for Correct Answer',
+                  type: 'number',
+                  initialValue: 1,
+                  validation: (rule) => rule.required().min(0),
                 },
               ],
-              validation: (rule) => rule.required(),
+              hidden: ({ parent }) => ['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(parent?.questionType),
+              validation: (rule) => rule.custom((correctAnswer, context) => {
+                const questionType = (context.parent as any)?.questionType;
+                
+                if (!['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(questionType)) {
+                  if (!correctAnswer?.value || (correctAnswer.value as any[]).length === 0) {
+                    return 'Correct answer is required for this question type';
+                  }
+                }
+                
+                return true;
+              }),
             }),
             defineField({
               name: 'orderNum',
