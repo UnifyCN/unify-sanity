@@ -6,34 +6,20 @@ export default defineType({
   type: 'document',
   fields: [
     {
-      name: 'submodule',
-      title: 'Submodule',
+      name: 'lesson',
+      title: 'Lesson',
       type: 'reference',
-      to: [{type: 'submodule'}],
+      to: [{type: 'lesson'}],
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'questions',
-      title: 'Questions',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'quizQuestion'}],
-        },
-      ],
     },
   ],
   preview: {
     select: {
-      title: 'submodule.title',
-      subtitle: 'questions',
+      title: 'lesson.title',
     },
     prepare(selection) {
-      const {title, subtitle} = selection
       return {
-        title: `Quiz for ${title}`,
-        subtitle: `${subtitle?.length || 0} questions`,
+        title: `Quiz for ${selection.title}`,
       }
     },
   },

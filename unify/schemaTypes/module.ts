@@ -16,17 +16,6 @@ export default defineType({
       title: 'Description',
       type: 'text',
     },
-    {
-      name: 'submodules',
-      title: 'Submodules',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'submodule'}],
-        },
-      ],
-    },
   ],
   preview: {
     select: {

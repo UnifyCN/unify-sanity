@@ -23,23 +23,6 @@ export default defineType({
       to: [{type: 'module'}],
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'lessons',
-      title: 'Lessons',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{type: 'lesson'}],
-        },
-      ],
-    },
-    {
-      name: 'quiz',
-      title: 'Quiz',
-      type: 'reference',
-      to: [{type: 'quiz'}],
-    },
   ],
   preview: {
     select: {
