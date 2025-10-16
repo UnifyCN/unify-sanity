@@ -108,6 +108,103 @@ export default defineType({
       ],
     }),
 
+    // Activity pages for interactive content
+    defineField({
+      name: 'activity_pages',
+      title: 'Activity Pages',
+      type: 'array',
+      of: [
+        defineField({
+          name: 'activityPage',
+          title: 'Activity Page',
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'title',
+              title: 'Activity Title',
+              type: 'string',
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              name: 'order',
+              title: 'Page Order',
+              type: 'number',
+              validation: (rule) => rule.required().min(0),
+            }),
+            defineField({
+              name: 'instructions',
+              title: 'Instructions',
+              type: 'array',
+              of: [{ type: 'block' }],
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              name: 'input_fields',
+              title: 'Input Fields',
+              type: 'array',
+              of: [
+                defineField({
+                  name: 'large_input_box',
+                  title: 'Large Input Box',
+                  type: 'object',
+                  fields: [
+                    { name: 'label', type: 'string', title: 'Field Label' },
+                    { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
+                    { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
+                  ],
+                }),
+                defineField({
+                  name: 'mid_input_box',
+                  title: 'Medium Input Box',
+                  type: 'object',
+                  fields: [
+                    { name: 'label', type: 'string', title: 'Field Label' },
+                    { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
+                    { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
+                  ],
+                }),
+                defineField({
+                  name: 'small_input_box',
+                  title: 'Small Input Box',
+                  type: 'object',
+                  fields: [
+                    { name: 'label', type: 'string', title: 'Field Label' },
+                    { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
+                    { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
+                  ],
+                }),
+              ],
+            }),
+            defineField({
+              name: 'answer_box',
+              title: 'Answer Box (Feedback)',
+              type: 'object',
+              fields: [
+                defineField({
+                  name: 'title',
+                  title: 'Answer Box Title',
+                  type: 'string',
+                }),
+                defineField({
+                  name: 'content',
+                  title: 'Answer Box Content',
+                  type: 'array',
+                  of: [{ type: 'block' }],
+                  validation: (rule) => rule.required(),
+                }),
+                defineField({
+                  name: 'showAfterSubmit',
+                  title: 'Show After Submit',
+                  type: 'boolean',
+                  initialValue: true,
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
+    }),
+
     defineField({
       name: 'order',
       title: 'Display Order',
