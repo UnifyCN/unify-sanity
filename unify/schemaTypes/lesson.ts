@@ -1,181 +1,124 @@
-import {defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'lesson',
   title: 'Lesson',
   type: 'document',
   fields: [
-    {
+    defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Lesson Title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: { source: 'title', maxLength: 96 },
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'text',
-    },
-    {
-      name: 'orderNumber',
-      title: 'Order Number',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
-    },
-    {
+    }),
+    defineField({
       name: 'submodule',
       title: 'Submodule',
       type: 'reference',
       to: [{type: 'submodule'}],
-      validation: (Rule) => Rule.required(),
-    },
-    {
+      validation: (rule) => rule.required(),
+    }),
+
+    // each lesson have mutliple pages
+    defineField({
       name: 'pages',
-      title: 'Pages',
+      title: 'Lesson Pages',
       type: 'array',
       of: [
-        {
-          type: 'object',
-          name: 'lessonPage',
+        defineField({
+          name: 'page',
           title: 'Lesson Page',
+          type: 'object',
           fields: [
-            {
+            defineField({
               name: 'title',
               title: 'Page Title',
               type: 'string',
-              validation: (Rule) => Rule.required(),
-            },
-            {
-              name: 'orderNumber',
-              title: 'Order Number',
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              name: 'order',
+              title: 'Page Order',
               type: 'number',
-              validation: (Rule) => Rule.required().min(0),
-            },
-            {
-              name: 'contents',
-              title: 'Page Contents',
+              validation: (rule) => rule.required().min(0),
+            }),
+            defineField({
+              name: 'content',
+              title: 'Page Content',
               type: 'array',
               of: [
+                { type: 'block' },
+                {
+                  type: 'image',
+                  fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
+                },
                 {
                   type: 'object',
-                  name: 'pageContent',
-                  title: 'Content Block',
+                  name: 'dropdown',
+                  title: 'Dropdown Section',
+                  icon: () => 'DD',
                   fields: [
-                    {
-                      name: 'contentType',
-                      title: 'Content Type',
-                      type: 'string',
-                      options: {
-                        list: [
-                          {title: 'Text', value: 'text'},
-                          {title: 'Bullet Points', value: 'bullet_points'},
-                          {title: 'Image', value: 'image'},
-                          {title: 'Dropdown', value: 'dropdown'},
-                          {title: 'Input', value: 'input'},
-                        ],
-                      },
-                      validation: (Rule) => Rule.required(),
-                    },
-                    {
-                      name: 'orderNumber',
-                      title: 'Order Number',
-                      type: 'number',
-                      validation: (Rule) => Rule.required().min(0),
-                    },
-                    {
-                      name: 'content',
-                      title: 'Content',
-                      type: 'object',
-                      fields: [
-                        {
-                          name: 'text',
-                          title: 'Text Content',
-                          type: 'text',
-                        },
-                        {
-                          name: 'richText',
-                          title: 'Rich Text',
-                          type: 'array',
-                          of: [{type: 'block'}],
-                        },
-                        {
-                          name: 'bulletPoints',
-                          title: 'Bullet Points',
-                          type: 'array',
-                          of: [{type: 'string'}],
-                        },
-                        {
-                          name: 'image',
-                          title: 'Image',
-                          type: 'image',
-                        },
-                        {
-                          name: 'dropdownOptions',
-                          title: 'Dropdown Options',
-                          type: 'array',
-                          of: [
-                            {
-                              type: 'object',
-                              fields: [
-                                {
-                                  name: 'label',
-                                  title: 'Label',
-                                  type: 'string',
-                                },
-                                {
-                                  name: 'value',
-                                  title: 'Value',
-                                  type: 'string',
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                        {
-                          name: 'inputConfig',
-                          title: 'Input Configuration',
-                          type: 'object',
-                          fields: [
-                            {
-                              name: 'placeholder',
-                              title: 'Placeholder',
-                              type: 'string',
-                            },
-                            {
-                              name: 'type',
-                              title: 'Input Type',
-                              type: 'string',
-                              options: {
-                                list: [
-                                  {title: 'Text', value: 'text'},
-                                  {title: 'Number', value: 'number'},
-                                  {title: 'Email', value: 'email'},
-                                ],
-                              },
-                            },
-                          ],
-                        },
-                        {
-                          name: 'structuredData',
-                          title: 'Structured Data',
-                          type: 'text',
-                          description: 'JSON string for custom structured data',
-                        },
-                      ],
-                    },
+                    { name: 'label', type: 'string', title: 'Label' },
+                    { name: 'content', type: 'text', title: 'Dropdown Content' },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'example_box',
+                  title: 'Example Box',
+                  icon: () => 'Ex',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'tip_box',
+                  title: 'Tip Box',
+                  icon: () => 'T',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'note_box',
+                  title: 'Note Box',
+                  icon: () => 'N',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
                   ],
                 },
               ],
-            },
+            }),
           ],
-        },
+        }),
       ],
-    },
+    }),
+
+    defineField({
+      name: 'order',
+      title: 'Display Order',
+      type: 'number',
+      initialValue: 0,
+    }),
   ],
   preview: {
     select: {
       title: 'title',
-      subtitle: 'orderNumber',
+      subtitle: 'order',
     },
   },
 })
