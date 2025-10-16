@@ -92,40 +92,86 @@ export default defineType({
                     },
                     {
                       name: 'is_correct',
-                      title: 'Is Correct Answer',
+                      title: '✓ Correct Answer',
                       type: 'boolean',
                       initialValue: false,
+                      description: 'Check this box if this option is a correct answer',
                     },
                     {
                       name: 'explanation',
                       title: 'Explanation (if selected)',
                       type: 'array',
                       of: [{ type: 'block' }],
+                      description: 'Explanation shown when this option is selected',
                     },
                   ],
                 },
               ],
-              hidden: ({ parent }) => !['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(parent?.questionType),
+              hidden: ({ parent }) => !['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(parent?.question_type),
               validation: (rule) => rule.custom((options, context) => {
-                const questionType = (context.parent as any)?.questionType;
+                const questionType = (context.parent as any)?.question_type;
                 
                 if (['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(questionType)) {
                   if (!options || options.length < 2) {
                     return 'At least 2 options are required';
                   }
                   
-                  const correctOptions = options.filter((opt: any) => opt.isCorrect);
+                  const correctOptions = options.filter((opt: any) => opt.is_correct);
                   
                   if (questionType === 'multiple_choice_single' && correctOptions.length !== 1) {
-                    return 'Single choice questions must have exactly 1 correct answer';
+                    return 'Single choice questions must have exactly 1 correct answer. Currently: ' + correctOptions.length + ' correct answers.';
                   }
                   
                   if (questionType === 'multiple_choice_multiple' && correctOptions.length < 1) {
-                    return 'Multiple choice questions must have at least 1 correct answer';
+                    return 'Multiple choice questions must have at least 1 correct answer. Currently: ' + correctOptions.length + ' correct answers.';
                   }
                   
                   if (questionType === 'true_false' && correctOptions.length !== 1) {
-                    return 'True/False questions must have exactly 1 correct answer';
+                    return 'True/False questions must have exactly 1 correct answer. Currently: ' + correctOptions.length + ' correct answers.';
+                  }
+                }
+                
+                return true;
+              }),
+            }),
+            defineField({
+              name: 'matching_pairs',
+              title: 'Matching Pairs',
+              type: 'array',
+              of: [
+                {
+                  type: 'object',
+                  name: 'matching_pair',
+                  title: 'Matching Pair',
+                  fields: [
+                    {
+                      name: 'left_item',
+                      title: 'Left Item',
+                      type: 'string',
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'right_item',
+                      title: 'Right Item',
+                      type: 'string',
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'explanation',
+                      title: 'Explanation',
+                      type: 'array',
+                      of: [{ type: 'block' }],
+                    },
+                  ],
+                },
+              ],
+              hidden: ({ parent }) => parent?.question_type !== 'matching',
+              validation: (rule) => rule.custom((pairs, context) => {
+                const questionType = (context.parent as any)?.question_type;
+                
+                if (questionType === 'matching') {
+                  if (!pairs || pairs.length < 2) {
+                    return 'Matching questions must have at least 2 pairs';
                   }
                 }
                 
@@ -159,11 +205,11 @@ export default defineType({
                   validation: (rule) => rule.required().min(0),
                 },
               ],
-              hidden: ({ parent }) => ['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(parent?.questionType),
+              hidden: ({ parent }) => ['multiple_choice_single', 'multiple_choice_multiple', 'true_false', 'matching'].includes(parent?.question_type),
               validation: (rule) => rule.custom((correctAnswer, context) => {
-                const questionType = (context.parent as any)?.questionType;
+                const questionType = (context.parent as any)?.question_type;
                 
-                if (!['multiple_choice_single', 'multiple_choice_multiple', 'true_false'].includes(questionType)) {
+                if (!['multiple_choice_single', 'multiple_choice_multiple', 'true_false', 'matching'].includes(questionType)) {
                   if (!correctAnswer?.value || (correctAnswer.value as any[]).length === 0) {
                     return 'Correct answer is required for this question type';
                   }
