@@ -26,7 +26,7 @@ export default defineType({
 
     // a lesson can have multiple quizzes
     defineField({
-      name: 'orderNumber',
+      name: 'order_number',
       title: 'Order Number',
       type: 'number',
       validation: (rule) => rule.required().min(0),
@@ -39,12 +39,12 @@ export default defineType({
       type: 'array',
       of: [
         defineField({
-          name: 'quizQuestion',
+          name: 'quiz_question',
           title: 'Question',
           type: 'object',
           fields: [
             defineField({
-              name: 'questionType',
+              name: 'question_type',
               title: 'Question Type',
               type: 'string',
               options: {
@@ -61,7 +61,7 @@ export default defineType({
               validation: (rule) => rule.required(),
             }),
             defineField({
-              name: 'questionText',
+              name: 'question_text',
               title: 'Question Text',
               type: 'array',
               of: [{ type: 'block' }],
@@ -91,7 +91,7 @@ export default defineType({
                       validation: (rule) => rule.required(),
                     },
                     {
-                      name: 'isCorrect',
+                      name: 'is_correct',
                       title: 'Is Correct Answer',
                       type: 'boolean',
                       initialValue: false,
@@ -133,7 +133,7 @@ export default defineType({
               }),
             }),
             defineField({
-              name: 'correctAnswer',
+              name: 'correct_answer',
               title: 'Correct Answer',
               type: 'object',
               fields: [
@@ -173,7 +173,7 @@ export default defineType({
               }),
             }),
             defineField({
-              name: 'orderNum',
+              name: 'order_number',
               title: 'Order Number',
               type: 'number',
               validation: (rule) => rule.required().min(0),

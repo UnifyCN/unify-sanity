@@ -26,12 +26,12 @@ export default defineType({
 
     // Intro pages for submodule
     defineField({
-      name: 'introPages',
+      name: 'intro_pages',
       title: 'Intro Pages',
       type: 'array',
       of: [
         defineField({
-          name: 'introPage',
+          name: 'intro_page',
           title: 'Intro Page',
           type: 'object',
           fields: [
