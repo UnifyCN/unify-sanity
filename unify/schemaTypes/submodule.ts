@@ -64,6 +64,12 @@ export default defineType({
         }),
       ],
     }),
+    defineField({
+      name: 'order',
+      title: 'Display Order',
+      type: 'number',
+      initialValue: 0,
+    }),
   ],
   preview: {
     select: {
