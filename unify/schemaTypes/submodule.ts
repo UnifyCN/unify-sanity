@@ -57,12 +57,55 @@ export default defineType({
                   type: 'image',
                   fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
                 },
+                {
+                  type: 'object',
+                  name: 'example_box',
+                  title: 'Example Box',
+                  icon: () => '💡',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'note_box',
+                  title: 'Note Box',
+                  icon: () => '📝',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'tip_box',
+                  title: 'Tip Box',
+                  icon: () => '💡',
+                  fields: [
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'dropdown',
+                  title: 'Dropdown Section',
+                  icon: () => 'DD',
+                  fields: [
+                    { name: 'label', type: 'string', title: 'Label' },
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
+                  ],
+                },
               ],
               validation: (rule) => rule.required(),
             }),
           ],
         }),
       ],
+    }),
+    defineField({
+      name: 'order',
+      title: 'Display Order',
+      type: 'number',
+      initialValue: 0,
     }),
   ],
   preview: {

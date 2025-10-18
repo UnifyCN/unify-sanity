@@ -71,7 +71,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'text', title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
                   ],
                 },
                 {
@@ -135,45 +135,43 @@ export default defineType({
               name: 'instructions',
               title: 'Instructions',
               type: 'array',
-              of: [{ type: 'block' }],
-              validation: (rule) => rule.required(),
-            }),
-            defineField({
-              name: 'input_fields',
-              title: 'Input Fields',
-              type: 'array',
               of: [
-                defineField({
+                { type: 'block' },
+                {
+                  type: 'object',
                   name: 'large_input_box',
                   title: 'Large Input Box',
-                  type: 'object',
+                  icon: () => '📝',
                   fields: [
                     { name: 'label', type: 'string', title: 'Field Label' },
                     { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
                     { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
                   ],
-                }),
-                defineField({
+                },
+                {
+                  type: 'object',
                   name: 'mid_input_box',
                   title: 'Medium Input Box',
-                  type: 'object',
+                  icon: () => '📄',
                   fields: [
                     { name: 'label', type: 'string', title: 'Field Label' },
                     { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
                     { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
                   ],
-                }),
-                defineField({
+                },
+                {
+                  type: 'object',
                   name: 'small_input_box',
                   title: 'Small Input Box',
-                  type: 'object',
+                  icon: () => '📋',
                   fields: [
                     { name: 'label', type: 'string', title: 'Field Label' },
                     { name: 'placeholder', type: 'string', title: 'Placeholder Text' },
                     { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
                   ],
-                }),
+                },
               ],
+              validation: (rule) => rule.required(),
             }),
             defineField({
               name: 'answer_box',
