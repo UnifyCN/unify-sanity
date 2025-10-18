@@ -71,7 +71,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'text', title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
                   ],
                 },
                 {
