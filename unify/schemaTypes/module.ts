@@ -16,6 +16,16 @@ export default defineType({
       title: 'Description',
       type: 'text',
     },
+    {
+      name: 'colorTheme',
+      title: 'Color Theme',
+      type: 'color',
+      description: 'Pick a color theme for this module',
+      options: {
+        disableAlpha: true,
+      },
+      validation: (Rule) => Rule.required(),
+    },
   ],
   preview: {
     select: {
