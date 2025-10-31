@@ -17,6 +17,23 @@ export default defineType({
       type: 'text',
     },
     {
+      name: 'coverPhoto',
+      title: 'Cover Photo',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt Text',
+          type: 'string',
+          description: 'Important for SEO and accessibility',
+        },
+      ],
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'colorTheme',
       title: 'Color Theme',
       type: 'color',
