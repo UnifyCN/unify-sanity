@@ -1,5 +1,58 @@
 import { defineField, defineType } from 'sanity'
 
+// Block configuration with separate text alignment
+const blockWithAlignment = {
+  type: 'block',
+  styles: [
+    { title: 'Normal', value: 'normal' },
+    { title: 'H1', value: 'h1' },
+    { title: 'H2', value: 'h2' },
+    { title: 'H3', value: 'h3' },
+    { title: 'Quote', value: 'blockquote' },
+  ],
+  marks: {
+    decorators: [
+      { title: 'Strong', value: 'strong' },
+      { title: 'Emphasis', value: 'em' },
+      { title: 'Code', value: 'code' },
+    ],
+    annotations: [
+      {
+        title: 'URL',
+        name: 'link',
+        type: 'object',
+        fields: [
+          {
+            title: 'URL',
+            name: 'href',
+            type: 'url',
+          },
+        ],
+      },
+      {
+        title: 'Text Alignment',
+        name: 'textAlign',
+        type: 'object',
+        fields: [
+          {
+            title: 'Alignment',
+            name: 'align',
+            type: 'string',
+            options: {
+              list: [
+                { title: 'Left', value: 'left' },
+                { title: 'Center', value: 'center' },
+                { title: 'Right', value: 'right' },
+              ],
+            },
+            initialValue: 'left',
+          },
+        ],
+      },
+    ],
+  },
+}
+
 export default defineType({
   name: 'lesson',
   title: 'Lesson',
@@ -59,7 +112,7 @@ export default defineType({
               title: 'Page Content',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'image',
                   fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
@@ -71,7 +124,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Dropdown Content' },
                   ],
                 },
                 {
@@ -80,7 +133,7 @@ export default defineType({
                   title: 'Example Box',
                   icon: () => 'Ex',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Example Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -89,7 +142,7 @@ export default defineType({
                   title: 'Tip Box',
                   icon: () => 'T',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Tip Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -98,7 +151,7 @@ export default defineType({
                   title: 'Note Box',
                   icon: () => 'N',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Note Content', validation: (rule) => rule.required() },
                   ],
                 },
               ],
@@ -136,7 +189,7 @@ export default defineType({
               title: 'Instructions',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'object',
                   name: 'large_input_box',
@@ -180,7 +233,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -197,7 +250,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                               validation: (rule) => rule.required(),
                             },
                             {
@@ -216,7 +269,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                             },
                           ],
                         },
@@ -241,7 +294,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -258,7 +311,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                               validation: (rule) => rule.required(),
                             },
                             {
@@ -277,7 +330,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                             },
                           ],
                         },
@@ -302,7 +355,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -319,7 +372,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                               validation: (rule) => rule.required(),
                             },
                             {
@@ -338,7 +391,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                             },
                           ],
                         },
@@ -363,7 +416,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -392,7 +445,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                             },
                           ],
                         },
@@ -418,7 +471,7 @@ export default defineType({
                   name: 'content',
                   title: 'Answer Box Content',
                   type: 'array',
-                  of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                   validation: (rule) => rule.required(),
                 }),
                 defineField({
@@ -469,7 +522,7 @@ export default defineType({
               title: 'Page Content',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'image',
                   fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
@@ -481,7 +534,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Dropdown Content' },
                   ],
                 },
                 {
@@ -490,7 +543,7 @@ export default defineType({
                   title: 'Example Box',
                   icon: () => 'Ex',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Example Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -499,7 +552,7 @@ export default defineType({
                   title: 'Tip Box',
                   icon: () => 'T',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Tip Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -508,7 +561,7 @@ export default defineType({
                   title: 'Note Box',
                   icon: () => 'N',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Note Content', validation: (rule) => rule.required() },
                   ],
                 },
               ],
