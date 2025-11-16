@@ -1,5 +1,58 @@
 import { defineField, defineType } from 'sanity'
 
+// Block configuration with separate text alignment
+const blockWithAlignment = {
+  type: 'block',
+  styles: [
+    { title: 'Normal', value: 'normal' },
+    { title: 'H1', value: 'h1' },
+    { title: 'H2', value: 'h2' },
+    { title: 'H3', value: 'h3' },
+    { title: 'Quote', value: 'blockquote' },
+  ],
+  marks: {
+    decorators: [
+      { title: 'Strong', value: 'strong' },
+      { title: 'Emphasis', value: 'em' },
+      { title: 'Code', value: 'code' },
+    ],
+    annotations: [
+      {
+        title: 'URL',
+        name: 'link',
+        type: 'object',
+        fields: [
+          {
+            title: 'URL',
+            name: 'href',
+            type: 'url',
+          },
+        ],
+      },
+      {
+        title: 'Text Alignment',
+        name: 'textAlign',
+        type: 'object',
+        fields: [
+          {
+            title: 'Alignment',
+            name: 'align',
+            type: 'string',
+            options: {
+              list: [
+                { title: 'Left', value: 'left' },
+                { title: 'Center', value: 'center' },
+                { title: 'Right', value: 'right' },
+              ],
+            },
+            initialValue: 'left',
+          },
+        ],
+      },
+    ],
+  },
+}
+
 export default defineType({
   name: 'lesson',
   title: 'Lesson',
@@ -59,7 +112,7 @@ export default defineType({
               title: 'Page Content',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'image',
                   fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
@@ -71,7 +124,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Dropdown Content' },
                   ],
                 },
                 {
@@ -80,7 +133,7 @@ export default defineType({
                   title: 'Example Box',
                   icon: () => 'Ex',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Example Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -89,7 +142,7 @@ export default defineType({
                   title: 'Tip Box',
                   icon: () => 'T',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Tip Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -98,7 +151,7 @@ export default defineType({
                   title: 'Note Box',
                   icon: () => 'N',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Note Content', validation: (rule) => rule.required() },
                   ],
                 },
               ],
@@ -136,7 +189,7 @@ export default defineType({
               title: 'Instructions',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'object',
                   name: 'large_input_box',
@@ -170,6 +223,237 @@ export default defineType({
                     { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
                   ],
                 },
+                {
+                  type: 'object',
+                  name: 'multiple_choice_single',
+                  title: 'Multiple Choice (Single Answer)',
+                  icon: () => '☑️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [blockWithAlignment],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Single choice questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'multiple_choice_multiple',
+                  title: 'Multiple Choice (Multiple Answers)',
+                  icon: () => '☑️☑️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [blockWithAlignment],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length < 1) {
+                          return 'Multiple choice questions must have at least 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'two_options_question',
+                  title: 'Two Options Question',
+                  icon: () => '⚖️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [blockWithAlignment],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options (2 options only)',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().length(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Two options questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'matching_question',
+                  title: 'Matching Question',
+                  icon: () => '🔗',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [blockWithAlignment],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'matching_pairs',
+                      title: 'Matching Pairs',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'matching_pair',
+                          title: 'Matching Pair',
+                          fields: [
+                            {
+                              name: 'left_item',
+                              title: 'Left Item',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'right_item',
+                              title: 'Right Item',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [blockWithAlignment],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2),
+                    },
+                  ],
+                },
               ],
               validation: (rule) => rule.required(),
             }),
@@ -187,7 +471,7 @@ export default defineType({
                   name: 'content',
                   title: 'Answer Box Content',
                   type: 'array',
-                  of: [{ type: 'block' }],
+                              of: [blockWithAlignment],
                   validation: (rule) => rule.required(),
                 }),
                 defineField({
@@ -238,7 +522,7 @@ export default defineType({
               title: 'Page Content',
               type: 'array',
               of: [
-                { type: 'block' },
+                blockWithAlignment,
                 {
                   type: 'image',
                   fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
@@ -250,7 +534,7 @@ export default defineType({
                   icon: () => 'DD',
                   fields: [
                     { name: 'label', type: 'string', title: 'Label' },
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Dropdown Content' },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Dropdown Content' },
                   ],
                 },
                 {
@@ -259,7 +543,7 @@ export default defineType({
                   title: 'Example Box',
                   icon: () => 'Ex',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Example Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Example Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -268,7 +552,7 @@ export default defineType({
                   title: 'Tip Box',
                   icon: () => 'T',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Tip Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Tip Content', validation: (rule) => rule.required() },
                   ],
                 },
                 {
@@ -277,7 +561,7 @@ export default defineType({
                   title: 'Note Box',
                   icon: () => 'N',
                   fields: [
-                    { name: 'content', type: 'array', of: [{ type: 'block' }], title: 'Note Content', validation: (rule) => rule.required() },
+                    { name: 'content', type: 'array', of: [blockWithAlignment], title: 'Note Content', validation: (rule) => rule.required() },
                   ],
                 },
               ],

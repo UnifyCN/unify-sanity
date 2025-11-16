@@ -1,5 +1,58 @@
 import { defineField, defineType } from 'sanity'
 
+// Block configuration with separate text alignment
+const blockWithAlignment = {
+  type: 'block',
+  styles: [
+    { title: 'Normal', value: 'normal' },
+    { title: 'H1', value: 'h1' },
+    { title: 'H2', value: 'h2' },
+    { title: 'H3', value: 'h3' },
+    { title: 'Quote', value: 'blockquote' },
+  ],
+  marks: {
+    decorators: [
+      { title: 'Strong', value: 'strong' },
+      { title: 'Emphasis', value: 'em' },
+      { title: 'Code', value: 'code' },
+    ],
+    annotations: [
+      {
+        title: 'URL',
+        name: 'link',
+        type: 'object',
+        fields: [
+          {
+            title: 'URL',
+            name: 'href',
+            type: 'url',
+          },
+        ],
+      },
+      {
+        title: 'Text Alignment',
+        name: 'textAlign',
+        type: 'object',
+        fields: [
+          {
+            title: 'Alignment',
+            name: 'align',
+            type: 'string',
+            options: {
+              list: [
+                { title: 'Left', value: 'left' },
+                { title: 'Center', value: 'center' },
+                { title: 'Right', value: 'right' },
+              ],
+            },
+            initialValue: 'left',
+          },
+        ],
+      },
+    ],
+  },
+}
+
 export default defineType({
   name: 'quiz',
   title: 'Quiz',
@@ -64,7 +117,7 @@ export default defineType({
               name: 'question_text',
               title: 'Question Text',
               type: 'array',
-              of: [{ type: 'block' }],
+              of: [blockWithAlignment],
               validation: (rule) => rule.required(),
             }),
             defineField({
@@ -81,7 +134,7 @@ export default defineType({
                       name: 'text',
                       title: 'Option Text',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       validation: (rule) => rule.required(),
                     },
                     {
@@ -101,7 +154,7 @@ export default defineType({
                       name: 'explanation',
                       title: 'Explanation (if selected)',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                       description: 'Explanation shown when this option is selected',
                     },
                   ],
@@ -160,7 +213,7 @@ export default defineType({
                       name: 'explanation',
                       title: 'Explanation',
                       type: 'array',
-                      of: [{ type: 'block' }],
+                      of: [blockWithAlignment],
                     },
                   ],
                 },
@@ -194,7 +247,7 @@ export default defineType({
                   name: 'explanation',
                   title: 'General Explanation',
                   type: 'array',
-                  of: [{ type: 'block' }],
+                  of: [blockWithAlignment],
                   description: 'Overall explanation for the correct answer(s)',
                 },
                 {
@@ -223,6 +276,26 @@ export default defineType({
               title: 'Order Number',
               type: 'number',
               validation: (rule) => rule.required().min(0),
+            }),
+            defineField({
+              name: 'answer_box',
+              title: 'Answer Box (Feedback)',
+              type: 'object',
+              fields: [
+                defineField({
+                  name: 'content',
+                  title: 'Answer Box Content',
+                  type: 'array',
+                  of: [blockWithAlignment],
+                  validation: (rule) => rule.required(),
+                }),
+                defineField({
+                  name: 'showAfterSubmit',
+                  title: 'Show After Submit',
+                  type: 'boolean',
+                  initialValue: true,
+                }),
+              ],
             }),
           ],
         }),
