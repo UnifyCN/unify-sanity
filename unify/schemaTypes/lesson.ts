@@ -170,6 +170,237 @@ export default defineType({
                     { name: 'required', type: 'boolean', title: 'Required', initialValue: false },
                   ],
                 },
+                {
+                  type: 'object',
+                  name: 'multiple_choice_single',
+                  title: 'Multiple Choice (Single Answer)',
+                  icon: () => '☑️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [{ type: 'block' }],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Single choice questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'multiple_choice_multiple',
+                  title: 'Multiple Choice (Multiple Answers)',
+                  icon: () => '☑️☑️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [{ type: 'block' }],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length < 1) {
+                          return 'Multiple choice questions must have at least 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'two_options_question',
+                  title: 'Two Options Question',
+                  icon: () => '⚖️',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [{ type: 'block' }],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'options',
+                      title: 'Answer Options (2 options only)',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'option',
+                          title: 'Option',
+                          fields: [
+                            {
+                              name: 'text',
+                              title: 'Option Text',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'value',
+                              title: 'Option Value',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'is_correct',
+                              title: '✓ Correct Answer',
+                              type: 'boolean',
+                              initialValue: false,
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().length(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Two options questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
+                    },
+                  ],
+                },
+                {
+                  type: 'object',
+                  name: 'matching_question',
+                  title: 'Matching Question',
+                  icon: () => '🔗',
+                  fields: [
+                    {
+                      name: 'question_text',
+                      title: 'Question Text',
+                      type: 'array',
+                      of: [{ type: 'block' }],
+                      validation: (rule) => rule.required(),
+                    },
+                    {
+                      name: 'matching_pairs',
+                      title: 'Matching Pairs',
+                      type: 'array',
+                      of: [
+                        {
+                          type: 'object',
+                          name: 'matching_pair',
+                          title: 'Matching Pair',
+                          fields: [
+                            {
+                              name: 'left_item',
+                              title: 'Left Item',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'right_item',
+                              title: 'Right Item',
+                              type: 'string',
+                              validation: (rule) => rule.required(),
+                            },
+                            {
+                              name: 'explanation',
+                              title: 'Explanation',
+                              type: 'array',
+                              of: [{ type: 'block' }],
+                            },
+                          ],
+                        },
+                      ],
+                      validation: (rule) => rule.required().min(2),
+                    },
+                  ],
+                },
               ],
               validation: (rule) => rule.required(),
             }),

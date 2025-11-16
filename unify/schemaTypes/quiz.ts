@@ -224,6 +224,26 @@ export default defineType({
               type: 'number',
               validation: (rule) => rule.required().min(0),
             }),
+            defineField({
+              name: 'answer_box',
+              title: 'Answer Box (Feedback)',
+              type: 'object',
+              fields: [
+                defineField({
+                  name: 'content',
+                  title: 'Answer Box Content',
+                  type: 'array',
+                  of: [{ type: 'block' }],
+                  validation: (rule) => rule.required(),
+                }),
+                defineField({
+                  name: 'showAfterSubmit',
+                  title: 'Show After Submit',
+                  type: 'boolean',
+                  initialValue: true,
+                }),
+              ],
+            }),
           ],
         }),
       ],
