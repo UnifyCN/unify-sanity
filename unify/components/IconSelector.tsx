@@ -70,11 +70,11 @@ export function IconSelector(props: StringInputProps) {
           )
         })}
       </div>
-      {value && (
+      {/* {value && (
         <div style={{marginTop: '1rem', padding: '0.75rem', background: '#f9f9f9', borderRadius: '4px'}}>
           <strong>Selected:</strong> <code>{value}</code>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
