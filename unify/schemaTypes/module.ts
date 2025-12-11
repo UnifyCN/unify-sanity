@@ -54,11 +54,11 @@ export default defineType({
       },
       options: {
         list: [
-          { title: 'Account Balance', value: 'account_balance' },
-          { title: 'Assignment Ind', value: 'assignment_ind' },
-          { title: 'Cottage', value: 'cottage' },
-          { title: 'Article', value: 'article' },
-          { title: 'Passport', value: 'passport' },
+          { title: 'Account Balance', value: 'AccountBalanceOutlined' },
+          { title: 'Assignment Ind', value: 'AssignmentIndOutlined' },
+          { title: 'Cottage', value: 'CottageOutlined' },
+          { title: 'Article', value: 'ArticleOutlined' },
+          { title: 'Passport', value: 'PassportOutlined' },
         ],
       },
       validation: (Rule) => Rule.required(),

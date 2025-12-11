@@ -8,11 +8,11 @@ import BadgeIcon from '@mui/icons-material/Badge'
 
 // Icon options with actual MUI icons
 const iconOptions = [
-  {value: 'account_balance', label: 'Account Balance', Icon: AccountBalanceIcon},
-  {value: 'assignment_ind', label: 'Assignment Ind', Icon: AssignmentIndIcon},
-  {value: 'cottage', label: 'Cottage', Icon: CottageIcon},
-  {value: 'article', label: 'Article', Icon: ArticleIcon},
-  {value: 'passport', label: 'Passport', Icon: BadgeIcon},
+  {value: 'AccountBalanceOutlined', label: 'Account Balance', Icon: AccountBalanceIcon},
+  {value: 'AssignmentIndOutlined', label: 'Assignment Ind', Icon: AssignmentIndIcon},
+  {value: 'CottageOutlined', label: 'Cottage', Icon: CottageIcon},
+  {value: 'ArticleOutlined', label: 'Article', Icon: ArticleIcon},
+  {value: 'PassportOutlined', label: 'Passport', Icon: BadgeIcon},
 ]
 
 export function IconSelector(props: StringInputProps) {
