@@ -1,4 +1,5 @@
 import {defineType} from 'sanity'
+import {IconSelector} from '../components/IconSelector'
 
 export default defineType({
   name: 'module',
@@ -40,6 +41,25 @@ export default defineType({
       description: 'Pick a color theme for this module',
       options: {
         disableAlpha: true,
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'icon',
+      title: 'Module Icon',
+      type: 'string',
+      description: 'Select an icon from Material UI Icons (@mui/icons-material)',
+      components: {
+        input: IconSelector,
+      },
+      options: {
+        list: [
+          { title: 'Account Balance', value: 'account_balance' },
+          { title: 'Assignment Ind', value: 'assignment_ind' },
+          { title: 'Cottage', value: 'cottage' },
+          { title: 'Article', value: 'article' },
+          { title: 'Passport', value: 'passport' },
+        ],
       },
       validation: (Rule) => Rule.required(),
     },
