@@ -5,6 +5,21 @@ import AssignmentIndIcon from '@mui/icons-material/AssignmentInd'
 import CottageIcon from '@mui/icons-material/Cottage'
 import ArticleIcon from '@mui/icons-material/Article'
 import BadgeIcon from '@mui/icons-material/Badge'
+import SchoolIcon from '@mui/icons-material/School'
+import BookIcon from '@mui/icons-material/Book'
+import WorkIcon from '@mui/icons-material/Work'
+import ComputerIcon from '@mui/icons-material/Computer'
+import BusinessIcon from '@mui/icons-material/Business'
+import ScienceIcon from '@mui/icons-material/Science'
+import LanguageIcon from '@mui/icons-material/Language'
+import HistoryIcon from '@mui/icons-material/History'
+import PsychologyIcon from '@mui/icons-material/Psychology'
+import MenuBookIcon from '@mui/icons-material/MenuBook'
+import AutoStoriesIcon from '@mui/icons-material/AutoStories'
+import CalculateIcon from '@mui/icons-material/Calculate'
+import PaletteIcon from '@mui/icons-material/Palette'
+import MusicNoteIcon from '@mui/icons-material/MusicNote'
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
 
 // Icon options with actual MUI icons
 const iconOptions = [
@@ -13,6 +28,21 @@ const iconOptions = [
   {value: 'cottage', label: 'Cottage', Icon: CottageIcon},
   {value: 'article', label: 'Article', Icon: ArticleIcon},
   {value: 'passport', label: 'Passport', Icon: BadgeIcon},
+  {value: 'school', label: 'School', Icon: SchoolIcon},
+  {value: 'book', label: 'Book', Icon: BookIcon},
+  {value: 'work', label: 'Work', Icon: WorkIcon},
+  {value: 'computer', label: 'Computer', Icon: ComputerIcon},
+  {value: 'business', label: 'Business', Icon: BusinessIcon},
+  {value: 'science', label: 'Science', Icon: ScienceIcon},
+  {value: 'language', label: 'Language', Icon: LanguageIcon},
+  {value: 'history', label: 'History', Icon: HistoryIcon},
+  {value: 'psychology', label: 'Psychology', Icon: PsychologyIcon},
+  {value: 'menu_book', label: 'Menu Book', Icon: MenuBookIcon},
+  {value: 'auto_stories', label: 'Auto Stories', Icon: AutoStoriesIcon},
+  {value: 'calculate', label: 'Calculate', Icon: CalculateIcon},
+  {value: 'palette', label: 'Palette', Icon: PaletteIcon},
+  {value: 'music_note', label: 'Music Note', Icon: MusicNoteIcon},
+  {value: 'sports_esports', label: 'Sports Esports', Icon: SportsEsportsIcon},
 ]
 
 export function IconSelector(props: StringInputProps) {
