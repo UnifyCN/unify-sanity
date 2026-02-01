@@ -3,6 +3,7 @@ import submodule from './submodule'
 import lesson from './lesson'
 import quiz from './quiz'
 import practice from './practice'
+import task from './tasks'
 
 export const schemaTypes = [
   module,
@@ -10,4 +11,5 @@ export const schemaTypes = [
   lesson,
   quiz,
   practice,
+  task,
 ]
