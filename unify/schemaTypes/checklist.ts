@@ -73,6 +73,15 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'class_order',
+      title: 'Order within class',
+      type: 'number',
+      description:
+        'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, … so some tasks come first, others second.',
+      initialValue: 0,
+      validation: (rule) => rule.required().min(0),
+    }),
+    defineField({
       name: 'module',
       title: 'Link to Module',
       type: 'reference',
