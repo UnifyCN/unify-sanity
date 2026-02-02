@@ -4,6 +4,7 @@ import lesson from './lesson'
 import quiz from './quiz'
 import practice from './practice'
 import task from './tasks'
+import checklist from './checklist'
 
 export const schemaTypes = [
   module,
@@ -12,4 +13,5 @@ export const schemaTypes = [
   quiz,
   practice,
   task,
+  checklist,
 ]
