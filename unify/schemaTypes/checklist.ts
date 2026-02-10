@@ -1,20 +1,20 @@
 import { defineField, defineType } from 'sanity'
 
+
 const PERSONA_OPTIONS = [
   { title: 'International Student', value: 'international_student' },
+  { title: 'Newcomer', value: 'newcomer' },
+  { title: 'Temporary Worker', value: 'temporary_worker' },
+  { title: 'Permanent Resident', value: 'permanent_resident' },
   { title: 'Refugee', value: 'refugee' },
-  { title: 'Protected Person', value: 'protected_person' },
-  { title: 'Skilled Worker', value: 'skilled_worker' },
-  { title: 'Immigrant', value: 'immigrant' },
-  { title: 'PR', value: 'pr' },
+  { title: 'Other', value: 'other' },
 ]
 
 const STAGE_OPTIONS = [
-  { title: 'Stage 0: Not arrived yet', value: '0' },
-  { title: 'Stage 1: 0–3 months', value: '1' },
-  { title: 'Stage 2: 3–12 months', value: '2' },
-  { title: 'Stage 3: 1–3 years', value: '3' },
-  { title: 'Stage 4: 3+ years', value: '4' },
+  { title: 'Less than 1 year', value: 'less_than_1_year' },
+  { title: '1–3 years', value: '1_to_3_years' },
+  { title: '3+ years', value: '3_plus_years' },
+  { title: 'Not yet in Canada', value: 'not_yet' },
 ]
 
 const CHECKLIST_CLASS_OPTIONS = [
