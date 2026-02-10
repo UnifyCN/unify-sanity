@@ -1,6 +1,5 @@
 import { defineField, defineType } from 'sanity'
 
-
 const PERSONA_OPTIONS = [
   { title: 'International Student', value: 'international_student' },
   { title: 'Newcomer', value: 'newcomer' },
@@ -10,7 +9,7 @@ const PERSONA_OPTIONS = [
   { title: 'Other', value: 'other' },
 ]
 
-const STAGE_OPTIONS = [
+const TIME_IN_CANADA_OPTIONS = [
   { title: 'Less than 1 year', value: 'less_than_1_year' },
   { title: '1–3 years', value: '1_to_3_years' },
   { title: '3+ years', value: '3_plus_years' },
@@ -43,23 +42,17 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'personas',
-      title: 'Personas',
-      type: 'array',
-      of: [{ type: 'string' }],
-      options: { list: PERSONA_OPTIONS },
-      description:
-        'User profiles this item applies to. Select one or more. Must match persona values stored in Supabase.',
-      validation: (rule) => rule.required().min(1),
-    }),
-
-    defineField({
-      name: 'stage',
-      title: 'Stage (time in Canada)',
+      name: 'persona',
+      title: 'Persona',
       type: 'string',
-      options: { list: STAGE_OPTIONS },
-      description:
-        "Lifecycle stage: Not arrived yet, Arrived 0–3 months, 3–12 months, 1–3 years, or 3+ years. User's stage must match to see this item.",
+      options: { list: PERSONA_OPTIONS },
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'time_in_canada',
+      title: 'Time in Canada',
+      type: 'string',
+      options: { list: TIME_IN_CANADA_OPTIONS },
       validation: (rule) => rule.required(),
     }),
 
@@ -67,33 +60,29 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: 'Short title for this checklist item.',
       validation: (rule) => rule.required(),
     }),
-
     defineField({
       name: 'description',
       title: 'Short description',
       type: 'text',
-      description: 'Brief description (e.g. the "Why" line).',
     }),
 
     defineField({
       name: 'class',
       title: 'Class',
       type: 'string',
-      description: 'Category: Do now, Do soon, Explore and connect, or Optional / later.',
       options: { list: CHECKLIST_CLASS_OPTIONS },
       validation: (rule) => rule.required(),
     }),
 
+    // (Opcional pero recomendado si quieres orden)
     defineField({
       name: 'class_order',
       title: 'Order within class',
       type: 'number',
-      description:
-        'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, ...',
-      validation: (rule) => rule.required().integer().min(0),
+      description: '0, 1, 2... Lower appears first.',
+      validation: (rule) => rule.integer().min(0),
     }),
 
     defineField({
@@ -101,7 +90,6 @@ export default defineType({
       title: 'Link to Module',
       type: 'reference',
       to: [{ type: 'module' }],
-      description: 'Link this item to a module. Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.submodule,
       validation: (rule) =>
         rule.custom((moduleRef, context) => {
@@ -111,13 +99,11 @@ export default defineType({
           return true
         }),
     }),
-
     defineField({
       name: 'submodule',
       title: 'Link to Submodule',
       type: 'reference',
       to: [{ type: 'submodule' }],
-      description: 'Link this item to a submodule (section). Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.module,
       validation: (rule) =>
         rule.custom((submoduleRef, context) => {
@@ -128,6 +114,7 @@ export default defineType({
         }),
     }),
 
+  
     defineField({
       name: 'linkTab',
       title: 'Link to tab (optional)',
@@ -135,53 +122,35 @@ export default defineType({
       options: { list: LINK_TAB_OPTIONS },
       description: 'If set, "Learn How" routes to this tab.',
     }),
-
     defineField({
       name: 'communityTarget',
       title: 'Community target (optional)',
       type: 'string',
       options: { list: COMMUNITY_TARGET_OPTIONS },
-      description: 'Only used if Link to tab = Community.',
       hidden: ({ parent }) => parent?.linkTab !== 'community',
     }),
-
     defineField({
       name: 'linkEventId',
       title: 'Event ID (optional)',
       type: 'number',
-      description: 'Used when Community target = Event.',
       hidden: ({ parent }) =>
         !(parent?.linkTab === 'community' && parent?.communityTarget === 'event'),
       validation: (rule) => rule.integer().positive(),
     }),
-
     defineField({
       name: 'linkPath',
       title: 'Explicit path (optional)',
       type: 'string',
-      description: 'Used when Community target = Circle (or any custom route).',
       hidden: ({ parent }) =>
         !(parent?.linkTab === 'community' && parent?.communityTarget === 'circle'),
     }),
   ],
-
   preview: {
-    select: {
-      title: 'title',
-      personas: 'personas',
-      class: 'class',
-    },
+    select: { title: 'title', persona: 'persona', class: 'class' },
     prepare(selection) {
-      const firstPersona = Array.isArray(selection.personas) ? selection.personas[0] : null
-      const personaLabel =
-        PERSONA_OPTIONS.find((o) => o.value === firstPersona)?.title ?? (firstPersona ?? 'Unknown')
-      const classLabel =
-        CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
-
-      return {
-        title: selection.title || 'Untitled checklist item',
-        subtitle: `${personaLabel} · ${classLabel}`,
-      }
+      const personaLabel = PERSONA_OPTIONS.find((o) => o.value === selection.persona)?.title ?? selection.persona
+      const classLabel = CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
+      return { title: selection.title || 'Untitled checklist item', subtitle: `${personaLabel} · ${classLabel}` }
     },
   },
 })
