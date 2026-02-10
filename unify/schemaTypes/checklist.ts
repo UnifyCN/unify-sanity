@@ -29,40 +29,66 @@ const LINK_TAB_OPTIONS = [
   { title: 'AI Companion', value: 'ai_companion' },
   { title: 'Community', value: 'community' },
   { title: 'Learn', value: 'learn' },
-];
+]
 
 const COMMUNITY_TARGET_OPTIONS = [
   { title: 'Gather (default)', value: 'gather' },
   { title: 'Event', value: 'event' },
   { title: 'Circle', value: 'circle' },
-];
-
+]
 
 export default defineType({
   name: 'checklist',
   title: 'Checklist Item',
   type: 'document',
   fields: [
+    // -------------------------
+    // previous fields (required by existing data + GROQ query)
+    // These are the ones showing up as "Unknown fields found"
+    // -------------------------
+    defineField({
+      name: 'personas',
+      title: 'Personas',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: { list: PERSONA_OPTIONS },
+      description: 'LEGACY: array of personas. Existing docs use this.',
+    }),
+    defineField({
+      name: 'stage',
+      title: 'Stage',
+      type: 'string',
+      description: 'LEGACY: stage slug used for filtering (existing docs use this).',
+    }),
+    defineField({
+      name: 'class_order',
+      title: 'Order within class',
+      type: 'number',
+      description: 'LEGACY: order inside the class group (0, 1, 2...).',
+      validation: (rule) => rule.integer().min(0),
+    }),
+
+    // -------------------------
+    // Current fields you had before (keep them, but remove "required" for now)
+    // because old docs probably don’t have these filled
+    // -------------------------
     defineField({
       name: 'persona',
-      title: 'Persona',
+      title: 'Persona (new - optional)',
       type: 'string',
-      description: 'User profile this checklist item applies to. Update options from product doc if needed.',
-      options: {
-        list: PERSONA_OPTIONS,
-      },
-      validation: (rule) => rule.required(),
+      description:
+        'NEW (optional): single persona. We keep it but do NOT require it (existing docs use personas[]).',
+      options: { list: PERSONA_OPTIONS },
     }),
     defineField({
       name: 'time_in_canada',
-      title: 'Time in Canada',
+      title: 'Time in Canada (new - optional)',
       type: 'string',
-      description: 'How long the user has been in Canada. Update options from product doc if needed.',
-      options: {
-        list: TIME_IN_CANADA_OPTIONS,
-      },
-      validation: (rule) => rule.required(),
+      description:
+        'NEW (optional): time in Canada. Not required so existing docs don’t break.',
+      options: { list: TIME_IN_CANADA_OPTIONS },
     }),
+
     defineField({
       name: 'title',
       title: 'Title',
@@ -81,11 +107,10 @@ export default defineType({
       title: 'Class',
       type: 'string',
       description: 'Category: Do now, Do soon, Explore and connect, or Optional / later.',
-      options: {
-        list: CHECKLIST_CLASS_OPTIONS,
-      },
+      options: { list: CHECKLIST_CLASS_OPTIONS },
       validation: (rule) => rule.required(),
     }),
+
     defineField({
       name: 'module',
       title: 'Link to Module',
@@ -101,6 +126,7 @@ export default defineType({
           return true
         }),
     }),
+
     defineField({
       name: 'submodule',
       title: 'Link to Submodule',
@@ -116,6 +142,10 @@ export default defineType({
           return true
         }),
     }),
+
+    // -------------------------
+    // new routing
+    // -------------------------
     defineField({
       name: 'linkTab',
       title: 'Link to tab (optional)',
@@ -147,22 +177,30 @@ export default defineType({
       name: 'linkPath',
       title: 'Explicit path (optional)',
       type: 'string',
-      description: 'Used when Community target = Circle (not a particular circle, but the circle main page).',
+      description: 'Used when Community target = Circle.',
       hidden: ({ parent }) =>
         !(parent?.linkTab === 'community' && parent?.communityTarget === 'circle'),
     }),
   ],
+
   preview: {
     select: {
       title: 'title',
+      // Prefer legacy personas[] first (because that’s what your data has)
+      personas: 'personas',
       persona: 'persona',
       class: 'class',
     },
     prepare(selection) {
-      const personaLabel =
-        PERSONA_OPTIONS.find((o) => o.value === selection.persona)?.title ?? selection.persona
       const classLabel =
         CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
+
+      const personaValue =
+        (Array.isArray(selection.personas) && selection.personas[0]) || selection.persona
+
+      const personaLabel =
+        PERSONA_OPTIONS.find((o) => o.value === personaValue)?.title ?? (personaValue ?? 'Unknown')
+
       return {
         title: selection.title || 'Untitled checklist item',
         subtitle: `${personaLabel} · ${classLabel}`,
