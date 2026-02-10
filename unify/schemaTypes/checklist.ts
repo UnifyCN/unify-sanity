@@ -24,6 +24,20 @@ const CHECKLIST_CLASS_OPTIONS = [
   { title: 'Optional / later', value: 'optional_later' },
 ]
 
+const LINK_TAB_OPTIONS = [
+  { title: 'Home', value: 'home' },
+  { title: 'AI Companion', value: 'ai_companion' },
+  { title: 'Community', value: 'community' },
+  { title: 'Learn', value: 'learn' },
+];
+
+const COMMUNITY_TARGET_OPTIONS = [
+  { title: 'Gather (default)', value: 'gather' },
+  { title: 'Event', value: 'event' },
+  { title: 'Circle', value: 'circle' },
+];
+
+
 export default defineType({
   name: 'checklist',
   title: 'Checklist Item',
@@ -101,6 +115,41 @@ export default defineType({
           if (!moduleRef && !submoduleRef) return 'Choose either Module or Submodule (at least one required).'
           return true
         }),
+    }),
+    defineField({
+      name: 'linkTab',
+      title: 'Link to tab (optional)',
+      type: 'string',
+      options: { list: LINK_TAB_OPTIONS },
+      description: 'If set, Learn How will route to this tab and optional target.',
+    }),
+
+    defineField({
+      name: 'communityTarget',
+      title: 'Community target (optional)',
+      type: 'string',
+      options: { list: COMMUNITY_TARGET_OPTIONS },
+      description: 'Only used if Link to tab = Community.',
+      hidden: ({ parent }) => parent?.linkTab !== 'community',
+    }),
+
+    defineField({
+      name: 'linkEventId',
+      title: 'Event ID (optional)',
+      type: 'number',
+      description: 'Used when Community target = Event.',
+      hidden: ({ parent }) =>
+        !(parent?.linkTab === 'community' && parent?.communityTarget === 'event'),
+      validation: (rule) => rule.integer().positive(),
+    }),
+
+    defineField({
+      name: 'linkPath',
+      title: 'Explicit path (optional)',
+      type: 'string',
+      description: 'Used when Community target = Circle (not a particular circle, but the circle main page).',
+      hidden: ({ parent }) =>
+        !(parent?.linkTab === 'community' && parent?.communityTarget === 'circle'),
     }),
   ],
   preview: {
