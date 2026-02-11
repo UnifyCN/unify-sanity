@@ -1,5 +1,6 @@
 import { defineField, defineType } from 'sanity'
 
+
 const PERSONA_OPTIONS = [
   { title: 'International Student', value: 'international_student' },
   { title: 'Refugee', value: 'refugee' },
@@ -9,13 +10,12 @@ const PERSONA_OPTIONS = [
   { title: 'PR', value: 'pr' },
 ]
 
-// Estos values deben matchear lo que ya tienes en tus docs (ej: arrived_0_3_months)
 const STAGE_OPTIONS = [
-  { title: 'Stage 0: Not arrived yet', value: 'not_arrived_yet' },
-  { title: 'Stage 1: Arrived 0–3 months', value: 'arrived_0_3_months' },
-  { title: 'Stage 2: 3–12 months', value: '3_12_months' },
-  { title: 'Stage 3: 1–3 years', value: '1_3_years' },
-  { title: 'Stage 4: 3+ years', value: '3_plus_years' },
+  { title: 'Not arrived yet', value: 'not_arrived' },
+  { title: 'Arrived 0–3 months', value: 'arrived_0_3_months' },
+  { title: '3–12 months', value: 'months_3_12' },
+  { title: '1–3 years', value: 'years_1_3' },
+  { title: '3+ years', value: 'years_3_plus' },
 ]
 
 const CHECKLIST_CLASS_OPTIONS = [
@@ -23,19 +23,6 @@ const CHECKLIST_CLASS_OPTIONS = [
   { title: 'Do soon', value: 'do_soon' },
   { title: 'Explore and connect', value: 'explore_and_connect' },
   { title: 'Optional / later', value: 'optional_later' },
-]
-
-const LINK_TAB_OPTIONS = [
-  { title: 'Home', value: 'home' },
-  { title: 'AI Companion', value: 'ai_companion' },
-  { title: 'Community', value: 'community' },
-  { title: 'Learn', value: 'learn' },
-]
-
-const COMMUNITY_TARGET_OPTIONS = [
-  { title: 'Gather (default)', value: 'gather' },
-  { title: 'Event', value: 'event' },
-  { title: 'Circle', value: 'circle' },
 ]
 
 export default defineType({
@@ -48,20 +35,25 @@ export default defineType({
       title: 'Personas',
       type: 'array',
       of: [{ type: 'string' }],
-      options: { list: PERSONA_OPTIONS, layout: 'grid' },
       description:
-        'User profiles this item applies to. Select one or more. If you select both International Student and Skilled Worker and PR, users with either persona will see this item. Must match persona values stored in Supabase.',
-      validation: (rule) => rule.required().min(1),
+        'User profiles this item applies to. Must match persona values stored in Supabase.',
+      options: {
+        list: PERSONA_OPTIONS,
+        layout: 'grid',
+      },
+      validation: rule => rule.required().min(1),
     }),
 
     defineField({
       name: 'stage',
       title: 'Stage (time in Canada)',
       type: 'string',
-      options: { list: STAGE_OPTIONS },
       description:
-        "Lifecycle stage: Not arrived yet, Arrived 0–3 months, 3–12 months, 1–3 years, or 3+ years. User's stage must match to see this item.",
-      validation: (rule) => rule.required(),
+        "Must match app's stageNumberToStageSlug(): not_arrived, arrived_0_3_months, months_3_12, years_1_3, years_3_plus.",
+      options: {
+        list: STAGE_OPTIONS,
+      },
+      validation: rule => rule.required(),
     }),
 
     defineField({
@@ -69,23 +61,25 @@ export default defineType({
       title: 'Title',
       type: 'string',
       description: 'Short title for this checklist item.',
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required(),
     }),
 
     defineField({
       name: 'description',
       title: 'Short description',
       type: 'text',
-      description: 'Brief description (e.g. the "Why" line).',
+      description: 'Brief description (e.g., the "Why" line).',
     }),
 
     defineField({
       name: 'class',
       title: 'Class',
       type: 'string',
-      options: { list: CHECKLIST_CLASS_OPTIONS },
       description: 'Category: Do now, Do soon, Explore and connect, or Optional / later.',
-      validation: (rule) => rule.required(),
+      options: {
+        list: CHECKLIST_CLASS_OPTIONS,
+      },
+      validation: rule => rule.required(),
     }),
 
     defineField({
@@ -93,102 +87,60 @@ export default defineType({
       title: 'Order within class',
       type: 'number',
       description:
-        'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, ...',
-      validation: (rule) => rule.integer().min(0),
+        'Order of this item within its class (lower numbers appear first; use 0, 1, 2, ...).',
+      validation: rule => rule.required().integer().min(0),
     }),
 
     defineField({
       name: 'module',
-      title: 'Link to Module',
+      title: 'Link to Module (optional)',
       type: 'reference',
       to: [{ type: 'module' }],
       description: 'Link this item to a module. Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.submodule,
-      validation: (rule) =>
+      validation: rule =>
         rule.custom((moduleRef, context) => {
           const submoduleRef = (context.parent as { submodule?: { _ref?: string } })?.submodule
           if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
-          if (!moduleRef && !submoduleRef)
-            return 'Choose either Module or Submodule (at least one required).'
           return true
         }),
     }),
 
     defineField({
       name: 'submodule',
-      title: 'Link to Submodule',
+      title: 'Link to Submodule (optional)',
       type: 'reference',
       to: [{ type: 'submodule' }],
-      description: 'Link this item to a submodule (section). Use either Module or Submodule, not both.',
+      description: 'Link this item to a submodule. Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.module,
-      validation: (rule) =>
+      validation: rule =>
         rule.custom((submoduleRef, context) => {
           const moduleRef = (context.parent as { module?: { _ref?: string } })?.module
           if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
-          if (!moduleRef && !submoduleRef)
-            return 'Choose either Module or Submodule (at least one required).'
           return true
         }),
-    }),
-
-    defineField({
-      name: 'linkTab',
-      title: 'Link to tab (optional)',
-      type: 'string',
-      options: { list: LINK_TAB_OPTIONS },
-      description: 'If set, "Learn how" routes to this tab.',
-    }),
-
-    defineField({
-      name: 'communityTarget',
-      title: 'Community target (optional)',
-      type: 'string',
-      options: { list: COMMUNITY_TARGET_OPTIONS },
-      description: 'Only used if Link to tab = Community.',
-      hidden: ({ parent }) => parent?.linkTab !== 'community',
-    }),
-
-    defineField({
-      name: 'linkEventId',
-      title: 'Event ID (optional)',
-      type: 'number',
-      description: 'Used when Community target = Event.',
-      hidden: ({ parent }) =>
-        !(parent?.linkTab === 'community' && parent?.communityTarget === 'event'),
-      validation: (rule) => rule.integer().positive(),
-    }),
-
-    defineField({
-      name: 'linkPath',
-      title: 'Explicit path (optional)',
-      type: 'string',
-      description: 'Used when Community target = Circle (or other custom routes).',
-      hidden: ({ parent }) =>
-        !(parent?.linkTab === 'community' && parent?.communityTarget === 'circle'),
     }),
   ],
 
   preview: {
     select: {
       title: 'title',
-      personas: 'personas',
+      stage: 'stage',
       class: 'class',
+      personas: 'personas',
     },
     prepare(selection) {
+      const stageLabel =
+        STAGE_OPTIONS.find(o => o.value === selection.stage)?.title ?? selection.stage
       const classLabel =
-        CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
+        CHECKLIST_CLASS_OPTIONS.find(o => o.value === selection.class)?.title ?? selection.class
 
-      const firstPersona =
-        Array.isArray(selection.personas) && selection.personas.length > 0
-          ? selection.personas[0]
-          : null
-
-      const personaLabel =
-        PERSONA_OPTIONS.find((o) => o.value === firstPersona)?.title ?? firstPersona ?? '—'
+      const personas = Array.isArray(selection.personas) ? selection.personas : []
+      const personaLabel = personas.length ? personas.join(', ') : 'No persona'
 
       return {
         title: selection.title || 'Untitled checklist item',
-        subtitle: `${personaLabel} · ${classLabel}`,
+        subtitle: `${personaLabel} · ${stageLabel} · ${classLabel}`,
       }
     },
   },
