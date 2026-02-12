@@ -26,6 +26,15 @@ const CHECKLIST_CLASS_OPTIONS = [
   { title: 'Optional / later', value: 'optional_later' },
 ]
 
+// Tab link: user can link item to a tab instead of module/submodule (choose 1 of 3)
+export const CHECKLIST_LINK_TAB_OPTIONS = [
+  { title: 'Home', value: 'home' },
+  { title: 'Community', value: 'community' },
+  { title: 'Companion', value: 'companion' },
+  { title: 'Checklist', value: 'checklist' },
+  { title: 'Learn', value: 'learn' },
+]
+
 export default defineType({
   name: 'checklist',
   title: 'Checklist Item',
@@ -94,45 +103,62 @@ export default defineType({
       title: 'Order within class',
       type: 'number',
       description:
-        'Order of this item within its class (lower numbers appear first; use 0, 1, 2, ...).',
-      validation: rule => rule.required().integer().min(0),
-    }),
-
-    defineField({
-      name: 'class_order',
-      title: 'Order within class',
-      type: 'number',
-      description:
         'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, …',
       initialValue: 0,
-      validation: (rule) => rule.required().min(0),
+      validation: (rule) => rule.required().integer().min(0),
     }),
     defineField({
       name: 'module',
-      title: 'Link to Module (optional)',
+      title: 'Link to Module',
       type: 'reference',
       to: [{ type: 'module' }],
-      description: 'Link this item to a module. Use either Module or Submodule, not both.',
-      hidden: ({ parent }) => !!parent?.submodule,
+      description: 'Choose one: link to a Module, a Submodule, or a Tab. Only one can be set.',
+      hidden: ({ parent }) => !!(parent?.submodule || parent?.link_tab),
       validation: rule =>
         rule.custom((moduleRef, context) => {
-          const submoduleRef = (context.parent as { submodule?: { _ref?: string } })?.submodule
-          if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
+          const p = context.parent as { submodule?: { _ref?: string }; link_tab?: string }
+          if (moduleRef && (p?.submodule || p?.link_tab))
+            return 'Choose only one: Module, Submodule, or Tab.'
+          if (!moduleRef && !p?.submodule && !p?.link_tab)
+            return 'Choose either a Module, Submodule, or Tab (one required).'
           return true
         }),
     }),
 
     defineField({
       name: 'submodule',
-      title: 'Link to Submodule (optional)',
+      title: 'Link to Submodule',
       type: 'reference',
       to: [{ type: 'submodule' }],
-      description: 'Link this item to a submodule. Use either Module or Submodule, not both.',
-      hidden: ({ parent }) => !!parent?.module,
+      description: 'Choose one: link to a Module, a Submodule, or a Tab. Only one can be set.',
+      hidden: ({ parent }) => !!(parent?.module || parent?.link_tab),
       validation: rule =>
         rule.custom((submoduleRef, context) => {
-          const moduleRef = (context.parent as { module?: { _ref?: string } })?.module
-          if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
+          const p = context.parent as { module?: { _ref?: string }; link_tab?: string }
+          if (submoduleRef && (p?.module || p?.link_tab))
+            return 'Choose only one: Module, Submodule, or Tab.'
+          if (!submoduleRef && !p?.module && !p?.link_tab)
+            return 'Choose either a Module, Submodule, or Tab (one required).'
+          return true
+        }),
+    }),
+
+    defineField({
+      name: 'link_tab',
+      title: 'Link to Tab',
+      type: 'string',
+      description: 'Choose one: link to a Module, a Submodule, or a Tab. Only one can be set.',
+      options: {
+        list: CHECKLIST_LINK_TAB_OPTIONS,
+      },
+      hidden: ({ parent }) => !!(parent?.module || parent?.submodule),
+      validation: rule =>
+        rule.custom((linkTab, context) => {
+          const p = context.parent as { module?: { _ref?: string }; submodule?: { _ref?: string } }
+          if (linkTab && (p?.module || p?.submodule))
+            return 'Choose only one: Module, Submodule, or Tab.'
+          if (!linkTab && !p?.module && !p?.submodule)
+            return 'Choose either a Module, Submodule, or Tab (one required).'
           return true
         }),
     }),
@@ -144,7 +170,6 @@ export default defineType({
       personas: 'personas',
       stage: 'stage',
       class: 'class',
-      personas: 'personas',
     },
     prepare(selection) {
       const personaLabels = (selection.personas || [])
