@@ -44,6 +44,7 @@ export default defineType({
       },
       validation: (rule) => rule.required().min(1).error('Select at least one persona.'),
     }),
+
     defineField({
       name: 'stage',
       title: 'Stage (time in Canada)',
@@ -53,15 +54,17 @@ export default defineType({
       options: {
         list: CHECKLIST_STAGE_OPTIONS,
       },
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required(),
     }),
+
     defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
       description: 'Short title for this checklist item.',
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required(),
     }),
+
     defineField({
       name: 'description',
       title: 'Short description',
@@ -74,6 +77,7 @@ export default defineType({
       type: 'text',
       description: 'Optional longer description with more detail for this checklist item.',
     }),
+
     defineField({
       name: 'class',
       title: 'Class',
@@ -82,8 +86,18 @@ export default defineType({
       options: {
         list: CHECKLIST_CLASS_OPTIONS,
       },
-      validation: (rule) => rule.required(),
+      validation: rule => rule.required(),
     }),
+
+    defineField({
+      name: 'class_order',
+      title: 'Order within class',
+      type: 'number',
+      description:
+        'Order of this item within its class (lower numbers appear first; use 0, 1, 2, ...).',
+      validation: rule => rule.required().integer().min(0),
+    }),
+
     defineField({
       name: 'class_order',
       title: 'Order within class',
@@ -95,41 +109,42 @@ export default defineType({
     }),
     defineField({
       name: 'module',
-      title: 'Link to Module',
+      title: 'Link to Module (optional)',
       type: 'reference',
       to: [{ type: 'module' }],
       description: 'Link this item to a module. Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.submodule,
-      validation: (rule) =>
+      validation: rule =>
         rule.custom((moduleRef, context) => {
           const submoduleRef = (context.parent as { submodule?: { _ref?: string } })?.submodule
           if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
-          if (!moduleRef && !submoduleRef) return 'Choose either Module or Submodule (at least one required).'
           return true
         }),
     }),
+
     defineField({
       name: 'submodule',
-      title: 'Link to Submodule',
+      title: 'Link to Submodule (optional)',
       type: 'reference',
       to: [{ type: 'submodule' }],
-      description: 'Link this item to a submodule (section). Use either Module or Submodule, not both.',
+      description: 'Link this item to a submodule. Use either Module or Submodule, not both.',
       hidden: ({ parent }) => !!parent?.module,
-      validation: (rule) =>
+      validation: rule =>
         rule.custom((submoduleRef, context) => {
           const moduleRef = (context.parent as { module?: { _ref?: string } })?.module
           if (moduleRef && submoduleRef) return 'Choose either Module or Submodule, not both.'
-          if (!moduleRef && !submoduleRef) return 'Choose either Module or Submodule (at least one required).'
           return true
         }),
     }),
   ],
+
   preview: {
     select: {
       title: 'title',
       personas: 'personas',
       stage: 'stage',
       class: 'class',
+      personas: 'personas',
     },
     prepare(selection) {
       const personaLabels = (selection.personas || [])
@@ -138,7 +153,11 @@ export default defineType({
       const stageLabel =
         CHECKLIST_STAGE_OPTIONS.find((o) => o.value === selection.stage)?.title ?? selection.stage
       const classLabel =
-        CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
+        CHECKLIST_CLASS_OPTIONS.find(o => o.value === selection.class)?.title ?? selection.class
+
+      const personas = Array.isArray(selection.personas) ? selection.personas : []
+      const personaLabel = personas.length ? personas.join(', ') : 'No persona'
+
       return {
         title: selection.title || 'Untitled checklist item',
         subtitle: [personaLabels, stageLabel, classLabel].filter(Boolean).join(' · '),
