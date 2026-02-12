@@ -69,6 +69,12 @@ export default defineType({
       description: 'Brief description (e.g. the "Why" line).',
     }),
     defineField({
+      name: 'longer_description',
+      title: 'Longer description',
+      type: 'text',
+      description: 'Optional longer description with more detail for this checklist item.',
+    }),
+    defineField({
       name: 'class',
       title: 'Class',
       type: 'string',
