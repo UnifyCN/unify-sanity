@@ -1,20 +1,22 @@
 import { defineField, defineType } from 'sanity'
 
-// Persona and time-in-Canada options — update from product doc when available
-const PERSONA_OPTIONS = [
+// Personas: must match Supabase / frontend persona slugs exactly (6 options)
+export const CHECKLIST_PERSONA_OPTIONS = [
   { title: 'International Student', value: 'international_student' },
-  { title: 'Newcomer', value: 'newcomer' },
-  { title: 'Temporary Worker', value: 'temporary_worker' },
-  { title: 'Permanent Resident', value: 'permanent_resident' },
   { title: 'Refugee', value: 'refugee' },
-  { title: 'Other', value: 'other' },
+  { title: 'Protected Person', value: 'protected_person' },
+  { title: 'Skilled Worker', value: 'skilled_worker' },
+  { title: 'Immigrant', value: 'immigrant' },
+  { title: 'PR', value: 'pr' },
 ]
 
-const TIME_IN_CANADA_OPTIONS = [
-  { title: 'Less than 1 year', value: 'less_than_1_year' },
-  { title: '1–3 years', value: '1_to_3_years' },
-  { title: '3+ years', value: '3_plus_years' },
-  { title: 'Not yet in Canada', value: 'not_yet' },
+// Stage = time in Canada / lifecycle; must match frontend stage slugs
+export const CHECKLIST_STAGE_OPTIONS = [
+  { title: 'Stage 0: Not arrived yet', value: 'not_arrived' },
+  { title: 'Stage 1: Arrived (0–3 months)', value: 'arrived_0_3_months' },
+  { title: 'Stage 2: 3–12 months', value: 'months_3_12' },
+  { title: 'Stage 3: 1–3 years', value: 'years_1_3' },
+  { title: 'Stage 4: 3+ years', value: 'years_3_plus' },
 ]
 
 const CHECKLIST_CLASS_OPTIONS = [
@@ -30,22 +32,26 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'persona',
-      title: 'Persona',
-      type: 'string',
-      description: 'User profile this checklist item applies to. Update options from product doc if needed.',
+      name: 'personas',
+      title: 'Personas',
+      type: 'array',
+      description:
+        'User profiles this item applies to. Select one or more. If you select both International Student and Skilled Worker and PR, users with either persona will see this item. Must match persona values stored in Supabase.',
+      of: [{ type: 'string' }],
       options: {
-        list: PERSONA_OPTIONS,
+        list: CHECKLIST_PERSONA_OPTIONS,
+        layout: 'grid',
       },
-      validation: (rule) => rule.required(),
+      validation: (rule) => rule.required().min(1).error('Select at least one persona.'),
     }),
     defineField({
-      name: 'time_in_canada',
-      title: 'Time in Canada',
+      name: 'stage',
+      title: 'Stage (time in Canada)',
       type: 'string',
-      description: 'How long the user has been in Canada. Update options from product doc if needed.',
+      description:
+        'Lifecycle stage: Not arrived yet, Arrived 0–3 months, 3–12 months, 1–3 years, or 3+ years. User’s stage must match to see this item.',
       options: {
-        list: TIME_IN_CANADA_OPTIONS,
+        list: CHECKLIST_STAGE_OPTIONS,
       },
       validation: (rule) => rule.required(),
     }),
@@ -60,7 +66,7 @@ export default defineType({
       name: 'description',
       title: 'Short description',
       type: 'text',
-      description: 'Brief description of this checklist item.',
+      description: 'Brief description (e.g. the "Why" line).',
     }),
     defineField({
       name: 'class',
@@ -77,7 +83,7 @@ export default defineType({
       title: 'Order within class',
       type: 'number',
       description:
-        'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, … so some tasks come first, others second.',
+        'Order of this item within its class (e.g. within "Do now"). Lower numbers appear first; use 0, 1, 2, …',
       initialValue: 0,
       validation: (rule) => rule.required().min(0),
     }),
@@ -115,17 +121,21 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
-      persona: 'persona',
+      personas: 'personas',
+      stage: 'stage',
       class: 'class',
     },
     prepare(selection) {
-      const personaLabel =
-        PERSONA_OPTIONS.find((o) => o.value === selection.persona)?.title ?? selection.persona
+      const personaLabels = (selection.personas || [])
+        .map((v: string) => CHECKLIST_PERSONA_OPTIONS.find((o) => o.value === v)?.title ?? v)
+        .join(', ')
+      const stageLabel =
+        CHECKLIST_STAGE_OPTIONS.find((o) => o.value === selection.stage)?.title ?? selection.stage
       const classLabel =
         CHECKLIST_CLASS_OPTIONS.find((o) => o.value === selection.class)?.title ?? selection.class
       return {
         title: selection.title || 'Untitled checklist item',
-        subtitle: `${personaLabel} · ${classLabel}`,
+        subtitle: [personaLabels, stageLabel, classLabel].filter(Boolean).join(' · '),
       }
     },
   },
