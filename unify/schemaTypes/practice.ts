@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 // Block configuration with separate text alignment (same as quiz/lesson)
 const blockWithAlignment = {
@@ -242,6 +243,7 @@ const quizQuestionObject = {
 // Activity-style page (many items per page when practice_type is "activity")
 const activityInstructionsOf = [
   blockWithAlignment,
+  checklistCheckboxBlock,
   {
     type: 'object',
     name: 'large_input_box',
@@ -488,7 +490,7 @@ export default defineType({
                   name: 'content',
                   title: 'Answer Box Content',
                   type: 'array',
-                  of: [blockWithAlignment],
+                  of: [blockWithAlignment, checklistCheckboxBlock],
                   validation: (rule) => rule.required(),
                 }),
                 defineField({

@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 // Block configuration with separate text alignment
 const blockWithAlignment = {
@@ -119,6 +120,7 @@ export default defineType({
               description: 'The main content of this lesson page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
               of: [
                 blockWithAlignment,
+                checklistCheckboxBlock,
                 {
                   type: 'image',
                   fields: [{ 
@@ -144,7 +146,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Dropdown Content',
                       description: 'The content that appears when the dropdown is expanded.',
                     },
@@ -160,7 +162,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Example Content',
                       description: 'The example content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -177,7 +179,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Tip Content',
                       description: 'The tip content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -194,7 +196,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Note Content',
                       description: 'The note content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -241,6 +243,7 @@ export default defineType({
               description: 'The instructions and interactive elements for this activity. You can add text, input fields, and various question types.',
               of: [
                 blockWithAlignment,
+                checklistCheckboxBlock,
                 {
                   type: 'object',
                   name: 'large_input_box',
@@ -336,7 +339,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [blockWithAlignment],
+                      of: [blockWithAlignment, checklistCheckboxBlock],
                       description: 'The question text that users will see.',
                       validation: (rule) => rule.required(),
                     },
@@ -355,7 +358,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'The text displayed for this answer option.',
                               validation: (rule) => rule.required(),
                             },
@@ -377,7 +380,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
@@ -404,7 +407,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [blockWithAlignment],
+                      of: [blockWithAlignment, checklistCheckboxBlock],
                       description: 'The question text that users will see.',
                       validation: (rule) => rule.required(),
                     },
@@ -423,7 +426,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'The text displayed for this answer option.',
                               validation: (rule) => rule.required(),
                             },
@@ -445,7 +448,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
@@ -472,7 +475,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [blockWithAlignment],
+                      of: [blockWithAlignment, checklistCheckboxBlock],
                       description: 'The question text that users will see.',
                       validation: (rule) => rule.required(),
                     },
@@ -491,7 +494,7 @@ export default defineType({
                               name: 'text',
                               title: 'Option Text',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'The text displayed for this answer option.',
                               validation: (rule) => rule.required(),
                             },
@@ -513,7 +516,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
@@ -540,7 +543,7 @@ export default defineType({
                       name: 'question_text',
                       title: 'Question Text',
                       type: 'array',
-                      of: [blockWithAlignment],
+                      of: [blockWithAlignment, checklistCheckboxBlock],
                       description: 'The question text or instructions for the matching exercise.',
                       validation: (rule) => rule.required(),
                     },
@@ -573,7 +576,7 @@ export default defineType({
                               name: 'explanation',
                               title: 'Explanation',
                               type: 'array',
-                              of: [blockWithAlignment],
+                              of: [blockWithAlignment, checklistCheckboxBlock],
                               description: 'Optional explanation shown to users about this matching pair.',
                             },
                           ],
@@ -602,7 +605,7 @@ export default defineType({
                   name: 'content',
                   title: 'Answer Box Content',
                   type: 'array',
-                  of: [blockWithAlignment],
+                  of: [blockWithAlignment, checklistCheckboxBlock],
                   description: 'The feedback content shown to users. Can include text, explanations, and formatting.',
                   validation: (rule) => rule.required(),
                 }),
@@ -661,6 +664,7 @@ export default defineType({
               description: 'The main content of this ending page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
               of: [
                 blockWithAlignment,
+                checklistCheckboxBlock,
                 {
                   type: 'image',
                   fields: [{ 
@@ -686,7 +690,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Dropdown Content',
                       description: 'The content that appears when the dropdown is expanded.',
                     },
@@ -702,7 +706,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Example Content',
                       description: 'The example content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -719,7 +723,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Tip Content',
                       description: 'The tip content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -736,7 +740,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [blockWithAlignment], 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Note Content',
                       description: 'The note content to display in the box.',
                       validation: (rule) => rule.required() 

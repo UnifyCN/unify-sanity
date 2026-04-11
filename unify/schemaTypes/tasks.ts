@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 // Same block configuration as lesson pages: alignment, link, headers, quote, etc.
 const blockWithAlignment = {
@@ -87,6 +88,7 @@ export default defineType({
       description: 'The main content of this task. Same as lesson pages: text, images, example boxes, notes, tips, and dropdown sections.',
       of: [
         blockWithAlignment,
+        checklistCheckboxBlock,
         {
           type: 'image',
           fields: [
@@ -114,7 +116,7 @@ export default defineType({
             {
               name: 'content',
               type: 'array',
-              of: [blockWithAlignment],
+              of: [blockWithAlignment, checklistCheckboxBlock],
               title: 'Dropdown Content',
               description: 'The content that appears when the dropdown is expanded.',
             },
@@ -130,7 +132,7 @@ export default defineType({
             {
               name: 'content',
               type: 'array',
-              of: [blockWithAlignment],
+              of: [blockWithAlignment, checklistCheckboxBlock],
               title: 'Example Content',
               description: 'The example content to display in the box.',
               validation: (rule) => rule.required(),
@@ -147,7 +149,7 @@ export default defineType({
             {
               name: 'content',
               type: 'array',
-              of: [blockWithAlignment],
+              of: [blockWithAlignment, checklistCheckboxBlock],
               title: 'Tip Content',
               description: 'The tip content to display in the box.',
               validation: (rule) => rule.required(),
@@ -164,7 +166,7 @@ export default defineType({
             {
               name: 'content',
               type: 'array',
-              of: [blockWithAlignment],
+              of: [blockWithAlignment, checklistCheckboxBlock],
               title: 'Note Content',
               description: 'The note content to display in the box.',
               validation: (rule) => rule.required(),

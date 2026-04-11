@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 export default defineType({
   name: 'submodule',
@@ -60,6 +61,7 @@ export default defineType({
               description: 'The main content of this intro page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
               of: [
                 { type: 'block' },
+                checklistCheckboxBlock,
                 {
                   type: 'image',
                   fields: [{ 
@@ -79,7 +81,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [{ type: 'block' }], 
+                      of: [{ type: 'block' }, checklistCheckboxBlock], 
                       title: 'Example Content',
                       description: 'The example content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -96,7 +98,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [{ type: 'block' }], 
+                      of: [{ type: 'block' }, checklistCheckboxBlock], 
                       title: 'Note Content',
                       description: 'The note content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -113,7 +115,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [{ type: 'block' }], 
+                      of: [{ type: 'block' }, checklistCheckboxBlock], 
                       title: 'Tip Content',
                       description: 'The tip content to display in the box.',
                       validation: (rule) => rule.required() 
@@ -136,7 +138,7 @@ export default defineType({
                     { 
                       name: 'content', 
                       type: 'array', 
-                      of: [{ type: 'block' }], 
+                      of: [{ type: 'block' }, checklistCheckboxBlock], 
                       title: 'Dropdown Content',
                       description: 'The content that appears when the dropdown is expanded.',
                     },
