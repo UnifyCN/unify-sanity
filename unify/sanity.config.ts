@@ -3,6 +3,8 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {colorInput} from '@sanity/color-input'
+import {documentInternationalization} from '@sanity/document-internationalization'
+import {assist} from '@sanity/assist'
 
 export default defineConfig({
   name: 'default',
@@ -11,7 +13,31 @@ export default defineConfig({
   projectId: 'fercgabp',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool(), colorInput()],
+  plugins: [
+    structureTool(),
+    visionTool(),
+    colorInput(),
+    // Document-level i18n: each translatable doc gets a `language` field and
+    // per-language document variants linked by a translation.metadata doc.
+    documentInternationalization({
+      supportedLanguages: [
+        {id: 'en', title: 'English'},
+        {id: 'vi', title: 'Vietnamese'},
+        {id: 'es', title: 'Spanish'},
+        {id: 'hi', title: 'Hindi'},
+      ],
+      schemaTypes: ['module', 'submodule', 'lesson', 'checklist'],
+    }),
+    // AI Assist: enables the document-level "Translate" action, keyed off the
+    // same `language` field the plugin above manages.
+    assist({
+      translate: {
+        document: {
+          languageField: 'language',
+        },
+      },
+    }),
+  ],
 
   schema: {
     types: schemaTypes,

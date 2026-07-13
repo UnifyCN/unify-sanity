@@ -40,6 +40,13 @@ export default defineType({
   title: 'Checklist Item',
   type: 'document',
   fields: [
+    // Managed by @sanity/document-internationalization (hidden from editors).
+    defineField({
+      name: 'language',
+      type: 'string',
+      readOnly: true,
+      hidden: true,
+    }),
     defineField({
       name: 'personas',
       title: 'Personas',
