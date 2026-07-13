@@ -6,6 +6,13 @@ export default defineType({
   title: 'Module',
   type: 'document',
   fields: [
+    // Managed by @sanity/document-internationalization (hidden from editors).
+    {
+      name: 'language',
+      type: 'string',
+      readOnly: true,
+      hidden: true,
+    },
     {
       name: 'title',
       title: 'Title',
