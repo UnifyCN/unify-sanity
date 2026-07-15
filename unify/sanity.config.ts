@@ -5,6 +5,7 @@ import {schemaTypes} from './schemaTypes'
 import {colorInput} from '@sanity/color-input'
 import {documentInternationalization} from '@sanity/document-internationalization'
 import {assist} from '@sanity/assist'
+import {structure} from './structure'
 
 export default defineConfig({
   name: 'default',
@@ -14,7 +15,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
-    structureTool(),
+    structureTool({structure}),
     visionTool(),
     colorInput(),
     // Document-level i18n: each translatable doc gets a `language` field and
@@ -25,6 +26,7 @@ export default defineConfig({
         {id: 'vi', title: 'Vietnamese'},
         {id: 'es', title: 'Spanish'},
         {id: 'hi', title: 'Hindi'},
+        {id: 'ar', title: 'Arabic'},
       ],
       schemaTypes: ['module', 'submodule', 'lesson', 'checklist'],
     }),
