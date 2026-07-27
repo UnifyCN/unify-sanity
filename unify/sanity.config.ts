@@ -28,7 +28,7 @@ export default defineConfig({
         {id: 'hi', title: 'Hindi'},
         {id: 'ar', title: 'Arabic'},
       ],
-      schemaTypes: ['module', 'submodule', 'lesson', 'checklist'],
+      schemaTypes: ['module', 'submodule', 'lesson', 'checklist', 'practice', 'quiz'],
     }),
     // AI Assist: enables the document-level "Translate" action, keyed off the
     // same `language` field the plugin above manages.
