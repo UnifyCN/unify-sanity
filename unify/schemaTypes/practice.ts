@@ -395,6 +395,13 @@ export default defineType({
   title: 'Practice',
   type: 'document',
   fields: [
+    // Managed by @sanity/document-internationalization (hidden from editors).
+    defineField({
+      name: 'language',
+      type: 'string',
+      readOnly: true,
+      hidden: true,
+    }),
     defineField({
       name: 'submodule',
       title: 'Submodule',
