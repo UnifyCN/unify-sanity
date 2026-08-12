@@ -28,8 +28,8 @@ the first time through.
 
 ## Inputs
 
-You need two things before starting, either from `args` (e.g. `/i18n-add-language fr-CA "French
-(Canada)"`) or by asking the user directly:
+You need the following before starting, either from `args` (e.g. `/i18n-add-language fr-CA
+"French (Canada)" "Français (canadien)" FRENCH`) or by asking the user directly:
 
 - **`LANG_CODE`** — the language code this project will use everywhere (e.g. `fr-CA`, `es-MX`).
   **Use a region-qualified code if the target has meaningfully different regional conventions**
@@ -37,13 +37,25 @@ You need two things before starting, either from `args` (e.g. `/i18n-add-languag
   string on the web side, so `fr-CA` vs bare `fr` is the difference between "9 août 2026" and
   generic French formatting, for zero extra code. Confirm this choice with whoever requested the
   language before writing anything; it's expensive to rename later.
-- **`LANG_DISPLAY_NAME`** — human display name (e.g. `"French (Canada)"` for Sanity,
-  `"Français (canadien)"` for the web UI's native-label picker).
+- **`SANITY_LANGUAGE_TITLE`** — the display name Sanity's Studio shows (e.g. `"French
+  (Canada)"`). English-named, editor-facing.
+- **`UI_NATIVE_LABEL`** — the label the web app's language picker shows, **in the language
+  itself** (e.g. `"Français (canadien)"`, not `"French (Canada)"`). These are genuinely two
+  different strings — don't conflate them into one "display name" input; the fr-CA rollout used
+  different values for each and a shared field would silently produce the wrong one in one of the
+  two systems.
+- **`ENV_FLAG_SUFFIX`** — if gating (below), the uppercase, underscore-safe suffix for the feature
+  flag, e.g. `FRENCH` (→ `NEXT_PUBLIC_ENABLE_FRENCH`), not the raw `LANG_CODE`. **Do not
+  mechanically interpolate a region-qualified `LANG_CODE` into an env var name** —
+  `NEXT_PUBLIC_ENABLE_fr-CA` is not a valid JS identifier and breaks dot-access (`process.env.NEXT_PUBLIC_ENABLE_fr-CA`
+  parses as a subtraction expression). Pick a human-chosen, normalized name instead — this
+  project used `NEXT_PUBLIC_ENABLE_FRENCH` for `fr-CA`, mirroring the existing
+  `NEXT_PUBLIC_ENABLE_ARABIC` for `ar`.
 
 Also confirm **scope**: Sanity content only, web UI strings only, or both (this rollout did
-both). And confirm **gating**: should the language be visible immediately, or hidden behind a
-`NEXT_PUBLIC_ENABLE_<LANG>`-style flag until native review (recommended default for a
-machine-translated first pass — see Phase 2b).
+both). And confirm **gating**: should the language be visible immediately, or hidden behind the
+`ENV_FLAG_SUFFIX` flag until native review (recommended default for a machine-translated first
+pass — see Phase 2b).
 
 ---
 
@@ -63,10 +75,21 @@ coverage, so you have a real baseline to work against:
 // perspective: 'raw' (required — otherwise drafts are invisible)
 {
   "lesson_en": count(*[_type=="lesson" && language=="en" && !(_id in path("drafts.**"))]),
-  "lesson_existing_langs": array::unique(*[_type=="translation.metadata" && "lesson" in schemaTypes][0].translations[]._key),
+  // Aggregate across ALL lesson metadata docs, not just the first — [0] on an unfiltered
+  // *[_type=="translation.metadata" && ...] reports one lesson's coverage, not the type's.
+  // Also prefer each doc's DRAFT copy over its published copy if both exist (see Phase 5a's
+  // draft/published ambiguity pitfall — it applies here too, not just at final-audit time).
+  "lesson_langs_covered": array::unique(*[_type=="lesson" && language=="en" && !(_id in path("drafts.**"))]{
+    "meta": *[_id == "drafts." + (*[_type=="translation.metadata" && references(^._id)][0]._id) ][0].translations[]._key
+  }.meta[]),
   // repeat per schemaType
 }
 ```
+
+This is a **recon-time approximation**, not a final audit — with hundreds of base docs the nested
+per-document subquery above can hit the same timeout risk documented in Phase 3's query-tool-limits
+section. If it times out, run it on a sample or paginate; Phase 5a's flat `_id in [...]` lookup is
+the pattern to use once you have exact IDs, and is the one that must be exhaustive, not this one.
 
 Read the actual schema for each type (`get_schema` / the type's file under `schemaTypes/`) and
 classify every field as **translate** (human-readable text) or **copy verbatim** (structure,
@@ -99,9 +122,10 @@ Find the locale directory (`lib/i18n/locales/` in the web-app repo). Confirm:
   holds** in whatever codebase you're working in; don't assume it — if formatting is hardcoded
   to one locale, you'll need to fix those call sites too.
 - Whether the language should be **gated**. This project gates unreviewed machine translations
-  behind a `NEXT_PUBLIC_ENABLE_<LANG>` flag (see how Arabic and now fr-CA are gated in
-  `lib/i18n/config.ts`) so they're built and testable but hidden from the public picker until a
-  native speaker reviews them. Reuse that pattern for a new language unless told otherwise.
+  behind a `NEXT_PUBLIC_ENABLE_<ENV_FLAG_SUFFIX>` flag (see how Arabic and now fr-CA are gated in
+  `lib/i18n/config.ts` — `NEXT_PUBLIC_ENABLE_ARABIC`, `NEXT_PUBLIC_ENABLE_FRENCH`) so they're
+  built and testable but hidden from the public picker until a native speaker reviews them.
+  Reuse that pattern for a new language unless told otherwise.
 - Any **shared-database constraint** on stored language preference (e.g. a Postgres `CHECK`
   constraint enumerating valid codes on a `preferred_language` column). If one exists and doesn't
   yet include your new code, cross-device sync will silently fail until it's updated — that's a
@@ -120,7 +144,7 @@ are translated.
 
 ### 2a. Sanity
 
-Add `{id: LANG_CODE, title: LANG_DISPLAY_NAME}` to `supportedLanguages` in the
+Add `{id: LANG_CODE, title: SANITY_LANGUAGE_TITLE}` to `supportedLanguages` in the
 `documentInternationalization` config. This is what makes the Studio's Translations UI recognize
 the language — deploy the Studio (`npm run deploy` from the Studio package directory) once this
 lands so the admin UI actually shows it.
@@ -128,9 +152,9 @@ lands so the admin UI actually shows it.
 ### 2b. Web UI (if in scope)
 
 Same shape every time, roughly 4 files:
-1. Central language config — add `LANG_CODE: "LANG_DISPLAY_NAME"` to the supported-languages map.
+1. Central language config — add `LANG_CODE: "UI_NATIVE_LABEL"` to the supported-languages map.
 2. If gating: add `LANG_CODE` to the gated-languages set and a
-   `process.env.NEXT_PUBLIC_ENABLE_<LANG> === "true"` check, mirroring however the existing
+   `process.env.NEXT_PUBLIC_ENABLE_<ENV_FLAG_SUFFIX> === "true"` check, mirroring however the existing
    gated language does it.
 3. i18next `resources` registration — import the (not-yet-created) locale JSON and add it to the
    resources map.
@@ -139,7 +163,12 @@ Same shape every time, roughly 4 files:
 5. **If `LANG_CODE` has a region suffix** (`fr-CA`, not `fr`): check whatever function resolves
    `Accept-Language` headers on first visit. If it reduces `fr-CA` → base `fr` before matching
    against supported codes, a browser sending `fr-CA` won't match your `fr-CA`-keyed locale.
-   Patch it to map the bare form to your region-qualified key.
+   Patch it to map the bare form to your region-qualified key — **but gate that mapping on the
+   same enabled-check from step 2**, not just the "is this a known code" check. A first version of
+   this exact patch in the fr-CA rollout mapped `fr` → `fr-CA` unconditionally, so a browser
+   sending `Accept-Language: fr` auto-selected the pending-review catalog on first visit even with
+   the flag off — silently defeating the entire point of gating. Caught in code review, not by
+   this skill's first draft; now it is.
 
 ---
 
@@ -159,9 +188,16 @@ For a source document with published id `SRC`:
    `SRC-LANG_CODE` — it automatically prefixes `drafts.`, producing `drafts.SRC-LANG_CODE`.
    **Never publish.** There is no reason to publish during this phase; native review and
    downstream app support (query filtering by language) come first.
-4. **Merge into `translation.metadata` additively.** Find the doc via
-   `*[_type=="translation.metadata" && references("SRC")][0]` (perspective `raw`), take its
-   `translations` array **verbatim**, and append (or replace, if re-running) one entry:
+4. **Merge into `translation.metadata` additively.** Resolve the group id via
+   `*[_type=="translation.metadata" && references("SRC")][0]._id` (perspective `raw`), then —
+   because a prior patch on this exact document may already have created a draft copy —
+   **explicitly prefer that draft's `translations` array over the published copy's** when reading
+   what already exists: check `drafts.<thatId>` first, fall back to `<thatId>` only if no draft
+   exists. Reading from whichever copy `[0]` happens to resolve to (the same ambiguity Phase 5a
+   audits against) risks reading a **stale, unpatched published array** and overwriting a newer
+   draft's already-merged languages. Take the resolved `translations` array **verbatim**, and
+   append (or replace, if re-running) one entry:
+
    ```json
    {
      "_key": "LANG_CODE",
@@ -169,13 +205,24 @@ For a source document with published id `SRC`:
      "value": {"_type": "reference", "_ref": "SRC-LANG_CODE", "_weak": true}
    }
    ```
+
    Patch with `set: {translations: [...existingEntries, newEntry]}`. **Never** patch with just
    the new entry alone — that wipes every other language's link. `patch_documents` targets a
    bare/published id and will transparently create a draft-with-patches-applied from the
-   published revision; the published copy is left untouched (this matters for Phase 5).
-5. **Idempotency check, always, before steps 2–4**: does `drafts.SRC-LANG_CODE` already exist?
-   Skip if so. This makes the whole process safely re-runnable and lets you recover cleanly from
-   a crash mid-batch (see Pitfall 2 below) without hand-tracking what's done.
+   published revision if no draft exists yet; the published copy itself is left untouched (this
+   is *why* the draft/published pair — and the read-before-merge care above — matters).
+5. **Idempotency check, always, before steps 2–4 — and it's two conditions, not one**:
+   - Does `drafts.SRC-LANG_CODE` (the **content**) already exist, *and* does the metadata group
+     already link `LANG_CODE`? → fully done, skip entirely.
+   - Does the content draft exist but the metadata link is **missing**? → this is a real, common
+     outcome of a crash between step 3 and step 4 (or of a batch that ran step 3 for many docs
+     before step 4 for any of them). **Do not skip it as "already translated."** Perform only the
+     cheap metadata merge (step 4) — do not re-translate content that already exists.
+   - Neither exists? → run the full sequence.
+
+   This distinction is what makes recovery from a crash mid-batch (see Pitfall 2) cheap: querying
+   ground truth after a crash and finding "content exists, metadata doesn't" is normal and fixed
+   in seconds per document, not by re-translating.
 
 ### Field classification (general shape — re-derive exact field names per schema)
 
@@ -353,6 +400,11 @@ on an agent's self-reported block/span counts — spot-check a few independently
    the policy decision before scaling past a pilot batch. (Phase 3, terminology policy)
 6. **Guessed translation-key paths** in runtime verification produce false failures — always
    pull real key paths from the actual JSON before testing lookups. (Phase 5c)
+7. **Un-gated region-code negotiation.** A `base-language → region-qualified-code` mapping in
+   Accept-Language negotiation (Phase 2b, item 5) must check the *same* enabled-flag as the
+   picker, not just "is this a recognized code" — otherwise a browser header alone auto-selects a
+   deliberately-hidden, unreviewed language on first visit, silently defeating the gate. Caught
+   by code review after this skill's first draft shipped without it.
 
 ## Worked example (fr-CA, Canadian French — the rollout this skill was extracted from)
 
