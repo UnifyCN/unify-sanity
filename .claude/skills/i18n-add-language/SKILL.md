@@ -75,21 +75,28 @@ coverage, so you have a real baseline to work against:
 // perspective: 'raw' (required — otherwise drafts are invisible)
 {
   "lesson_en": count(*[_type=="lesson" && language=="en" && !(_id in path("drafts.**"))]),
-  // Aggregate across ALL lesson metadata docs, not just the first — [0] on an unfiltered
+  // Aggregate across ALL lesson base docs, not just the first — [0] on an unfiltered
   // *[_type=="translation.metadata" && ...] reports one lesson's coverage, not the type's.
-  // Also prefer each doc's DRAFT copy over its published copy if both exist (see Phase 5a's
-  // draft/published ambiguity pitfall — it applies here too, not just at final-audit time).
-  "lesson_langs_covered": array::unique(*[_type=="lesson" && language=="en" && !(_id in path("drafts.**"))]{
-    "meta": *[_id == "drafts." + (*[_type=="translation.metadata" && references(^._id)][0]._id) ][0].translations[]._key
-  }.meta[]),
+  "lesson_metadata_ids": *[_type=="lesson" && language=="en" && !(_id in path("drafts.**"))] {
+    "metaId": *[_type=="translation.metadata" && references(^._id)][0]._id
+  }.metaId,
   // repeat per schemaType
 }
 ```
 
-This is a **recon-time approximation**, not a final audit — with hundreds of base docs the nested
-per-document subquery above can hit the same timeout risk documented in Phase 3's query-tool-limits
-section. If it times out, run it on a sample or paginate; Phase 5a's flat `_id in [...]` lookup is
-the pattern to use once you have exact IDs, and is the one that must be exhaustive, not this one.
+`lesson_metadata_ids` gives you the raw (possibly draft-or-published, ambiguously) id per lesson —
+do **not** try to resolve each one's covered languages inline in GROQ by string-concatenating a
+`drafts.` prefix onto whatever `[0]` returned. That reproduces the exact bare-id normalization bug
+Phase 3 step 4a warns about: if `[0]` already returned a `drafts.`-prefixed id, prepending `drafts.`
+again produces a nonexistent id and silently reports zero coverage. Instead, apply Phase 3 step 4's
+canonical resolve → normalize → prefer-draft procedure to each id — as a normal step-by-step
+sequence (strip any `drafts.` prefix yourself, then query `drafts.<bareId>` first, `<bareId>` as
+fallback), not as one clever inline query.
+
+This is a **recon-time approximation**, not a final audit — with hundreds of base docs, resolving
+every id this way is exactly the per-document work Phase 3's query-tool-limits section warns can
+time out at scale. If it does, run it on a sample or paginate; Phase 5a's flat `_id in [...]`
+lookup against a batch of already-known ids is the pattern for when it must be exhaustive.
 
 Read the actual schema for each type (`get_schema` / the type's file under `schemaTypes/`) and
 classify every field as **translate** (human-readable text) or **copy verbatim** (structure,
@@ -188,29 +195,53 @@ For a source document with published id `SRC`:
    `SRC-LANG_CODE` — it automatically prefixes `drafts.`, producing `drafts.SRC-LANG_CODE`.
    **Never publish.** There is no reason to publish during this phase; native review and
    downstream app support (query filtering by language) come first.
-4. **Merge into `translation.metadata` additively.** Resolve the group id via
-   `*[_type=="translation.metadata" && references("SRC")][0]._id` (perspective `raw`), then —
-   because a prior patch on this exact document may already have created a draft copy —
-   **explicitly prefer that draft's `translations` array over the published copy's** when reading
-   what already exists: check `drafts.<thatId>` first, fall back to `<thatId>` only if no draft
-   exists. Reading from whichever copy `[0]` happens to resolve to (the same ambiguity Phase 5a
-   audits against) risks reading a **stale, unpatched published array** and overwriting a newer
-   draft's already-merged languages. Take the resolved `translations` array **verbatim**, and
-   append (or replace, if re-running) one entry:
+4. **Merge into `translation.metadata` additively.** This is the step most likely to be gotten
+   subtly wrong — read all four sub-steps before implementing it.
 
-   ```json
-   {
-     "_key": "LANG_CODE",
-     "_type": "internationalizedArrayReferenceValue",
-     "value": {"_type": "reference", "_ref": "SRC-LANG_CODE", "_weak": true}
-   }
-   ```
+   a. **Resolve, then normalize to a bare id.**
 
-   Patch with `set: {translations: [...existingEntries, newEntry]}`. **Never** patch with just
-   the new entry alone — that wipes every other language's link. `patch_documents` targets a
-   bare/published id and will transparently create a draft-with-patches-applied from the
-   published revision if no draft exists yet; the published copy itself is left untouched (this
-   is *why* the draft/published pair — and the read-before-merge care above — matters).
+      ```groq
+      *[_type=="translation.metadata" && references("SRC")][0]._id
+      ```
+
+      This `[0]` can land on either the published copy or an existing draft — you cannot tell
+      which from the result alone. **Strip a leading `drafts.` if present** to get `bareMetaId`
+      before doing anything else. Skipping this is a real bug, not a hypothetical one: if you
+      blindly prepend `drafts.` to whatever the query returned, and it already returned a
+      `drafts.`-prefixed id, you construct `drafts.drafts.<id>` — a nonexistent document — and
+      your "existing translations" read comes back empty, silently discarding every other
+      language's link on the next write.
+
+   b. **Read existing translations from the draft, preferring it over the published copy.**
+      Because a prior patch on this exact document may already have created a draft copy,
+      fetch `drafts.<bareMetaId>` first; only fall back to `<bareMetaId>` (published) if no draft
+      exists yet. Reading from whichever copy an unqualified `[0]` happens to land on (the same
+      ambiguity Phase 5a audits against) risks reading a **stale, unpatched published array** and
+      overwriting a newer draft's already-merged languages.
+
+   c. **Merge the new language in by `_key` — never by appending.** Build the result from the
+      existing array keyed by `_key`, with the `LANG_CODE` key set (added, or overwritten if this
+      exact merge is ever re-run — e.g. during Pitfall 2's crash-recovery flow) to:
+
+      ```json
+      {
+        "_key": "LANG_CODE",
+        "_type": "internationalizedArrayReferenceValue",
+        "value": {"_type": "reference", "_ref": "SRC-LANG_CODE", "_weak": true}
+      }
+      ```
+
+      A naive `[...existingEntries, newEntry]` append is a second real bug: on any re-run it
+      produces a **duplicate `_key`** for the same language instead of replacing the stale entry.
+      Merge through a map (`_key` → entry) and flatten back to an array — this is the same shape
+      `unify/scripts/translate-lesson.ts` already uses; don't invent a different one.
+
+   d. **Patch.** `patch_documents` on `bareMetaId` with `set: {translations: <the merged array>}`
+      — it accepts a bare/published id and transparently creates-or-edits the draft, so you don't
+      need to target `drafts.<bareMetaId>` for the write itself (only for the *read* in step b).
+      **Never** patch with just the new entry alone — that wipes every other language's link. The
+      published copy itself is left untouched by this (why the draft/published distinction and
+      the read-before-merge care in steps a–b matter in the first place).
 5. **Idempotency check, always, before steps 2–4 — and it's two conditions, not one**:
    - Does `drafts.SRC-LANG_CODE` (the **content**) already exist, *and* does the metadata group
      already link `LANG_CODE`? → fully done, skip entirely.
