@@ -212,6 +212,15 @@ For a source document with published id `SRC`:
       your "existing translations" read comes back empty, silently discarding every other
       language's link on the next write.
 
+      **If the query returns nothing**, no metadata group exists for this document yet — this
+      happens on a genuinely fresh document (e.g. one added since the project's languages were
+      last set up, or a project running this skill for its very first language). Create one
+      before continuing: `bareMetaId = "i18n-" + bareSource`, and
+      `createIfNotExists({_id: bareMetaId, _type: "translation.metadata", schemaTypes: [sourceSchemaType], translations: []})`
+      — `sourceSchemaType` is the base document's own `_type` (`"lesson"`, `"checklist"`, etc.).
+      Then proceed to step b with an empty existing-translations array (there's nothing to
+      prefer a draft over yet).
+
    b. **Read existing translations from the draft, preferring it over the published copy.**
       Because a prior patch on this exact document may already have created a draft copy,
       fetch `drafts.<bareMetaId>` first; only fall back to `<bareMetaId>` (published) if no draft
@@ -236,12 +245,30 @@ For a source document with published id `SRC`:
       Merge through a map (`_key` → entry) and flatten back to an array — this is the same shape
       `unify/scripts/translate-lesson.ts` already uses; don't invent a different one.
 
-   d. **Patch.** `patch_documents` on `bareMetaId` with `set: {translations: <the merged array>}`
+   d. **Patch, guarded against a concurrent write.** `patch_documents` on `bareMetaId` with
+      `set: {translations: <the merged array>}` and `ifRevisionId: <the _rev you read in step b>`
       — it accepts a bare/published id and transparently creates-or-edits the draft, so you don't
       need to target `drafts.<bareMetaId>` for the write itself (only for the *read* in step b).
-      **Never** patch with just the new entry alone — that wipes every other language's link. The
-      published copy itself is left untouched by this (why the draft/published distinction and
-      the read-before-merge care in steps a–b matter in the first place).
+      **Never** patch with just the new entry alone — that wipes every other language's link.
+
+      The guard matters for a specific, real scenario, not races in general: **this skill's own
+      concurrency discipline (2–3 agents, exclusive ID batches) already prevents two agents
+      *within one language rollout* from touching the same metadata doc at once — that's not
+      what this protects against.** It protects against two situations outside that discipline's
+      reach, both sharing the same root cause (a stale read-then-blind-write on a document
+      *other* rollouts also write to): running two *different* language rollouts against this
+      project concurrently (metadata docs are shared across every language, so a fr-CA batch and
+      an es-MX batch can legitimately race on the exact same document), and a crash-recovery
+      re-run (Pitfall 2) that starts before an earlier, still-finishing run on the same content
+      has fully stopped. Either way, without the guard, the second writer's blind
+      `set: {translations: ...}` can silently overwrite the first writer's just-added language
+      entry — same failure mode step c's merge-by-key already fixed for the *single-writer*
+      case, just now for two writers. **On a revision conflict, reread the document (back to
+      step b), redo the merge (step c) against the now-current array, and retry the patch** —
+      don't just fail the whole document.
+
+      The published copy itself is left untouched by any of this (why the draft/published
+      distinction and the read-before-merge care in steps a–b matter in the first place).
 5. **Idempotency check, always, before steps 2–4 — and it's two conditions, not one**:
    - Does `drafts.SRC-LANG_CODE` (the **content**) already exist, *and* does the metadata group
      already link `LANG_CODE`? → fully done, skip entirely.
