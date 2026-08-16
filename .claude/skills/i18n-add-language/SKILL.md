@@ -215,11 +215,30 @@ For a source document with published id `SRC`:
       **If the query returns nothing**, no metadata group exists for this document yet — this
       happens on a genuinely fresh document (e.g. one added since the project's languages were
       last set up, or a project running this skill for its very first language). Create one
-      before continuing: `bareMetaId = "i18n-" + bareSource`, and
-      `createIfNotExists({_id: bareMetaId, _type: "translation.metadata", schemaTypes: [sourceSchemaType], translations: []})`
-      — `sourceSchemaType` is the base document's own `_type` (`"lesson"`, `"checklist"`, etc.).
-      Then proceed to step b with an empty existing-translations array (there's nothing to
-      prefer a draft over yet).
+      before continuing, using the same `create_documents` MCP tool this pattern uses everywhere
+      else (not a raw `createIfNotExists` client call, which — unlike this tool — writes the
+      supplied id as-is and would create a *published* group, breaking the draft-only rule):
+
+      ```json
+      {
+        "_id": "i18n-<bareSource>",
+        "_type": "translation.metadata",
+        "schemaTypes": ["<sourceSchemaType>"],
+        "translations": [
+          {"_key": "<SOURCE_LANG>", "_type": "internationalizedArrayReferenceValue", "value": {"_type": "reference", "_ref": "<bareSource>", "_weak": true}}
+        ]
+      }
+      ```
+
+      `sourceSchemaType` is the base document's own `_type` (`"lesson"`, `"checklist"`, etc.);
+      `SOURCE_LANG` is the source-language code (`"en"` in this project). **Seed the
+      source-language entry — never start from an empty array.** This isn't just consistency
+      with every other metadata group; it's required for step a's own resolution query to work
+      at all: `references("SRC")` matches a document only if it contains a reference to `SRC`
+      somewhere. An empty `translations: []` group has no references to anything, so it would be
+      *permanently undiscoverable* by the exact query this step uses to find it — every future
+      run would conclude no group exists and could try to recreate one. Then proceed to step b —
+      the array now has one entry (the source language), not zero.
 
    b. **Read existing translations from the draft, preferring it over the published copy.**
       Because a prior patch on this exact document may already have created a draft copy,
