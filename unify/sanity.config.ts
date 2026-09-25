@@ -28,6 +28,7 @@ export default defineConfig({
         {id: 'hi', title: 'Hindi'},
         {id: 'ar', title: 'Arabic'},
         {id: 'fr-CA', title: 'French (Canada)'},
+        {id: 'pa', title: 'Punjabi'},
       ],
       schemaTypes: ['module', 'submodule', 'lesson', 'checklist', 'practice', 'quiz'],
     }),
