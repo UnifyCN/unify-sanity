@@ -182,11 +182,10 @@ export default defineType({
     }),
     defineField({
       name: 'submodule',
-      title: 'Submodule',
+      title: 'Module',
       type: 'reference',
       to: [{type: 'submodule'}],
-      description:
-        'Select the parent submodule (section) that this lesson belongs to. You can search for it here.',
+      description: 'Select the module that this lesson belongs to.',
       validation: (rule) => rule.required(),
     }),
 
@@ -218,7 +217,7 @@ export default defineType({
             }),
             defineField({
               name: 'content',
-              title: 'Page Content',
+              title: 'Content blocks',
               type: 'array',
               description:
                 'The main content of this lesson page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
@@ -687,8 +686,7 @@ export default defineType({
       name: 'order',
       title: 'Display Order',
       type: 'number',
-      description:
-        'The order in which this lesson appears within its parent submodule. Lower numbers appear first. Note: always start from 1 and increment by 1 for different lessons (you will have to track this yourself for every lesson in a submodule).',
+      description: 'The order of this lesson within its module. Start at 1 and increase by 1. Lower numbers appear first.',
       initialValue: 0,
     }),
 
@@ -722,7 +720,7 @@ export default defineType({
             }),
             defineField({
               name: 'content',
-              title: 'Page Content',
+              title: 'Content blocks',
               type: 'array',
               description:
                 'The main content of this ending page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
