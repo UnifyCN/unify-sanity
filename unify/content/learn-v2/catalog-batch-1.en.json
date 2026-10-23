@@ -1,0 +1,4928 @@
+{
+  "review": "/tmp/learn-catalog-review-1.md",
+  "reviewedBatchSha256": "60753ab66bb89d1e6ea805a76acd11eae4a394e851c91c15a4c9e2037300e00d",
+  "publishedSubsetSha256": "7ef518fe19862e61263f98dd80c968c83db53b9b3f6e8da940f74cc0a6542043",
+  "lessons": [
+    {
+      "id": "051dd468-57e4-4420-92f3-fb9ae0bca635",
+      "title": "Staying Organized & Renewals",
+      "pages": [
+        {
+          "_key": "d15f087e22e7",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "ae269a13e97a2e52e5b0",
+              "question": "Which item belongs in a family document tracker?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "39e05b36e0d6d15d1bca",
+                  "text": "Each document's expiry date",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "8b1428af73b48568c41f",
+                  "text": "Favourite travel destinations",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f9b7803eb9eff5b1cbe1",
+                  "text": "Weekly grocery choices",
+                  "correct": false
+                }
+              ],
+              "explanation": "Expiry dates help identify which documents may need attention."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "09eb95af0b983679700f",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "e63ccd4e755fc69d676b",
+                      "text": "A document tracker can help a family see which documents need attention first.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "de7ffa7aa62d27f447d1"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "e65285098aa3560284da",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "446826f05217f2eff1af",
+                      "text": " Sam checks the family tracker and notices that one passport expires before the other documents. Sam reviews that document first and keeps its digital copy with the family’s other secure files.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "5aa82afcec8fea64a92d"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "3e5d3d7eb13069da92a5",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "2b6a96aa832c420b8e1a",
+                  "question": "Where can permanent residents find information about PR cards and status?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "6427db19e7fc89329c9d",
+                          "text": "The Government of Canada’s settlement page links to information about getting a PR card or PR travel document and managing permanent resident status.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "12c29e04e7e1031dda00"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "2523cf786a13f99b7ed5",
+                  "question": "What is an e-COPR?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "86ed4946b81a8253a5b7",
+                          "text": "An electronic Confirmation of Permanent Residence is proof of a person’s new permanent resident status in Canada.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "5d72a415d195dfd4d766"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "b4f5e34d7904277416d8",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "7278ecbc2d170e341f7b",
+                  "title": "Settling in Canada",
+                  "publisher": "Government of Canada",
+                  "url": "https://ircc.canada.ca/english/newcomers/index.asp"
+                },
+                {
+                  "_type": "source",
+                  "_key": "66fd12f2e2522e3cb368",
+                  "title": "Apply for permanent residence as a protected person: Settle in Canada",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/protected-persons/settle.html?wbdisable=true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "083cd715-fe81-459f-a04d-b78a1c90a835",
+      "title": "Lesson 4.1:  Why Filing Taxes Matters",
+      "pages": [
+        {
+          "_key": "8546d2dc654a",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "bf9e3f5d66f8810b77e0",
+              "question": "Why can filing a tax return matter even if you had little or no income?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "d3ea4eba2a72d47911a9",
+                  "text": "It can help you keep receiving benefits and credits",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "486b12bbf2e3b5415c56",
+                  "text": "It guarantees that you will receive every tax credit",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "e5d5e35f56c0640153a7",
+                  "text": "It means you never need to report income again",
+                  "correct": false
+                }
+              ],
+              "explanation": "Filing allows the CRA to consider you for many benefit and credit payments. Eligibility and additional application steps may still apply."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "8733c1a6c13a86819d4d",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "f8fa5e532b07156492ba",
+                      "text": "The CRA uses information from a tax return to determine whether a person may receive many benefits and credits. Filing also establishes whether the person owes tax or is due a refund.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "624bd9fa735faa54bd85"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "bb62124d9bdfc143b33c",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "95d750df6ca719dbcca2",
+                      "text": " Sam had little income during the year. Sam files a return so the CRA can assess it, determine whether a refund is owed, and consider Sam for applicable benefit and credit payments.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "a64e0e79ab081ffb4d87"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "2520a080d47afd165de3",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "f62812e96da393ccb3dd",
+                  "question": "Does filing guarantee a refund?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "63ac429249c40f3c1dc4",
+                          "text": "No. A refund is issued only if one is owed.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "0ffbcd7575b12c69604d"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "a6b713c16e02d098e0a2",
+                  "question": "Does filing automatically cover every benefit application?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "8fb30c4495cd9a46cc6d",
+                          "text": "No. The CRA automatically considers people for many payments, but some cases may require additional forms.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "bae6a5b68dd73df83661"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "0efb9981411607867ebe",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "a13c68ad048a7e52f67a",
+                  "title": "Tax tip: Taxes made simple for newcomers to Canada",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2026/tax-tip-taxes-made-simple-newcomers-canada.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "08f20296-f81c-45c5-a776-bdf86c4fcc46",
+      "title": "Managing Your Health Records",
+      "pages": [
+        {
+          "_key": "77885caf788b",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "6b8b81a1972f057925b2",
+              "question": "What should you do if a paper immunization record is missing from Health Gateway?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "88c164c368a26e797f55",
+                  "text": "Submit the paper record for review",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "45e977811f154293172f",
+                  "text": "Assume the paper record is incorrect",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "96b2eb0a92baeb08a3a6",
+                  "text": "Wait for it to appear automatically",
+                  "correct": false
+                }
+              ],
+              "explanation": "Health Gateway only shows immunizations in the Provincial Immunization Registry. A paper record can be submitted for review and an update."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "5276340f3a503bd0f9f7",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "94427007470ae5a8642f",
+                      "text": "Health Gateway contains many health records, but not all. For example, its immunization history may exclude vaccines given outside BC or by some health care providers.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "6109adf9167aa896fc15"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "5d490e559d6903abb708",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "01c1aa0dbef32a8d98b6",
+                      "text": " Lee sees that a vaccine received outside BC is missing from Health Gateway. Lee finds the paper record and submits it for review.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "e4ef521b07f735e91693"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "7a19d80eb4b17ed4d4c3",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "036c2a2e0997dacf81bc",
+                  "question": "Where can I request an immunization record that is not online?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "a51e5ac628d2f7978dc8",
+                          "text": "Ask the provider that gave the vaccine or contact your local Public Health Unit.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "d31a9ce15f9a1a5313dd"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "63e9f9dbab0c3368588e",
+                  "question": "Can I download and print an immunization record from Health Gateway?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "eb77fef00fe71354c26e",
+                          "text": "Yes. Health Gateway allows you to access, download, and print records held in the Provincial Immunization Registry.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "2a3950c840d97a08c4af"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "df9cc116279823b4988b",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "315f89a9f3d97772c008",
+                  "title": "Immunization records",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/health-library/immunizations/information-and-safety/records"
+                },
+                {
+                  "_type": "source",
+                  "_key": "76e79a16194ceeea1857",
+                  "title": "Your health information",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/your-health-information"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "a1bef954350b",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "66001ac1bfa03d4a80ae",
+              "question": "Which online tool provides a consolidated view of many B.C. health records?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "d75acb30366e4ea8ab45",
+                  "text": "Health Gateway",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "8bb8f1958eacfcb1a944",
+                  "text": "Emergency Department Wait Times",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "ba48f3ff9b6015072a05",
+                  "text": "LifeLabs location finder",
+                  "correct": false
+                }
+              ],
+              "explanation": "Health Gateway provides a consolidated view of many records, including lab results, medication history, immunizations, and health visits. It does not contain every health record."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "bd0263b79e92d3d4120b",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "a7bd85de772c63b6a8f7",
+                      "text": "Health information may be stored in several provincial, regional, or local systems. Health Gateway brings many B.C. records together, while MyCareCompass provides access to LifeLabs results and appointment booking.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "a042c70ad8323b71b683"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "ff17f8ad5f7aa80c69ab",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "3d1718564e42608cd1c6",
+                      "text": " Priya wants to review records from different types of care. She checks Health Gateway for her available health records and uses MyCareCompass for her LifeLabs results.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "b67c149979ab6177a0e1"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "4a97b01f82e3cb1ff8e4",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "1f78a229f9590ac36b45",
+                  "question": "Does Health Gateway contain every health record?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "6081b6214ab8bf5ddd14",
+                          "text": "No. It contains many records, but not all of them.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "4a1eec85d74fe1f21079"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "629cdd3220471f173efe",
+                  "question": "What can I do if an immunization is missing from Health Gateway?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "a1b804c71397c508d407",
+                          "text": "If you have a paper record, you can submit it for review. You can also contact the provider that gave the vaccine.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "fd2e781c86c9cf5a69ca"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "3d860a6ff316b4cc1f2d",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "f949f09d2a8eba38f563",
+                  "title": "Your health information",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/your-health-information"
+                },
+                {
+                  "_type": "source",
+                  "_key": "78bceaae17bc798dc67b",
+                  "title": "Immunization records",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/health-library/immunizations/information-and-safety/records"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0998478b-0c4f-4576-b0ce-9f572fceb566",
+      "title": "Lesson 3.4: Credit Score",
+      "pages": [
+        {
+          "_key": "b7401bb1f264",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "8ab87381093527e4bc26",
+              "question": "Which action may help a credit score?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "6d1f84ccd4269b2df998",
+                  "text": "Paying bills on time",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "1845e3f16b68cc20b037",
+                  "text": "Missing payments",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "0e3067d15f4e025d0a5e",
+                  "text": "Using more than the credit limit",
+                  "correct": false
+                }
+              ],
+              "explanation": "On-time payments and responsible credit use can help a score. Missed payments and too much debt can lower it."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "b143e23f16bac5bbf6ae",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "670627c7fc94d4c5a3c1",
+                      "text": "Payment history, debt owed, use of available credit, length of credit history, credit inquiries, and types of credit can affect a credit score. The exact formulas are not public and may differ.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "8398dcede96ebf78b569"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "b02a200c603d494a9598",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "0c94719f434eafa63b81",
+                      "text": " Lee pays bills on time and keeps debt below the available credit limits. These habits may support Lee’s score over time.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "75cdaa4fba1e265a9415"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "fa66f6a4776f52647ecf",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "a558fc5107255bfb59d5",
+                  "question": "Does a credit score stay the same?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "6905e2c064a2d879e45c",
+                          "text": "No. It can change as lenders update your credit history.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "707e449ab4bbcdb2128e"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "0ea6733ccadc7740f2de",
+                  "question": "Does checking my own credit report or score lower my score?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "4f3e850aa2db2f576099",
+                          "text": "No. Checking your own credit report or score does not affect your score.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "27a980d4bdd380f5dfbf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "c0705d72967df11b074c",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "b55b32d3d953df5e16d2",
+                  "title": "Credit report and score basics",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "url": "https://canada.ca/en/financial-consumer-agency/services/credit-reports-score/credit-report-score-basics.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "c6f3a7a9f8b5a59dc12b",
+                  "title": "Module 3: Understanding credit",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "url": "https://canada.ca/en/financial-consumer-agency/services/financial-basics/financial-basics-videos/financial-basics-video-credit.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0b8bffe0-8aef-4274-9789-bcd1f42007fc",
+      "title": "Navigating Transit Efficiently",
+      "pages": [
+        {
+          "_key": "19bfacfe8f23",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "8d0e7da2db97398948b9",
+              "question": "On a Metro Vancouver bus, how can a rider request the next stop?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "dccc2946f44b6f0d2877",
+                  "text": "Pull the yellow cord or press a red stop button",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "9f7279ba1d31424ed4f4",
+                  "text": "Wait for the bus to stop automatically at every stop",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "cf11335469cc5bb3ae6e",
+                  "text": "Open the rear door immediately",
+                  "correct": false
+                }
+              ],
+              "explanation": "TransLink says bus riders request the next stop by pulling the yellow cord or pressing a red button on a nearby pole."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "1bbb452a0be9f0ba8dd6",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "87b7b8038d0fb5a89795",
+                      "text": "Before leaving, check the route, walking distance, transfer points, departure information, and service alerts. At the stop, confirm that signs match the planned route.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "ea5bb789e7ffc23774f1"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "1dc2cc4c134fd9c9e271",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "0cec3b71215287da043f",
+                      "text": " Sam plans a bus trip, checks the latest departure information and alerts, arrives before the scheduled departure, and confirms the route number on the stop sign.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "e7368e6a3c8e586987c4"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "26b9e566f369ce9c8dd7",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "cbd8269b7f4526291def",
+                  "question": "What should I do before boarding?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "055afae56fb7ffb7d348",
+                          "text": "Let passengers get off first. Then board and find a seat or hold a handrail for stability.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "7175e62eaf0e0d6438b1"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "4058db12beaf2ed996f9",
+                  "question": "How can I avoid missing a stop on a Metro Vancouver bus?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "3cc611dc19a986113f6e",
+                          "text": "Follow the route and request the next stop by pulling the yellow cord or pressing a red stop button.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "aa3bf7633b5c7c4684d7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "fe8aca90f07b2fbfd689",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "a85539e9ff69afcdc4bb",
+                  "title": "Transit for New Riders - English",
+                  "publisher": "TransLink",
+                  "url": "http://translink.ca/rider-guide/transit-for-new-riders/english"
+                },
+                {
+                  "_type": "source",
+                  "_key": "f18e56d7ef46c3de56d2",
+                  "title": "Travel-training workshops aim to set new riders up for success - The Buzzer blog",
+                  "publisher": "TransLink",
+                  "url": "https://buzzer.translink.ca/2022/06/travel-training-workshops-aim-to-set-new-riders-up-for-success"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e0eca20-3d96-4d1f-8609-cbf821284b50",
+      "title": "Multiculturalism & Diversity",
+      "pages": [
+        {
+          "_key": "110158ab0236",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "cf452e99e1ab6625a1fe",
+              "question": "Which action best supports a newcomer in British Columbia who wants to connect with the local community?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "f0710c7d70c62b757021",
+                  "text": "Contact a local newcomer service provider",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "1154980f692011c93fa4",
+                  "text": "Avoid community organizations",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "a84c5ef5c1a3766ec0ed",
+                  "text": "Give up personal traditions",
+                  "correct": false
+                }
+              ],
+              "explanation": "B.C. newcomer service providers can help eligible people connect with their local community."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "8cfca76c4c40277b841d",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "230dc88536e70420aec3",
+                      "text": "In British Columbia, newcomer services can provide introductions to life in the province and connections to local communities. Services may be offered in a person’s preferred language.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "1717f048ee349198a732"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "d69f328c8493bb007b44",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "768eda93fc672400ac5a",
+                      "text": " A newcomer wants to meet people nearby. They contact a local service provider and ask about community connections in their preferred language.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "c9bb3e50c2a8add57e5e"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "2623bd9049bf96d50b58",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "5475323ae5e70a584a93",
+                  "question": "What kinds of community support can B.C. newcomer services provide?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "2cfdca338437724b2aee",
+                          "text": "They can offer information about life in B.C. and connections to the local community, school, and healthcare.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "3e73487b7f0a0aed95f0"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "3b5dd06c856520e241c6",
+                  "question": "How may these services be delivered?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "734909e60e11a5594bb8",
+                          "text": "They may be available in person or online, including meetings, workshops, support groups, peer support, and mentoring.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "6fe351d34dc36af4adc6"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "caeed58904c2870db13f",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "f3bff010e3994f077c03",
+                  "title": "WelcomeBC - Start Your New life in BC",
+                  "publisher": "Province of British Columbia",
+                  "url": "https://welcomebc.ca/start-your-life-in-b-c/settlement-services/services-for-newcomers-on-a-temporary-work-or-study-permit-and-new-citizens%C2%A0(bc-nsp)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0e590bf2-fb70-4dec-ab23-1d71a503e142",
+      "title": "Lesson 3.6: Checking Your Credit",
+      "pages": [
+        {
+          "_key": "adb9432a8327",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "5ca6df5a3163490094d4",
+              "question": "Which action does not affect your credit score?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "047a5b0808c4bdd1f559",
+                  "text": "Checking your own credit report",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "5c95d6bf186ae4f6bb4b",
+                  "text": "Applying for a new credit card",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "8991a170daaefe0ceca1",
+                  "text": "Applying for a loan",
+                  "correct": false
+                }
+              ],
+              "explanation": "Checking your own report is a soft check and does not affect your score. A credit application may create a hard check."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "f4299d066a190ab3879b",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "b9c3c0ab26210295aabc",
+                      "text": "A credit report summarizes how you have used credit. Reviewing it can also help you notice possible signs of fraud or identity theft.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "cf4ad98b95927130566c"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "6c08d96d9b4dbf4c3ebc",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "ba21490c42e0fb4cb88c",
+                      "text": " Alex downloads a free credit report from a main credit bureau and reviews the listed accounts and inquiries. This is a soft check, so it does not affect Alex’s credit score.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "998859f45de8b51268d9"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "672ee809cb9e936d4ef2",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "9153b294ab95288d4d35",
+                  "question": "What is the difference between a credit report and a credit score?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "169ae333ce80252888cd",
+                          "text": "A credit report summarizes your credit history. A credit score is a number calculated from information in that report.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "14695f623bb083071d38"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "9bd957002e4f10d58b15",
+                  "question": "Why should I review my credit report?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "ffee945ee6806e3497e3",
+                          "text": "Reviewing it may help you notice signs of fraud or identity theft.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "6d56d7eb6993fc9819bd"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "f72577ff970ef6e5fcd2",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "07dcb627f060336a2ff1",
+                  "title": "Getting your credit report and credit score",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "url": "https://canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html?trk=article-ssr-frontend-pulse_little-text-block"
+                },
+                {
+                  "_type": "source",
+                  "_key": "d8c742203ed6e98ad990",
+                  "title": "Credit report and score basics",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "url": "https://canada.ca/en/financial-consumer-agency/services/credit-reports-score/credit-report-score-basics"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10e4825a-2570-48f3-9edb-fc3768fd947b",
+      "title": "Road Safety and Winter Driving",
+      "pages": [
+        {
+          "_key": "8ab7d9094794",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "5ae841ee6fc5ad026443",
+              "question": "What should a driver do on a slippery road?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "2f5a61321c4ac15eef3f",
+                  "text": "Use cruise control",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "e7128c27b4863ea02e44",
+                  "text": "Drive smoothly and increase following distance",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "960206831e284b491d5b",
+                  "text": "Brake abruptly",
+                  "correct": false
+                }
+              ],
+              "explanation": "Smooth, gradual movements and more following distance reduce the chance of losing traction."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "525ef52bb525a49709eb",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "9b5a9a4fa17968c1f228",
+                      "text": "Before travelling in poor winter weather, check road conditions and possible closures. If driving is necessary, allow extra time and avoid cruise control on slippery roads.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "b93c398e98ddff8c98e2"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "007762196ff43798b30c",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "e1d6b1536347b16ca3bc",
+                      "text": " A driver sees that snow is making the road slick. They allow extra travel time, increase their following distance, and accelerate, steer, and brake gradually.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "bb43df4a9c33a1aa0313"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "97e3f77f46012a76cac6",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "9bf4e354273b6008b3e6",
+                  "question": "What vehicle parts should I check before winter travel?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "31f33dde00adf52e0786",
+                          "text": "Check that the lights and wipers work, and make sure washer fluid is topped up.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "50bad4083dcc90ecd517"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "4f86b381b61ad9ede5f7",
+                  "question": "Should I use cruise control on a slippery road?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "2be18ac87cfe42d4791f",
+                          "text": "No. Cruise control should not be used on slippery roads.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "cc00438a218ac491a821"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "a8ce852a6674c62954a1",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "b23c7cb8bd809df36e41",
+                  "title": "Be winter ready: ICBC urges drivers to gear down and stay safe on B.C. roads",
+                  "publisher": "ICBC",
+                  "url": "https://icbc.com/zh-Hans/about-icbc/newsroom/2025-11-26-winter-driving"
+                },
+                {
+                  "_type": "source",
+                  "_key": "f3ea3f2013b75ef4f279",
+                  "title": "ICBC survey: 76% of Lower Mainland drivers polled using winter tires this season",
+                  "publisher": "ICBC",
+                  "url": "https://icbc.com/about-icbc/newsroom/2024-jan15-winter-driving"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "165e8062-0876-4e41-bb64-cb96cdf59533",
+      "title": "Strengthen Your Connections",
+      "pages": [
+        {
+          "_key": "5cde88758b01",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "0c643ca02d056f74ab55",
+              "question": "Which activity can help you meet people with interests similar to yours?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "421ed259750330337f3d",
+                  "text": "Joining an activity at a community centre or library",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f6275d0e5fa16ea00e1f",
+                  "text": "Avoiding local groups and events",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "b3fb96c856e9dd0cbfd8",
+                  "text": "Waiting for people to contact you first",
+                  "correct": false
+                }
+              ],
+              "explanation": "Community centres, recreation centres, and libraries offer activities that can help people connect through shared interests."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "a228b79d697a5db5f9fa",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "0d0db039e9b4e7eeddac",
+                      "text": "Shared activities can create natural opportunities to meet people and build relationships. Community centres, libraries, sports teams, associations, and social clubs are possible places to connect.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "d9662bafefd547f01811"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "f8b63743a4c71a869973",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "4a9f38d53be46a108d04",
+                      "text": " Sam joins a local book club, speaks with another member about a shared interest, and later sends a friendly message about the next meeting.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "958ec61696bd3a8be0ae"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "19a95efb2d77a7527710",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "00edb300eb8c0b09d3ae",
+                  "question": "Where can I look for community activities?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "8dd59316c8c69c9b5522",
+                          "text": "Check your city or town website, local library, or community or recreation centre.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "9c8b0b7ce02af9e9fda9"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "0416ef76e93aac83041b",
+                  "question": "What can matched participants do through Canada Connects?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "02f578339b618b8bf1cb",
+                          "text": "They can share community information, attend cultural or sporting events, practise English or French, and meet people with common interests.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "db17072b7b59f81e5a78"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "125a1dd0a4249ea59faa",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "6545b600e2b667bac03c",
+                  "title": "Settling in Canada: Connecting with your community",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/settle-canada/community-connections.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "ef63d236ba35d702fc54",
+                  "title": "Canada Connects: Bringing newcomers and Canadians together",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/campaigns/canada-connects.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1e741084-0609-4574-8abd-cc45bfdb893a",
+      "title": "Lesson 6.2: Red Flags of a Scam",
+      "pages": [
+        {
+          "_key": "e3a0ab164b77",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "2a35a3f188a5f4f05500",
+              "question": "Which message is a clear warning sign of a CRA scam?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "5078f9761cc9ecde6ba8",
+                  "text": "A text offering a CRA refund by e-transfer",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f7f7d6bbb4f102e332d5",
+                  "text": "An email notification that a new message is available in your CRA account",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "6c92632e3bffb1f03a02",
+                  "text": "A letter asking for documents related to your tax account",
+                  "correct": false
+                }
+              ],
+              "explanation": "The CRA does not send refunds or payments by e-transfer or text message. It may send an email notification when you have a new message in your CRA account."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "46d534b3c2139754845f",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "74e836cf6e3a4dcb6550",
+                      "text": "A convincing logo does not prove that a message or website is genuine. Check the web address carefully. If you are unsure, contact the organization directly or type its official address into your browser.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "2f0afb739b29043c75ce"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "a6d0f2dc29d5c42eb973",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "9347b502ba3e17e67865",
+                      "text": " Sam receives a tax message with a link to a sign-in page. Instead of using the link, Sam types ",
+                      "marks": []
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "898da4a48fce11e2de1d",
+                      "text": "canada.ca",
+                      "marks": [
+                        "code"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "6e19984e19d117e68336",
+                      "text": " into the browser and navigates from the official site.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "7ac90a387f0a0e675f48"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "23b2903f4e380293528e",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "63bd4ecf306cfeb51cb3",
+                  "question": "Can the CRA ask for personal information by phone?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "aa7d1b62b1d3b36e1d29",
+                          "text": "Yes. The CRA may ask for information to verify your identity. However, it will not ask for personal or financial information in a voicemail or email.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "933fa77cf9ca4015d7bc"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "e79018c0bf41d2bc8b16",
+                  "question": "What should I do if a message link seems suspicious?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "3cfbfdd8b03d16477f57",
+                          "text": "Do not click it. Contact the organization directly or type its official web address into your browser.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "8bd9a83c9ceefd5ac52a"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "6d0edfa906d466897269",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "5d9d0628c4bb2e1813ff",
+                  "title": "Recognize a scam - Scams and fraud - CRA",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2198b6ed-a28e-41de-ac53-91f76c2072e9",
+      "title": "Food Around Campus",
+      "pages": [
+        {
+          "_key": "d97945b3bba1",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "33cbc206c76474f3a502",
+              "question": "Which Surrey location accepts SFSS Food Bank Program vouchers?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "0f62aad800e18f92b87f",
+                  "text": "T&T Supermarket",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "4b488008be1ab5472ad5",
+                  "text": "Blenz Coffee",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f04f3eac4064177f27b4",
+                  "text": "Boston Pizza",
+                  "correct": false
+                }
+              ],
+              "explanation": "SFU lists T&T Supermarket at SFU Surrey as a location where SFSS Food Bank Program vouchers can be redeemed."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "56f0ab581537dcb2755e",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "df7d61c97890def7983d",
+                      "text": "Nearby grocery stores can be useful for buying ingredients. SFU also lists food-security resources connected with its Surrey campus, including vouchers redeemable at T&T Supermarket and a seasonal Farm to Campus initiative.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "ebc756f50a68c8d4b03a"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c9051f27e9a36df7ea09",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "b1fcda4c6ab1fa36d3f8",
+                      "text": " A student wants groceries rather than a prepared meal. They visit T&T Supermarket and check SFU’s food-security page to learn about relevant support resources.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "2811a20a42c4e2f52423"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "8043250b5fd3f5dd7b54",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "ce079f43d8cc4055247c",
+                  "question": "Does SFU list a food-support resource connected with T&T Supermarket at Surrey?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "2d291b099ea6076cf620",
+                          "text": "Yes. SFU says SFSS Food Bank Program vouchers can be redeemed there.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "f5bf9cf94d5529e7a174"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "db10a46aec1f326601bc",
+                  "question": "Is there an SFU fresh-produce initiative connected with Surrey Campus?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "9939b627c7841500ca2a",
+                          "text": "Yes. SFU lists the seasonal Farm to Campus initiative, which offers sign-up for subsidized bags of fresh local farm produce.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "3c42d6f426579e1e047c"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "b0fd79e734d5b7f9de31",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "419642ebcf5123d79069",
+                  "title": "Food Security",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/food/programs/food-security.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "5e344dc164f6",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "3bcaa9ba3ebaae9d7ec3",
+              "question": "Which resource is open to anyone in the SFU community?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "9100b98b6d65b994b7a0",
+                  "text": "SFU Community Free Fridge",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "e2d65277b51d7e603f16",
+                  "text": "SFU Food Pantry",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "c7015071f841a35054af",
+                  "text": "SFSS Food Bank Program",
+                  "correct": false
+                }
+              ],
+              "explanation": "The Community Free Fridge is open to anyone in the SFU community and is on the lower level of the Maggie Benston Centre."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "8296a2a559aae1f4b5e0",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "e06f1e76fb11448647b3",
+                      "text": "SFU lists food resources in addition to places that sell meals. These include the Community Free Fridge, Food Pantry, and Food Rescue.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "8d8e4ae2d040fc6b0361"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c3fa21e7b867699b725b",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "c8de12631a0aa0ec8445",
+                      "text": " A student looking for a low-barrier food resource checks the SFU food security page and learns that the Community Free Fridge is open to anyone in the university community.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "51a81daf66c961ecdbf1"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "9078c3181dedc1635c8d",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "bab47810ee74bf0b6619",
+                  "question": "Where is the Community Free Fridge?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "3520780495f57fb3aa64",
+                          "text": "It is on the lower level of the Maggie Benston Centre.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "86c124b62ebb7652cd22"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "0e318bf05eb7361f44fe",
+                  "question": "Can people who do not live in residence use the Dining Hall?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "719ce8c7640538dd2038",
+                          "text": "Yes. SFU states that anyone on campus can use it.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "fbd6983aadbe416b44fe"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "800a9b0c90ffdae615bf",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "040584d6bcbd5781e84e",
+                  "title": "Food Security",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/food/programs/food-security.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "d3e1e1961573d6b48f6d",
+                  "title": "Where To Eat On Burnaby Campus This Summer",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/food/Blog/where-to-eat-on-campus-this-summer.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "09e973f64ce1",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "950e7e4527cc6a2b64b1",
+              "question": "Which option is listed near SFU Vancouver's Harbour Centre?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "8a593704ea7aa91edeb4",
+                  "text": "Sushi",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "ae24ca92ba2787d3fc83",
+                  "text": "Learning Garden",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f0bfc3f9f781927a8bf7",
+                  "text": "Dining Hall",
+                  "correct": false
+                }
+              ],
+              "explanation": "The lesson lists sushi among the food options near Harbour Centre. The other choices are associated with SFU's Burnaby campus."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "246af6d6807a9ee0693a",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "7e020017ba59369f15a9",
+                      "text": "When choosing food between classes, consider the nearby options and the time available.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "865081257389159649ef"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "bcb66336236e1660e58e",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "45260144f6453fa2a62a",
+                      "text": " A student has a short break at Harbour Centre. They choose nearby takeout so they can return before their next class.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "6c313d10a17f306a5d06"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "b84c92b3e6de70af9d67",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "66f45e4bdcf03f1cd899",
+                  "question": "What kinds of food are listed near Harbour Centre?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "947a2c04a46dcda22b03",
+                          "text": "The lesson lists food-court choices, Tim Hortons, sushi, bubble tea, cafés, and takeout.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "db905273ca9f962a5b08"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "e8f3463224a8f2f5296f",
+                  "question": "Where can students learn about SFU food-support resources?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "75413c2d167344bfce1d",
+                          "text": "SFU’s Food Security page describes campus resources and food-access programs. Check the page for current details and locations.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "9163bb41a2e8b45e50e0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "f183b78be33d44e16dd5",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "ccc84c899f2623c2149e",
+                  "title": "Food Security",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/food/programs/food-security.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2358c68c-4f85-4f11-aee2-193f8d78b3f0",
+      "title": "Lesson 3.3:  Credit Report",
+      "pages": [
+        {
+          "_key": "f4514ca28cac",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "0405de7e85944487b7ca",
+              "question": "Which statement about checking your own credit report is correct?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "d3fd8c43e7737c2cbbb6",
+                  "text": "It lowers your credit rating",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "c0836c48b26253a01927",
+                  "text": "It does not affect your credit rating",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "336bc79cef5180a5ec49",
+                  "text": "It removes outstanding debts",
+                  "correct": false
+                }
+              ],
+              "explanation": "Checking your credit report or credit score does not affect your credit rating."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "68e752ce12865d91a665",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "90e6da5a139120d16fe5",
+                      "text": "A credit score is based on information in your credit report. It indicates how likely you are to repay a loan and how you manage credit.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "b5de93cf87178d50dd74"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "fbe69d2c1c4914ba6812",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "0bf60acac9b54dfa3ceb",
+                      "text": " Sam checks their own credit report before applying for credit. This check does not affect Sam’s credit rating.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "0ed6303d54f199edbf42"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "f5d4268f108ac07c7204",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "46d100047fcb26be5ead",
+                  "question": "Can I access my credit report online for free?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "247be4d1f479a51ce31f",
+                          "text": "Yes. Equifax and TransUnion provide free online access to credit reports.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "f1d35324261ffdb86a31"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "bb9b177e39cf154edcfe",
+                  "question": "Is a credit score the same as a credit report?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "841ed46dffa3a653f6b7",
+                          "text": "No. A credit report summarizes your past use of credit. A credit score is a number based on information in that report.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "c3659271a8cdaa3a8d79"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "b8dad13dda0907c1a5b2",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "9c3ac1863cd792332cb9",
+                  "title": "Getting your credit report and credit score",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "url": "https://canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html?trk=article-ssr-frontend-pulse_little-text-block"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2645d621-09bd-450d-8068-7c0e9481edc2",
+      "title": "Additional Out-of-Pocket Costs",
+      "pages": [
+        {
+          "_key": "58ae6c7abc0a",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "9e2465899755e906237c",
+              "question": "Which service may require an out-of-pocket payment even if you have MSP?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "415b30c3d8674804f4cf",
+                  "text": "Dental care",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "bd78d1c49b5092d169fb",
+                  "text": "Every health service without exception",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "d43ecfaa38b297b74e06",
+                  "text": "No health service",
+                  "correct": false
+                }
+              ],
+              "explanation": "MSP does not fully cover many services. Dental care is one service for which you may need to pay."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "9b8a8536eaa7d2d95878",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c873bdf14c793a069741",
+                      "text": "Coverage can differ by service and by assistance or private plan. Check what is covered before deciding how to budget.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "c581e7c7c1ad2ef715cd"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "7cba73fd45cc3c7252ac",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "cf48741014e59340f259",
+                      "text": " Sam expects to need a prescription and an eye exam. Before making a budget, Sam checks whether PharmaCare or a private plan may cover part of either cost.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "967f8ba22fe89119238f"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "d406577a81530929634f",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "f36536e3cf896aa04365",
+                  "question": "Can private health plans cover some extra health costs?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "348028985bb721360456",
+                          "text": "Some employer or student plans may partially cover therapies, and some private plans may cover certain purchased vaccines.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "fa71afa03f323b72d322"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "c1a104dbfb655e0639eb",
+                  "question": "Are all vaccines funded in B.C.?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "f9bb5fa51fc1de71fd36",
+                          "text": "No. HealthLink BC says not all vaccines approved in Canada are funded by the provincial government.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "35af2150711083364b6b"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "e5de5ee7709c4f706145",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "e87779f52b9ea8bee0fb",
+                  "title": "Immunization FAQ",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/health-library/immunizations/immunization-faq"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "433b57759c23",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "b965c36644482be21189",
+              "question": "What can HealthLink BC help a person do?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "7cbcb237e9f3243a5e4d",
+                  "text": "Find reliable health information or connect with a health professional",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "4163bc3ad72b15e78bcf",
+                  "text": "Guarantee that every health service is free",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "db6bead83f59c46d1e7c",
+                  "text": "Approve every private insurance claim",
+                  "correct": false
+                }
+              ],
+              "explanation": "HealthLink BC can guide people to reliable health information or connect them with a health professional. The source does not say it guarantees coverage or approves insurance claims."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "54efb34e3214b5725bb0",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "b7f057c13cab699f902d",
+                      "text": "A reliable health information service can help you find appropriate resources. In B.C., HealthLink BC offers personalized assistance and can connect people with health professionals.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "93ae184fb020bc75b20a"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "30a960bbd564aa13b564",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "9954b294c912f09e0616",
+                      "text": " A person has questions about a possible health cost. They contact HealthLink BC for help finding reliable information or an appropriate health professional.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "db8758d0cbfd36ef54d2"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "ac93f0010d7bf4147b52",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "69a82e34a004a5c278de",
+                  "question": "Are all vaccines approved in Canada publicly funded in B.C.?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "f8a9c8a66afbb33a0141",
+                          "text": "No. HealthLink BC states that not all vaccines approved in Canada are funded by the provincial government.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "44b58b994868ff0cb66e"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "c6f2f82a5eaa1f9934ad",
+                  "question": "Where can I check whether an immunization is funded for me?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "44764ff38f9781d4559a",
+                          "text": "Check with a local public health unit about eligibility.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "22b449b204691ffc387b"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "a78340380e790198d6fa",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "525833fe52aeac74b85f",
+                  "title": "Health Canada - BC region",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/find-care/find-health-services/agency/health-canada-bc-region"
+                },
+                {
+                  "_type": "source",
+                  "_key": "c394088afb55b630f549",
+                  "title": "Immunization FAQ",
+                  "publisher": "HealthLink BC",
+                  "url": "https://healthlinkbc.ca/health-library/immunizations/immunization-faq"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29c69cb4-9412-41c4-b899-b83977a6ade9",
+      "title": "LinkedIn Profile Essentials",
+      "pages": [
+        {
+          "_key": "36a57dba7cf5",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "ee8998940315c4499582",
+              "question": "Which action can help you build a professional network on LinkedIn?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "c1f573f82ac04141b51c",
+                  "text": "Engage with experts in your field",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "3570b11e3c74be09650b",
+                  "text": "Make every social media account public",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "985732f181eefcc3e5ff",
+                  "text": "Use the same generic profile for every career goal",
+                  "correct": false
+                }
+              ],
+              "explanation": "Job Bank recommends engaging with experts in your field on professional social media platforms such as LinkedIn."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "dc11239da4169b0cfafb",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "1010c9913a20e682a63f",
+                      "text": "Keep your career goal in mind when presenting yourself online. Relevant accomplishments and keywords can help show how your background fits the work you want.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "43804e06e8b3d14d1cb6"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "4c813bfdfd887ce44f8b",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "dd97b3e183a1527a7c88",
+                      "text": " Priya wants a project coordination role. She reviews relevant job descriptions, identifies accurate terms that match her experience, and uses those terms when describing her accomplishments.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "f3710b532799f0a6f438"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "9d2e565d8e08ffc17c14",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "836d78098e82aa03901e",
+                  "question": "How can I decide what to showcase online?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "f4c422311a967c2b24d4",
+                          "text": "Consider what your field values. You might display relevant accomplishments through articles, a website, a portfolio, or a blog.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "ba94f7f64ed116e4c776"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "e49dbd0eee6809776790",
+                  "question": "How can LinkedIn support networking?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "fbfdbb3ac60a4daa9e36",
+                          "text": "You can engage with professionals in your field, discuss your skills when appropriate, and stay active in your network.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "20e551700be5d7907e31"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "7c1092e631498ce1e149",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "c26a8b05d02087e19a76",
+                  "title": "Stand out to employers and land your dream job",
+                  "publisher": "Job Bank",
+                  "url": "https://nt.jobbank.gc.ca/career-planning/resources/stand-out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2a9b87d2-1736-4b0b-9ef1-d6e2760c2add",
+      "title": "Child & Family Benefits",
+      "pages": [
+        {
+          "_key": "9e2e6919277d",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "b3c73ac764ea6c9adfeb",
+              "question": "After applying, what helps a family continue receiving benefit and credit payments they are entitled to?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "d466793afb19774af3d7",
+                  "text": "File tax returns every year, even with no income",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "5bfae7643321d5e2b75c",
+                  "text": "Submit a new benefit application every year",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "0fb8a315c04d6360dc29",
+                  "text": "Apply separately for every related provincial program",
+                  "correct": false
+                }
+              ],
+              "explanation": "Annual tax returns are required to continue receiving entitled payments. A spouse or common-law partner must also file each year."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "66653e3e843b7f4f759b",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "b3f9842bff5c4c51f64d",
+                      "text": "After applying, keep personal information current with the CRA so it can determine the correct benefit and credit amounts. Keep supporting documents in case the CRA asks to confirm information.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "19fd4973b0b77a354f18"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "57730820eb0193e80f1b",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "a98ba48dabf6340bc42b",
+                      "text": " A parent changes their marital status. They update this information with the CRA and keep relevant documents in case the CRA requests confirmation.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "37caed67e991154ab32b"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "2d3de54372785039aba0",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "76548544f2d45fc3eda9",
+                  "question": "Do I apply separately for related provincial or territorial programs?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "5db2da6c05bd01775419",
+                          "text": "No. When you apply for the Canada Child Benefit, the CRA determines eligibility for related provincial and territorial programs.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "d42d95dac461d09e44a4"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "147e273b57d9afb6628f",
+                  "question": "What if the CRA has never paid benefits for my child?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "a2c301e52280b880f20d",
+                          "text": "If applying online or by mail, you must provide proof of birth. It is not required when applying through birth registration because the province or territory securely shares it with the CRA.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "6987a0e02e935e7ce453"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "03edfe0a6f5435eb2ddd",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "1bafdd00af6ad5de8d44",
+                  "title": "Overview of child and family benefits",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/services/child-family-benefits.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "5f666f2191f8d794754c",
+                  "title": "How to apply - Canada child benefit (CCB)",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit/how-apply.html?wbdisable=true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31a21e62-c941-4b28-b0a5-3f6f103340ce",
+      "title": "Staying Organized & Connected",
+      "pages": [
+        {
+          "_key": "4549356fd7f2",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "4ceb5021f0c07bd909ff",
+              "question": "Which SFU resource can help students explore career pathways and prepare for interviews?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "e6bd0ca3f5d96dffda2e",
+                  "text": "Career and Volunteer Services",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "4d761a835dbfa67bd3f0",
+                  "text": "SFU Bookstore",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "505ff34bd34fbfd4b41f",
+                  "text": "Recreation and Athletics",
+                  "correct": false
+                }
+              ],
+              "explanation": "Career and Volunteer Services supports career exploration, resumes, cover letters, mock interviews, and work-search strategies."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "d59ea91f7ada946829e5",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "a90a658c5af6a7666ff2",
+                      "text": "Online connections can lead to practical campus support. SFU lists services for academic success, community involvement, careers, health and wellness, and university needs.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "d03750fa318d3f903422"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c35d82ff83223989c635",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "479245f9b10de41e58be",
+                      "text": " A student sees Career and Volunteer Services listed on an SFU page. They visit the service website to learn about career exploration and interview preparation.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "2532a02bfc2fa2a89715"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "c28a3ccf37e5b287e2a6",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "3adebb907fb07af6a967",
+                  "question": "Where can I find options for getting involved in the SFU community?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "440e0e5753809d97c908",
+                          "text": "SFU’s Get Involved service lists community-building events, volunteer opportunities, and experiential learning programs.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "4c0109334836a859d251"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "d6610dcf511325d3d430",
+                  "question": "Can an SFU community use Discord to connect virtually?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "70f63093f2c957e96c99",
+                          "text": "Yes. SFU’s SFUReady page says Out on Campus offers virtual community participation through its Discord server.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "67967da789c4878e6534"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "528ee250dc58504a7a98",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "8e8b3b20fe92d5c27853",
+                  "title": "SFUReady",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/students/newundergrads/spring/month-of-welcome/sfuready.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "3d893af8df4b",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "f0a496598c0cc67ee33e",
+              "question": "Which statement about the Student Hub Discord is correct?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "612d7e8b9646662a05e7",
+                  "text": "It is an official SFU service.",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "5bafbe4a7fd59c6b3b92",
+                  "text": "It is student-run and unofficial.",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "bc6e7a74dfeeda9d0378",
+                  "text": "It is only for one faculty.",
+                  "correct": false
+                }
+              ],
+              "explanation": "The Student Hub Discord is student-run and unofficial, although students across faculties use it."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "fa1c0f7b08987ec52a22",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "a1155a96d3f8ce760b80",
+                      "text": "Choose channels that match your current needs and limit notifications so important updates are easier to notice.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "a41201f071d9e258f0bb"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "d520c5d7b9bcced04a24",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "94814da82cee0ef1bf22",
+                      "text": " A student follows a course channel and a club channel, then turns off notifications for unrelated social channels.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "7baf0c1a9c9099da05f4"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "15797b98dcf072d390e9",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "3537c1cdaed7aee55ebe",
+                  "question": "Is the Student Hub Discord an official SFU service?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "a02dd873e5fe08afdbe5",
+                          "text": "No. It is a student-run, unofficial community.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "863fffaef46032d9716f"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "34bfc16f4b6a0eae979a",
+                  "question": "Where else can students learn about SFU resources and services?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "de6cf4e98ac0855d1d51",
+                          "text": "SFUReady connects students with SFU staff, community members, resources, and services.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "7ca0d2d03ca89f2051d3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "fdb1032fc5b28f105e4a",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "760ea8b31cdf6ab78854",
+                  "title": "SFUReady",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/students/newundergrads/spring/month-of-welcome/sfuready.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3a3e8a5d-3e24-4eaa-bf80-4a3524bbcaa5",
+      "title": "Common Information Scams and Red Flags",
+      "pages": [
+        {
+          "_key": "823c3c968fbb",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "56b6353056aae7d49fd4",
+              "question": "What should you do if an unexpected message asks you to follow a link and enter your banking password?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "26a00e741b8e415c2895",
+                  "text": "Click the link if the message looks official",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "1df62d50f46783fbba31",
+                  "text": "Do not click, and verify the sender's identity",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "7c36c58066494d4a0314",
+                  "text": "Reply with the password instead",
+                  "correct": false
+                }
+              ],
+              "explanation": "A message can imitate a trusted person or organization. Do not click its links or provide personal information. Check who sent it."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "5fe0193f642cb6860ad5",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "6d12080512d5e64c1f4d",
+                      "text": "A professional appearance, familiar name, or realistic caller ID does not prove that a message is genuine. Verify online immigration information through IRCC’s official website or official social media channels.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "6f41661b2a508351b549"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "f8e101a9da6448c0e020",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "e07b021eadb2c385987a",
+                      "text": " Sam receives a direct message claiming to be from IRCC and promising faster processing. Sam does not reply or open the link. Sam checks the claim through IRCC’s official website instead.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "000c72ce127b9a957a4f"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "73c904842c9d0ba425a5",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "c1888a8c9f0662464996",
+                  "question": "Can caller ID prove that a government caller is genuine?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "bb2442979196eccc1897",
+                          "text": "No. Scammers can use technology to make a phone number appear real.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "a773e144cf843bbde478"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "a24e819d2a839bb09d57",
+                  "question": "Can anyone guarantee a Canadian job, visa, or permanent residence?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "a7eefa0e1a515c1c6c12",
+                          "text": "No. The Government of Canada says no one can guarantee these outcomes.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "d7fdf8030afea8f91ab4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "b422bff9b19bc1dce233",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "dd9e19e26dfcd54822e8",
+                  "title": "Fraud targeting newcomers",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/newcomers.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "c42b3e4bd19e26a11d7c",
+                  "title": "Online and telephone immigration scams",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/internet-email-telephone.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "fea62269c070",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "85e7af2039afa7a2c028",
+              "question": "An unexpected email asks for your banking password through a link. What should you do?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "18613658a53d3ef634f2",
+                  "text": "Click the link and enter the password",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "dc0a1ecedecfd43d59b8",
+                  "text": "Do not click or share information, and verify the sender",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "5706eaa5d7dca4d24903",
+                  "text": "Forward the email with your password",
+                  "correct": false
+                }
+              ],
+              "explanation": "Unexpected requests for private information may be phishing. Do not use the link or provide information. Check the sender's identity."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "a6ec7bf9bd40b341eed6",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "18973d793cafe8062934",
+                      "text": "A professional appearance or familiar caller ID does not prove that a message is genuine. Scammers can copy websites and fake phone numbers. Verify information through an official website or official channel.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "24c80024543ca652f71e"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "0a779cbaa22142486e2b",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "c5c4b4217a7ae65ff0e8",
+                      "text": " Sam receives a call claiming to be from IRCC and demanding immediate payment. Sam does not provide personal or payment information. Instead, Sam checks the claim through IRCC’s official website.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "4f62ca9d3fdee951e27d"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "335d326bf598f0791e61",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "8ebeb9dc2195350f51c7",
+                  "question": "Does a familiar caller ID prove that a caller is legitimate?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "8b083ac033cf708951b6",
+                          "text": "No. Scammers can use technology to make a phone number appear real.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "927b3c827875c486c7dc"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "3643da833c413635c6f2",
+                  "question": "How can I check immigration information found online?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "8a943a1c95d09ae353e3",
+                          "text": "Verify it through IRCC’s official website or official social media channels.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "6d9d3656daf77bc84770"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "6d2056e9a8450b84757b",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "c969eac5d5f82e6fe928",
+                  "title": "Fraud targeting newcomers",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/newcomers.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "50d5d1536a075b786d8c",
+                  "title": "Online and telephone immigration scams",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/protect-fraud/internet-email-telephone.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3d734317-409f-4fc4-97e1-f838506eaaca",
+      "title": "Lesson 4.4: GST, PST, and HST",
+      "pages": [
+        {
+          "_key": "ecf9e53ad225",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "aecd9a084a0ee6d4c570",
+              "question": "What determines the GST/HST rate for a taxable supply?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "b223addf364374377b2e",
+                  "text": "The place of supply",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "119ccf7d9e136d858231",
+                  "text": "The customer's preferred tax rate",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "57ba56d3eadd59317a96",
+                  "text": "The payment method",
+                  "correct": false
+                }
+              ],
+              "explanation": "The applicable rate depends on the place of supply, which is the province or territory where the supply is considered to be made."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "718126dfe8a3eaf27257",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "eb14363ae78e771feb53",
+                      "text": "For a taxable supply, first identify the place of supply. Then use the GST/HST rate that applies there. If PST also applies, GST is calculated on the price before PST.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "89bde17662ce2b2de759"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "8af2c67e19901b4f9dd0",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "6b58c4cb313993e941cd",
+                      "text": " A store in British Columbia delivers a taxable item to a customer in Ontario. If Ontario is the place of supply, the store applies Ontario’s HST rate.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "6a104db60b6b23373771"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "e19e7b2aa12a6b8f59b8",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "a9ec54af410c3b22bc80",
+                  "question": "Are basic groceries exempt from GST/HST?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "1a4afc045c4c6926a1de",
+                          "text": "Basic groceries are generally zero-rated. This means they are taxable at 0% GST/HST throughout Canada.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "ebc7b9fd96d5c917762b"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "fcc9ff54153f9d4eee13",
+                  "question": "When GST and PST both apply, is GST calculated on the PST?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "7f457b319f71fd32983b",
+                          "text": "No. GST is calculated on the price before PST.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "8d3da8a125b1184d45b7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "d9618354cd935917f2ec",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "29b04f674207ffdc8f1f",
+                  "title": "Charge and collect the GST/HST",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-gst/charge-gst-hst.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "c7f7743413a73b62c2fc",
+                  "title": "General Information for GST/HST Registrants",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/services/forms-publications/publications/rc4022/general-information-gst-hst-registrants.html?wbdisable=true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3fe78ba4-b085-4aeb-850b-070152cb7eca",
+      "title": "Resume Structure",
+      "pages": [
+        {
+          "_key": "20dc14174ddd",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "88982dab9c67980711ae",
+              "question": "Which Job Bank resume template is intended for someone with limited paid work experience?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "960cf3ed204c70698b16",
+                  "text": "Youth and recent graduates’ template",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "26581422220a7577f2dd",
+                  "text": "Traditional template",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "7c73e759ddf802acf879",
+                  "text": "Any template without customization",
+                  "correct": false
+                }
+              ],
+              "explanation": "Job Bank recommends the youth and recent graduates’ template for first-time job seekers, recent graduates, and people with limited paid work experience."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "c4f24937d3e263a3003f",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "6192cdebc2f85351026c",
+                      "text": "A resume can be customized for a particular job. Choose a suitable template, then adjust its sections to present the qualifications, experience, education, and skills that fit the role.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "87b52a127be2fee04ab6"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "f72afa1d07b5afa8e25d",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "d84c2a0eb7f708a6d0bc",
+                      "text": " Sam has limited paid experience and is applying for an entry-level role. Sam chooses the youth and recent graduates’ template, then adds relevant education, volunteer experience, and skills.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "1b9be9c4920ff03eff43"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "d4373a825547f302a1ea",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "4149da13beee558b54a1",
+                  "question": "Can I change the sections of a Job Bank resume?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "44f04809c0b1bd2f5180",
+                          "text": "Yes. The Resume Builder allows free-text descriptions and new sections so you can customize the content.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "3b2100d48517f63eff10"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "d9753f9128ed9eb5eb0a",
+                  "question": "Can I prepare different resumes for different jobs?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "5902d6f4f9c88dc650cc",
+                          "text": "Yes. Job Bank says you can build multiple resumes and adapt each one to specific job requirements.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "e540f8610b410cc41dbf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "19b3714ba13c88cd6b5b",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "94bf2f541a6a260c83cb",
+                  "title": "Resume Builder - Job Bank",
+                  "publisher": "Job Bank",
+                  "url": "https://pe.jobbank.gc.ca/findajob/resume-builder"
+                },
+                {
+                  "_type": "source",
+                  "_key": "c8444b985bd0a918b181",
+                  "title": "Question - Job Bank",
+                  "publisher": "Job Bank",
+                  "url": "https://nu.jobbank.gc.ca/support/question;jsessionid=DFB3222BFF050CE8BD6D16A3B6210484.jobsearch76?qaid=76&tid=57"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "401ce6bd-6d02-4a5f-9103-998a0fb41151",
+      "title": "Canada Learning Bond & RESP Grants",
+      "pages": [
+        {
+          "_key": "5c737043d747",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "18a59bf868b4a5c6f53a",
+              "question": "Which benefit requires a contribution to the RESP?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "eb7e0306c8bfd2340a02",
+                  "text": "Canada Learning Bond",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "65c4394a46387607d95e",
+                  "text": "Canada Education Savings Grant",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "1a82d3e102f67fd89e1b",
+                  "text": "Both benefits",
+                  "correct": false
+                }
+              ],
+              "explanation": "RESP contributions are required for the Canada Education Savings Grant, but not for the Canada Learning Bond."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "3c86fe51069124a843b6",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "03ce6556aad2476fae11",
+                      "text": "The Canada Learning Bond does not require RESP contributions. The Canada Education Savings Grant is based on contributions made to the RESP.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "18ed83b26f0dab957229"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "f703d6d6ea64a0070012",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "37017eea90bd0b460782",
+                      "text": " A caregiver opens an RESP but cannot contribute yet. They ask the financial institution to check whether the child is eligible for the Canada Learning Bond.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "6502dfcd33dc8dd9f7f4"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "ca77342e6ac732e62ddb",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "ada138975eb23fbbd739",
+                  "question": "Can an eligible child receive the Canada Learning Bond without RESP contributions?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "fee25168b770beed380d",
+                          "text": "Yes. No contribution is needed, but the child must be named as a beneficiary in an RESP.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "8bd523f9cf0a165a2f13"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "95b69577d251f7f199d8",
+                  "question": "Who can open an RESP for a child?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "786174630db4b053e8e8",
+                          "text": "A parent, guardian, grandparent, other relative, or friend can be the subscriber who opens it.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "cb82e468bd3bb6d38320"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "67f14fcb0b07160e7cbb",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "475a18bfb87a30fb6d7a",
+                  "title": "How much money can be added to Registered Education Savings Plans",
+                  "publisher": "Government of Canada",
+                  "url": "http://canada.ca/en/services/benefits/education/education-savings/savings-grant.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4092a094-9460-4b10-999c-48014273e57f",
+      "title": "Lesson 7.1: Complete Application & Core Documents",
+      "pages": [
+        {
+          "_key": "0e166251a7ae",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "4f83ad650ac83f19d873",
+              "question": "For the non-Express Entry Provincial Nominee Program, what should you do before signing a form?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "14a33f0edc983261d2b0",
+                  "text": "Check that the form requires a signature",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "b7a05076e00fc683abb4",
+                  "text": "Sign every downloaded PDF form",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "335017315ff01b8e506e",
+                  "text": "Leave all signature fields blank",
+                  "correct": false
+                }
+              ],
+              "explanation": "Signature rules depend on the form. IRCC says to check each form's requirements and sign in the correct places."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "1294ba6a7381a1250e34",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "9e9fd8beb7c4060abb07",
+                      "text": "A program’s instructions determine which forms need signatures. Some forms may be completed in a portal, while others may need handwritten signatures.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "789fd504f1d23d5093c3"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "0939ab72a8aa25ed6677",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "473d6b47320eeeda3879",
+                      "text": " Sam reviews the instructions for each required form. Sam signs only the forms that require signatures and confirms that the correct person signed each one.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "76e24bba60f2393cc22d"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "f7f040bf40a30a5ff4ca",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "164cf2a83d70e6053351",
+                  "question": "Do all downloaded forms require a signature?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "e76908f518091a60c72e",
+                          "text": "No. In the non-Express Entry Provincial Nominee Program, some downloaded forms do not need signatures, while certain forms that apply to the applicant must be signed.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "cb08e8cfff7089954e3d"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "65ad1457766d4e5535d4",
+                  "question": "What passport details may need to appear in submitted copies?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "e29d670c610e2638627d",
+                          "text": "The cited program instructions request pages showing the passport number, issue and expiry dates, photo, name, date and place of birth, and any listed changes to key personal details.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "79aeb8f0213b767746ba"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "ba42ef0e27ce98db14e0",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "01bdf1378fe36086e9db",
+                  "title": "Provincial Nominee Program: Non-Express Entry Process - Get your documents ready",
+                  "publisher": "Government of Canada",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry/documents.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "410c864b-95ec-4716-9566-6c737ac1e3ed",
+      "title": "How Clubs (Generally) Work at SFU",
+      "pages": [
+        {
+          "_key": "066a72a20a42",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "a7e2f428db73b330ac56",
+              "question": "Which SFU Applied Sciences group is described as an elected body that represents undergraduate students?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "cfc0e54181cb9ab7db62",
+                  "text": "A student society",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "fedc76a1b456c1c6183d",
+                  "text": "A special-interest club",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "e004867d148fbbe73c01",
+                  "text": "A design team",
+                  "correct": false
+                }
+              ],
+              "explanation": "SFU says student societies are elected bodies that represent undergraduate students in their departments and the broader SFU community."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "19baca115f8560a75acd",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "665a5bdba482a9a96d82",
+                      "text": "A student society may represent students and connect them with faculty and the SFSS. A club or design team may instead focus on a shared interest, skill, project, or competition.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "d4ef552a3bec84a96147"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "dc9ce2d02ab1ddee1ee3",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "23e58c553c64cbc18806",
+                      "text": " Sam compares an elected departmental society with a robotics design team. Sam chooses based on whether they want student representation work or hands-on project experience.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "e323cf1ccbed769fc738"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "aea3994e77d3bb2badba",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "34b8a09d549fec735117",
+                  "question": "Are student societies and clubs the same?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "f4b9f24b3aca793f9d97",
+                          "text": "Not necessarily. SFU describes student societies as representative bodies, while clubs and design teams are special-interest groups.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "847feb05ce3c865faa5a"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "69f52ce33e7aa97e26e1",
+                  "question": "What can students gain from joining an Applied Sciences group?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "6f33c211ccc521534525",
+                          "text": "SFU lists opportunities to connect with peers, develop skills, and access learning or career resources.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "a716f5148093b8284323"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "0558fe2e334cb0fa0796",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "ce415fdfa14ad336be74",
+                  "title": "Clubs & Societies",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/fas/study/student-life/clubs-student-societies.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "f3c1791084d62313897c",
+                  "title": "Student Societies and PD",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/fas-intranet/fas/student-societies-and-pd.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "81a66338ecfe",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "296ade908323b0410e28",
+              "question": "Which source can help you learn when a club opens recruitment?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "8a09341bfeed8012dbdf",
+                  "text": "The club's Instagram account",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "712997a10cd8a7478a7b",
+                  "text": "An unrelated course outline",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "c818fe0877464054775e",
+                  "text": "A campus map",
+                  "correct": false
+                }
+              ],
+              "explanation": "SFU lists Instagram and other club channels as ways to receive recruitment and involvement updates."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "c0e7ba4cd8b12e8a8781",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c684d34b02165f7a06de",
+                      "text": "Recruitment practices differ by group. A club may announce openings through its own online channels, so information from that club is the most relevant.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "1177a355f27cc48e44f4"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "e2a198d28b6ab20f0c33",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "0b5173c2b82a91a95e2c",
+                      "text": " Alex is interested in a design team. Alex follows its Instagram account and checks for a recruitment announcement before applying.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "e4b28d741a4ed7a1a64f"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "f3002322b70eceeefc31",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "37cea1863c8cba2d1166",
+                  "question": "Do all student groups use the same recruitment process?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "e03f0189dceeb7a32de1",
+                          "text": "No. The sources show different ways to get involved, including recruitment updates, applications, Discord servers, and social media.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "c7f87c2ee6a5fc2ec7c6"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "98fc07d06bf10d4b26d0",
+                  "question": "Can joining a club support learning outside class?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "e26fa59e52931e4cfd47",
+                          "text": "Yes. SFU says clubs and design teams can help students develop skills beyond the classroom and access learning or career resources.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "cbe212acfb62e278c190"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "220ac449a853952c6d42",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "47158b0986a9c3ddded5",
+                  "title": "Clubs & Societies",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/fas/study/student-life/clubs-student-societies.html"
+                },
+                {
+                  "_type": "source",
+                  "_key": "bf88a1ca267013a814e8",
+                  "title": "Student Societies and PD",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/fas-intranet/fas/student-societies-and-pd.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4e228b33-752e-47cc-9cb7-ec7c89b29002",
+      "title": "Renting in Practice",
+      "pages": [
+        {
+          "_key": "b1dbb1ab3db2",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "d876e8b69be094e9483d",
+              "question": "Which is a possible disadvantage of renting?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "d0bc8972a014cc46de69",
+                  "text": "Rent payments do not build property equity for the tenant.",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "62ec9f20218d572abec1",
+                  "text": "The tenant automatically owns the home after several years.",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "00f032b23ddee9f59acd",
+                  "text": "The tenant has complete freedom to renovate.",
+                  "correct": false
+                }
+              ],
+              "explanation": "Renting does not give the tenant ownership of the property, and tenants may have limited control over changes to the home."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "6c43737c5b90147daff2",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "7a8991531625acaafcfa",
+                      "text": "A renter can compare flexibility and lower upfront costs with limits on control and the lack of property equity.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "12c47d03051517dbfeb9"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "91b9250c817bf9e54f8a",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "b0345eec20e74abd566c",
+                      "text": " Sam expects to relocate for school and prefers a flexible lease. Sam accepts that renting will not build property equity.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "0e22156aa0865691c315"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "b20e3deec3bceefd2c27",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "e13e45de7cc87a5b0512",
+                  "question": "Where can B.C. renters find official tenancy information?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "46a21f979cac879ba92e",
+                          "text": "The Province of British Columbia provides information sheets, resources and contact information for the Residential Tenancy Branch.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "14f5654e5671d33fd7be"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "cae064f032ff28de429d",
+                  "question": "Why might renting suit someone who expects to move?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "f08ba828b9b82551e089",
+                          "text": "Flexible lease terms can make relocation for work or school easier.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "846bc6d9f3a30dabc363"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "3cfc93b2c67c05263dc9",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "6e23c8944b3a2b666bd0",
+                  "title": "Tenancy information sheets, toolkits and resources",
+                  "publisher": "Province of British Columbia",
+                  "url": "https://gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/calculators-and-resources/information-sheets-resources"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "b7690a520750",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "e76a5b9210d0d9149ed5",
+              "question": "Which action helps you understand the full monthly cost of a rental?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "112fe5e2c15a71a023e8",
+                  "text": "Ask which utilities are included in the rent",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "d3c766181f7fb18a4954",
+                  "text": "Rely only on verbal promises",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "9975627e31c706824fc4",
+                  "text": "Send a deposit before viewing the unit",
+                  "correct": false
+                }
+              ],
+              "explanation": "Checking whether heat, electricity, or internet is included can help you identify costs beyond the listed rent."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "8ee43aa6c07cb76e93fe",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "5f711ad7e8d459f3accf",
+                      "text": "Before deciding on a rental, confirm important details such as included utilities and whether the terms will be recorded in a tenancy agreement.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "68ff9c9b113865e43953"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "c8f7f9476eed5836deec",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "34f49198d39b68ae3ebd",
+                      "text": " Sam likes a rental listing. During the viewing, Sam asks which utilities are included and requests a written tenancy agreement before making a decision.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "469e51960d5b8dde23fb"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "71daf58e0ed60e28cdab",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "8e87e446404ecdde3ee3",
+                  "question": "Where can I find official B.C. tenancy information?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "de85041f20b1be67ec18",
+                          "text": "The Residential Tenancy Branch provides information sheets, resources, and contact options for tenants and landlords.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "cd656b60bc0653dfc336"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "bb9ff4ad407c27973265",
+                  "question": "What should I clarify about utilities?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "14d88bf84b1b536a3745",
+                          "text": "Ask whether heat, electricity, and internet are included in the rent.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "7ede95b3e2a8e474e51f"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "63f65b2ca4b997455be5",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "9d1ec29081a0212b920a",
+                  "title": "Tenancy information sheets, toolkits and resources",
+                  "publisher": "Province of British Columbia",
+                  "url": "https://gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/calculators-and-resources/information-sheets-resources"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50b82f0a-ebf1-4305-b894-045f5bf517fd",
+      "title": "Why a Cover Letter Matters?",
+      "pages": [
+        {
+          "_key": "df048768a7ea",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "fd6deafa986795272718",
+              "question": "What should you emphasize in a cover letter?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "827b0cb5e0852c4edf3a",
+                  "text": "Skills and examples that match the job requirements",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "4235c3a2fc76b9a705e4",
+                  "text": "Every task from every previous job",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "9ab56d7a06206b503fcc",
+                  "text": "Generic information unrelated to the position",
+                  "correct": false
+                }
+              ],
+              "explanation": "A convincing cover letter focuses on qualifications that align with the job description and supports them with specific examples."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "2ac0610e98f639a36e7c",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "d93286638358893bf8c3",
+                      "text": "Choose skills and qualifications that match the job description. Support them with specific examples, and adjust the letter for the employer and role.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "45910bd2848d81ec5757"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "4b98c93fb7793ea7ed77",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "958e42cb85ed891ef9ca",
+                      "text": " Sam sees that a posting emphasizes customer service. In the cover letter, Sam briefly describes resolving a difficult customer concern and connects that experience to the role.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "52110be9d9e4d72d0cff"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "bf768eb97a7cebc0f762",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "6ee7083bec367919825e",
+                  "question": "Should I use the same cover letter for every application?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "8b0d4d21ecc3fec68f10",
+                          "text": "No. Tailor it to the company and the job. You may need a different letter for each application.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "b8e26a3bf4ef2740a619"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "d066905a5b30f70af21d",
+                  "question": "What is the main goal of a cover letter?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "d9ca44e059e712ed3140",
+                          "text": "Its main goal is to help you move to the next step of the recruitment process.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "a0ef6aaeb1de30a5282b"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "e14f9bef8938d3f11893",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "4e2dd7ca7b6caeebfcdb",
+                  "title": "Stand out to employers and land your dream job",
+                  "publisher": "Job Bank",
+                  "url": "https://nt.jobbank.gc.ca/career-planning/resources/stand-out"
+                },
+                {
+                  "_type": "source",
+                  "_key": "fcdc8c2939a1156edfe9",
+                  "title": "How do I apply for a job?",
+                  "publisher": "Job Bank",
+                  "url": "https://ns.jobbank.gc.ca/findajob/resources/apply-for-jobs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "bc4b21479101",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "ba6df1528ca7fd5c4911",
+              "question": "What should you do before tailoring a cover letter?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "f6d65f14975cb4de4861",
+                  "text": "Research the company and understand the job requirements",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "daee271c08bd4584cf5f",
+                  "text": "Use the same letter for every application",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "af67a8f91c9fe302f0be",
+                  "text": "Focus on qualifications unrelated to the posting",
+                  "correct": false
+                }
+              ],
+              "explanation": "Research helps you connect your relevant qualifications to the employer and the job requirements."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "d76531b78c58d46da87c",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "1d2091386b38bced5e6d",
+                      "text": "Research the employer and job first. Then choose qualifications that match the posting and adjust the letter’s tone to what you learn about the company.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "3c001f413a3602318adf"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "a5705aef61fb357af8e9",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "acb7e8ddb6c3809a92cc",
+                      "text": " A posting emphasizes teamwork. The applicant briefly describes a school project where they worked with classmates to complete a shared task, then explains how that experience relates to the role.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "98dd3796798593f83a93"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "3302e7cd5c0f57ca9817",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "0c8bf1e7426b55e2c564",
+                  "question": "Should I use one cover letter for every job?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "914e02a119345d1f16a4",
+                          "text": "No. Tailor it to the company and position. You may need a different letter for each application.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "723c1806cd7363747340"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "932fc183c57395fc0f60",
+                  "question": "Is a cover letter always required?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "3048d8db5361b6ba2af2",
+                          "text": "No. When one is required, use it to show how your profile meets the job requirements.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "5ff8e1f156bc1ed17ac9"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "f85e3c3abd648da949e3",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "0d49de00946121aff151",
+                  "title": "Stand out to employers and land your dream job",
+                  "publisher": "Job Bank",
+                  "url": "https://nt.jobbank.gc.ca/career-planning/resources/stand-out"
+                },
+                {
+                  "_type": "source",
+                  "_key": "2c27686f1c3130d2640d",
+                  "title": "How do I apply for a job?",
+                  "publisher": "Job Bank",
+                  "url": "https://ns.jobbank.gc.ca/findajob/resources/apply-for-jobs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "516f2fc5-8a1b-48cb-9dfe-d8b854a38b5a",
+      "title": "Welcome to SFU Life",
+      "pages": [
+        {
+          "_key": "9198d3cf07e1",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "fbb9b716242b3ab5f664",
+              "question": "What is most useful to save offline before landing?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "b33e1b7a3773d033747f",
+                  "text": "Your destination address and campus maps",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "8a36de304c49b5c64171",
+                  "text": "A list of student clubs",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "cbdb1b38ea372e5d019d",
+                  "text": "A field school description",
+                  "correct": false
+                }
+              ],
+              "explanation": "Your destination address and campus maps can help you navigate if Wi-Fi takes time to connect."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "5c8846534d9646a67e12",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "2670f27c1d05a25585e2",
+                      "text": "A simple arrival plan should keep essential documents and destination details easy to reach. Saving key information offline can help when internet access is delayed.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "4189a4484dab3f2ff695"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "14b53bf9e82bf7fc7c4e",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "f7e79b250323a8cdc748",
+                      "text": " Before flying, Noor saves the campus map and destination address on their phone. After landing, Noor can check both without connecting to Wi-Fi.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "c8f4ff574a4d6721e4ac"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "b78b9c83e15222809060",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "a384ad886fc54e55fe45",
+                  "question": "What should I keep ready when I arrive?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "fdaf6b3f964a767e74f3",
+                          "text": "Keep your study permit or other entry documents ready.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "f6b28d8e4b4125bde2ba"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "8c1879812103afa77a90",
+                  "question": "Where can FASS students find help connecting with peers after arrival?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "9e24eadbac357f20bcb0",
+                          "text": "Arts Central staff help FASS students connect with peers and get involved.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "798bcc024a1385a63b2b"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "584f981d9816bd0968e6",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "4a35c63be7bdc058231e",
+                  "title": "Student Life",
+                  "publisher": "Simon Fraser University",
+                  "url": "https://sfu.ca/fass/studentlife"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

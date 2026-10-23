@@ -1,3 +1,4 @@
+import {SyncLessonContent} from './actions/SyncLessonContent'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
@@ -42,6 +43,11 @@ export default defineConfig({
       },
     }),
   ],
+
+  document: {
+    actions: (actions, context) =>
+      context.schemaType === 'lesson' ? [SyncLessonContent, ...actions] : actions,
+  },
 
   schema: {
     types: schemaTypes,

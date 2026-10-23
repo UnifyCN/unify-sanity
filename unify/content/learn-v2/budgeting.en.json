@@ -1,0 +1,133 @@
+{
+  "reviewedDate": "2026-10-21",
+  "lessons": [
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "theory": "A useful savings goal names an amount and a deadline. Divide the amount by the number of months to find a monthly target.",
+      "practice": "For example, a $1,200 laptop goal over four months needs $300 per month. Check whether $300 fits after essential expenses. If it does not, adjust the amount or the deadline.",
+      "question": "You want to save $1,200 in four months. What is the monthly savings target?",
+      "options": [
+        "$100",
+        "$300",
+        "$1,200"
+      ],
+      "correct": 1,
+      "explanation": "$1,200 divided by four months is $300 per month.",
+      "faqs": [
+        [
+          "Should I use my pay before or after tax?",
+          "Use the take-home amount available to spend. Include other income you expect to receive."
+        ],
+        [
+          "What if my goal does not fit my budget?",
+          "Change the target amount, the deadline, or spending you can reduce. Keep essential expenses in the plan."
+        ]
+      ],
+      "sources": [
+        [
+          "Making a budget",
+          "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+        ],
+        [
+          "Setting your financial goals",
+          "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+        ]
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "theory": "Budget categories help you see where money goes. A suggested percentage is a starting point, not a requirement.",
+      "practice": "For example, if rent takes more than half of your take-home pay, a fixed percentage rule may not fit. Start with actual essential costs, then choose realistic amounts for savings and optional spending.",
+      "question": "Your essential costs exceed a suggested budget percentage. What should you do?",
+      "options": [
+        "Ignore part of the rent",
+        "Adjust the plan to actual costs",
+        "Stop recording expenses"
+      ],
+      "correct": 1,
+      "explanation": "A useful budget reflects actual costs. Suggested percentages do not change the bills you must pay.",
+      "faqs": [
+        [
+          "Must I use the same method as someone else?",
+          "No. Choose a method you can maintain and review it against your actual spending."
+        ],
+        [
+          "Are needs and wants the same for everyone?",
+          "No. Circumstances differ. Identify what is essential in your situation before choosing what to reduce."
+        ]
+      ],
+      "sources": [
+        [
+          "Making a budget",
+          "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+        ]
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "theory": "A budget compares available income with expenses and planned savings. Review the plan against what you actually spend.",
+      "practice": "For example, take-home income is $2,800. Fixed expenses are $1,600. That leaves $1,200 for other needs, savings, and optional spending. It is not all available for entertainment.",
+      "question": "Take-home income is $2,800 and fixed expenses are $1,600. How much remains before other expenses and savings?",
+      "options": [
+        "$1,200",
+        "$2,800",
+        "$4,400"
+      ],
+      "correct": 0,
+      "explanation": "$2,800 minus $1,600 leaves $1,200. Other expenses and savings still need to come from this amount.",
+      "faqs": [
+        [
+          "Is the first budget final?",
+          "No. Compare the plan with actual spending and adjust it."
+        ],
+        [
+          "What if expenses exceed income?",
+          "Check the figures and identify costs you can reduce. The plan must account for all essential expenses."
+        ]
+      ],
+      "sources": [
+        [
+          "Making a budget",
+          "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+        ]
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "theory": "Compound interest adds interest to the balance so that later interest can be calculated on a larger amount.",
+      "practice": "For example, $1,000 earning 5% annually becomes $1,050 after one year and $1,102.50 after two years if interest stays in the account. This illustration assumes a constant rate, annual compounding, no fees, and no withdrawals.",
+      "question": "In the example, what amount earns interest in the second year?",
+      "options": [
+        "Only the first $1,000",
+        "The $1,050 balance",
+        "Only the $50 interest"
+      ],
+      "correct": 1,
+      "explanation": "The second year starts with $1,050, including the first year’s interest.",
+      "faqs": [
+        [
+          "Do I need a full emergency fund before I start?",
+          "No. Start with an amount you can afford and build it over time."
+        ],
+        [
+          "Can I stop minimum payments on other debts while paying one off?",
+          "No. Continue required minimum payments on all debts. Extra payments toward a higher-interest debt can reduce interest costs."
+        ]
+      ],
+      "sources": [
+        [
+          "Setting up an emergency fund",
+          "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+        ],
+        [
+          "Savings accounts",
+          "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+        ],
+        [
+          "Paying back your debt",
+          "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+        ]
+      ]
+    }
+  ]
+}

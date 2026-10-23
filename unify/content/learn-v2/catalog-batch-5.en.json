@@ -1,0 +1,466 @@
+{
+  "publishedSubsetSha256": "673cbbd4ce6daa9de48b29f810fbc3600b4682ef72ee12ad88532d134c2435dc",
+  "lessons": [
+    {
+      "id": "2b9d86be-a179-45a6-81e1-ed2cf7b0e7c9",
+      "title": "What Are Information Scams?",
+      "pages": [
+        {
+          "_key": "18e48d074602",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "c879e88f3bc420f143b0",
+              "question": "What is the safest response to an unexpected message that appears to be from a government department and asks for personal information?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "1c6095ae43fde5c92f96",
+                  "text": "Use the link in the message immediately",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "0fcab30b2df1711913f9",
+                  "text": "Contact the department directly through its official website",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "c2b03c4fb1d0e969082d",
+                  "text": "Forward the message to friends",
+                  "correct": false
+                }
+              ],
+              "explanation": "An unexpected request for personal information may be a scam. Contact the department directly instead of using the message's link."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "4fd2979f1ed54dda154e",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_key": "fa70503bd4373a2a3cc2",
+                      "_type": "span",
+                      "text": "Realistic wording or design does not prove that a message is genuine. Scammers can imitate messages, images, and websites. To check a government claim, type https://www.canada.ca/ directly into your browser and find the department from there.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "705c0e28c848f21e6cbf"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "9f0a81c6a69de1ec201c",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "2e283991f4742638846d",
+                      "text": " Sam receives a professional-looking message about a government benefit. It asks Sam to click a link and enter banking details. Sam does not use the link and checks the program on the official Government of Canada website.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "ff573b43a63a70327494"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "de0fc953e60426fffd79",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "7f8669f18f83840f43c5",
+                  "question": "Can a polished message still be a scam?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "ceea7b10c64bd9de2aec",
+                          "text": "Yes. Scammers can create realistic messages, images, and websites.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "3d3ba60ae116c36f9319"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "d31b5042235c07398f77",
+                  "question": "How can I check a claim about a federal government service?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_key": "841dcc616a736d457fbf",
+                          "_type": "span",
+                          "text": "Type https://www.canada.ca/ directly into your browser. Find the relevant department from that site. Do not use a link in a suspicious message.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "7ba5034561db00f801be"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "adfba4dcaed64146c438",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "59a2fcbf839d714a2deb",
+                  "title": "Scams and fraud",
+                  "publisher": "Government of Canada",
+                  "url": "http://canada.ca/en/revenue-agency/campaigns/fraud-scams"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_key": "ad415f3bf5b8",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "600ac55f932308e0c2a7",
+              "question": "Which situation is an example of smishing?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "4925b66c5a88fc90aa1b",
+                  "text": "A text message asks you to click a link and enter personal information",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "af6dcb98050d20e596c6",
+                  "text": "Someone accidentally shares false information",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "93355e79ea5965f73054",
+                  "text": "Software secretly installs on a device",
+                  "correct": false
+                }
+              ],
+              "explanation": "Smishing is phishing through text messages. A text that asks you to follow a link and provide personal information fits this term."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "9e08a51bd107e4b90899",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "e79fee27ab30b5c28eef",
+                      "text": "A scam may combine methods. A message can use social engineering, such as urgency or threats, while directing someone to a fake website that requests personal information.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "7d87f52be5700f06840d"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "18d092659ac1812ec3ca",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "66e005efe71cabf5a962",
+                      "text": " Sam receives a text claiming to be from a government service. It demands quick action and links to a page asking for banking details. The text format suggests smishing, while the pressure is social engineering. Sam can avoid the link and contact the department directly.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "c6acd4b0c989aae4e4b1"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "dea81b88b67a36f9d450",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "6656c5cf6e61720142e1",
+                  "question": "What warning signs can appear in a scam message?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "75a0e3cd262fdd99f565",
+                          "text": "Warning signs include threats, demands for immediate payment, links to click, or requests for personal or financial information.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "5359ef121ddef2881522"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "305659304bdd4bcecad2",
+                  "question": "How can I check a message that appears to come from a government department?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_key": "b8489f370f28e72a9b97",
+                          "_type": "span",
+                          "text": "Contact the department through contact details you find independently. For Government of Canada information, type https://www.canada.ca/ directly into your browser and navigate from there.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "f77cc86c02de5cd810ec"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "95453f1f9efa48e1a539",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "da25f16e0ba02e9a41a6",
+                  "title": "Scams and fraud",
+                  "publisher": "Government of Canada",
+                  "url": "http://canada.ca/en/revenue-agency/campaigns/fraud-scams"
+                },
+                {
+                  "_type": "source",
+                  "_key": "fae44aa5f1687b74eea0",
+                  "title": "Fraud Prevention Month: How to recognize fraud, scams and tax schemes",
+                  "publisher": "Canada Revenue Agency",
+                  "url": "https://canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/fraud-prevention-month-recognize-fraud-scams-tax-schemes.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6b8826ee-8a02-42cd-8d51-98503c5ee5c6",
+      "title": "Lesson 3.3: CRS Basics (Express Entry)",
+      "pages": [
+        {
+          "_key": "2dae545d878c",
+          "sections": [
+            {
+              "_type": "lessonQuickCheck",
+              "_key": "dbff48f25673360e71d1",
+              "question": "Which CRS factor can combine with education or foreign work experience to produce skill transferability points?",
+              "options": [
+                {
+                  "_type": "answer",
+                  "_key": "352ac01bed345aea78e3",
+                  "text": "Official language proficiency",
+                  "correct": true
+                },
+                {
+                  "_type": "answer",
+                  "_key": "62f35735ab890dc5b076",
+                  "text": "The date the profile entered the pool",
+                  "correct": false
+                },
+                {
+                  "_type": "answer",
+                  "_key": "f10930c7bc521a2e7168",
+                  "text": "The order in which applications were received",
+                  "correct": false
+                }
+              ],
+              "explanation": "Official language proficiency can combine with education or foreign work experience for skill transferability points. CRS scores determine the main ranking. When candidates share the lowest invited score, IRCC uses the date and time they submitted their profiles to break the tie."
+            },
+            {
+              "_type": "lessonExample",
+              "_key": "9a98052d6d8eae185c73",
+              "theory": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "b5af7fee32f00009dd30",
+                      "text": "Some CRS factors interact. For example, education may produce skill transferability points when combined with official language proficiency or Canadian work experience.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "bf8b8f3d9764eba3040f"
+                }
+              ],
+              "practice": [
+                {
+                  "markDefs": [],
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "_key": "d3bdecb7590939910329",
+                      "text": "Hypothetical example:",
+                      "marks": [
+                        "strong"
+                      ]
+                    },
+                    {
+                      "_type": "span",
+                      "_key": "530af18c12a6839ad6b3",
+                      "text": " Sam has a post-secondary credential and qualifying official language results. These factors may be assessed together for skill transferability points, in addition to any applicable core points.",
+                      "marks": []
+                    }
+                  ],
+                  "_key": "11a4ef9568c145b6ad87"
+                }
+              ]
+            },
+            {
+              "_type": "lessonFaq",
+              "_key": "7792f7c29834655554e5",
+              "items": [
+                {
+                  "_type": "faqItem",
+                  "_key": "06e47009379034053391",
+                  "question": "Is CRS ranking first-come, first-served?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "ef0401d874befeba06b6",
+                          "text": "CRS scores determine the main ranking. If candidates share the lowest invited score, the tie-breaking rule uses the date and time they submitted their Express Entry profiles.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "9965ce09716b4f41e9d5"
+                    }
+                  ]
+                },
+                {
+                  "_type": "faqItem",
+                  "_key": "61567364c73e9f2d26da",
+                  "question": "Can a spouse or common-law partner affect the score?",
+                  "answer": [
+                    {
+                      "markDefs": [],
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "_key": "073a42d969207bcb188d",
+                          "text": "Yes, when applicable. Their education, official language proficiency, and Canadian work experience can be spouse or partner factors.",
+                          "marks": []
+                        }
+                      ],
+                      "_key": "0ef64477b141a770648c"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "lessonCitations",
+              "_key": "4cb9c4634f74c7491db2",
+              "sources": [
+                {
+                  "_type": "source",
+                  "_key": "c25af3724509c8f6b57a",
+                  "title": "Express Entry: Comprehensive Ranking System (CRS) criteria",
+                  "publisher": "Canada.ca",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html?expand=pointsC&wbdisable=true"
+                },
+                {
+                  "_type": "source",
+                  "_key": "8c35f82c24f365cd4dd8",
+                  "title": "Express Entry System - Technical Briefing",
+                  "publisher": "Canada.ca",
+                  "url": "https://canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/express-entry-system-technical-briefing.html?wbdisable=true"
+                },
+                {
+                  "_key": "crs-tie-rule",
+                  "_type": "source",
+                  "title": "Express Entry rounds: tie-breaking rule",
+                  "publisher": "Immigration, Refugees and Citizenship Canada",
+                  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=390"
+                },
+                {
+                  "_key": "crs-announced-changes",
+                  "_type": "source",
+                  "title": "2026 changes to points for Canadian work experience and job offers",
+                  "publisher": "Immigration, Refugees and Citizenship Canada",
+                  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "originalCorrections": [
+    {
+      "documentId": "6b8826ee-8a02-42cd-8d51-98503c5ee5c6",
+      "pageKey": "2dae545d878c",
+      "blockKey": "7c4d3ddfecff",
+      "spanKey": "adabafbaf5b0",
+      "before": "\nPoints can come from things like a spouse’s language level, a job offer, arranged employment, or a ",
+      "after": "\nPoints can come from factors such as a spouse’s language level or a ",
+      "reason": "Remove unqualified job-offer CRS points claim. Current and announced future rules differ; job offers cannot be listed without eligibility conditions.",
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/changes.html"
+    }
+  ],
+  "highlightCheck": "Two live postgres aggregate checks found zero highlights on the corrected block before publication. No highlight rows changed."
+}
