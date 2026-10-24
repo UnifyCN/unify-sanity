@@ -42,3 +42,32 @@ test('translation refuses changed answer flags, page positions, and section keys
     assert.throws(() => translatedLessonPages(pages, translated), /Translation changed/)
   }
 })
+test('translation accepts regenerated span keys and restores the source keys', () => {
+  const source = [
+    {
+      _key: 'page',
+      order: 1,
+      contentVersion: 2,
+      content: [],
+      sections: [
+        {
+          _key: 'concept',
+          _type: 'lessonConcept',
+          content: [
+            {_key: 'b1', _type: 'block', markDefs: [], children: [{_key: 'b1-span', _type: 'span', marks: [], text: 'Budget'}]},
+          ],
+        },
+      ],
+    },
+  ]
+  const translated = structuredClone(source) as any
+  translated[0].sections[0].content[0].children[0] = {_key: 'regenerated', _type: 'span', marks: [], text: 'Presupuesto'}
+  const result = translatedLessonPages(source, translated) as any
+  const span = result[0].sections[0].content[0].children[0]
+  assert.equal(span._key, 'b1-span')
+  assert.equal(span.text, 'Presupuesto')
+  assert.equal(result[0].content[0].children[0]._key, 'b1-span')
+  const blockChanged = structuredClone(source) as any
+  blockChanged[0].sections[0].content[0]._key = 'other'
+  assert.throws(() => translatedLessonPages(source, blockChanged), /changed identity/)
+})

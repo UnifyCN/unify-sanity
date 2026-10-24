@@ -46,7 +46,7 @@ export default defineConfig({
 
   document: {
     actions: (actions, context) =>
-      context.schemaType === 'lesson' ? [SyncLessonContent, ...actions] : actions,
+      context.schemaType === 'lesson' ? [...actions, SyncLessonContent] : actions,
   },
 
   schema: {
