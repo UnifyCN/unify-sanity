@@ -4,7 +4,7 @@ import {provinceField} from './fields/province'
 
 export default defineType({
   name: 'module',
-  title: 'Module',
+  title: 'Course',
   type: 'document',
   fields: [
     // Managed by @sanity/document-internationalization (hidden from editors).
@@ -19,20 +19,20 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: 'The name of the module. This will be displayed prominently throughout the application.',
+      description: 'The name of the course. This will be displayed prominently throughout the application.',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'description',
       title: 'Description',
       type: 'text',
-      description: 'A brief overview or summary of what this module covers. This helps users understand the module content before starting.',
+      description: 'A brief overview or summary of what this course covers. This helps users understand the course content before starting.',
     },
     {
       name: 'colorTheme',
       title: 'Color Theme',
       type: 'color',
-      description: 'Choose a color theme for this module. This color will be used for visual branding and theming throughout the module interface.',
+      description: 'Choose a color theme for this course. This color will be used for visual branding and theming throughout the course interface.',
       options: {
         disableAlpha: true,
       },
@@ -40,9 +40,9 @@ export default defineType({
     },
     {
       name: 'icon',
-      title: 'Module Icon',
+      title: 'Course Icon',
       type: 'string',
-      description: 'Select an icon to represent this module. Icons are from Material UI Icons library and will be displayed in module cards and navigation. (Note: if you wanted to use an icon that is not in this list, contact Paul to add them in)',
+      description: 'Select an icon to represent this course. Icons are from Material UI Icons library and will be displayed in course cards and navigation. (Note: if you wanted to use an icon that is not in this list, contact Paul to add them in)',
       components: {
         input: IconSelector,
       },

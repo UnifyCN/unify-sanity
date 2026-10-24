@@ -51,5 +51,28 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+    templates: (templates) => [
+      ...templates,
+      {
+        id: 'module-in-course',
+        title: 'Module in this course',
+        schemaType: 'submodule',
+        parameters: [{name: 'courseId', type: 'string'}],
+        value: ({courseId}: {courseId: string}) => ({
+          language: 'en',
+          module: {_type: 'reference', _ref: courseId},
+        }),
+      },
+      {
+        id: 'lesson-in-module',
+        title: 'Lesson in this module',
+        schemaType: 'lesson',
+        parameters: [{name: 'moduleId', type: 'string'}],
+        value: ({moduleId}: {moduleId: string}) => ({
+          language: 'en',
+          submodule: {_type: 'reference', _ref: moduleId},
+        }),
+      },
+    ],
   },
 })

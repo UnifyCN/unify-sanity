@@ -1,22 +1,22 @@
 import {structuredLessonFields} from './lessonSections'
-import {defineField, defineType, type Rule} from 'sanity'
-import {checklistCheckboxBlock} from './portableText/checklistCheckbox'
+import { defineArrayMember, defineField, defineType, type Rule } from 'sanity'
+import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 // Block configuration with separate text alignment
 const blockWithAlignment = {
   type: 'block',
   styles: [
-    {title: 'Normal', value: 'normal'},
-    {title: 'H1', value: 'h1'},
-    {title: 'H2', value: 'h2'},
-    {title: 'H3', value: 'h3'},
-    {title: 'Quote', value: 'blockquote'},
+    { title: 'Normal', value: 'normal' },
+    { title: 'H1', value: 'h1' },
+    { title: 'H2', value: 'h2' },
+    { title: 'H3', value: 'h3' },
+    { title: 'Quote', value: 'blockquote' },
   ],
   marks: {
     decorators: [
-      {title: 'Strong', value: 'strong'},
-      {title: 'Emphasis', value: 'em'},
-      {title: 'Code', value: 'code'},
+      { title: 'Strong', value: 'strong' },
+      { title: 'Emphasis', value: 'em' },
+      { title: 'Code', value: 'code' },
     ],
     annotations: [
       {
@@ -42,9 +42,9 @@ const blockWithAlignment = {
             type: 'string',
             options: {
               list: [
-                {title: 'Left', value: 'left'},
-                {title: 'Center', value: 'center'},
-                {title: 'Right', value: 'right'},
+                { title: 'Left', value: 'left' },
+                { title: 'Center', value: 'center' },
+                { title: 'Right', value: 'right' },
               ],
             },
             initialValue: 'left',
@@ -144,61 +144,7 @@ const lessonContent = [
   },
 ]
 
-export default defineType({
-  name: 'lesson',
-  title: 'Lesson',
-  type: 'document',
-  fields: [
-    // Managed by @sanity/document-internationalization (hidden from editors).
-    defineField({
-      name: 'language',
-      type: 'string',
-      readOnly: true,
-      hidden: true,
-    }),
-    defineField({
-      name: 'title',
-      title: 'Lesson Title',
-      type: 'string',
-      description:
-        'The name of this lesson. This will be displayed in navigation and lesson lists.',
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      description:
-        'A URL-friendly version of the title. Auto-generated from the title, but can be customized. Used in URLs.',
-      options: {source: 'title', maxLength: 96},
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-      description:
-        'A brief summary of what this lesson covers. Helps users understand the lesson content before starting.',
-    }),
-    defineField({
-      name: 'submodule',
-      title: 'Submodule',
-      type: 'reference',
-      to: [{type: 'submodule'}],
-      description:
-        'Select the parent submodule (section) that this lesson belongs to. You can search for it here.',
-      validation: (rule) => rule.required(),
-    }),
-
-    // each lesson have mutliple pages
-    defineField({
-      name: 'pages',
-      title: 'Lesson Pages',
-      type: 'array',
-      description:
-        'The main content pages of this lesson. These pages contain the educational content and are shown before activity pages.',
-      of: [
-        defineField({
+const lessonPage = defineArrayMember({
           name: 'page',
           title: 'Lesson Page',
           type: 'object',
@@ -218,26 +164,15 @@ export default defineType({
             }),
             defineField({
               name: 'content',
-              title: 'Page Content',
+              title: 'Content blocks',
               type: 'array',
-              description:
-                'The main content of this lesson page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
+              description: 'The main content of this lesson page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
               of: lessonContent,
             }),
           ],
-        }),
-      ],
-    }),
+        })
 
-    // Activity pages for interactive content
-    defineField({
-      name: 'activity_pages',
-      title: 'Activity Pages',
-      type: 'array',
-      description:
-        'Interactive activity pages with questions, input fields, and exercises. These pages appear after the lesson pages and allow users to practice what they learned.',
-      of: [
-        defineField({
+const activityPage = defineArrayMember({
           name: 'activityPage',
           title: 'Activity Page',
           type: 'object',
@@ -253,16 +188,14 @@ export default defineType({
               name: 'order',
               title: 'Page Order',
               type: 'number',
-              description:
-                'The order in which this activity page appears. Lower numbers appear first. Start from 0.',
+              description: 'The order in which this activity page appears. Lower numbers appear first. Start from 0.',
               validation: (rule) => rule.required().min(0),
             }),
             defineField({
               name: 'instructions',
               title: 'Instructions',
               type: 'array',
-              description:
-                'The instructions and interactive elements for this activity. You can add text, input fields, and various question types.',
+              description: 'The instructions and interactive elements for this activity. You can add text, input fields, and various question types.',
               of: [
                 blockWithAlignment,
                 checklistCheckboxBlock,
@@ -273,24 +206,24 @@ export default defineType({
                   icon: () => '📝',
                   description: 'A large text input field for longer responses or essays.',
                   fields: [
-                    {
-                      name: 'label',
-                      type: 'string',
+                    { 
+                      name: 'label', 
+                      type: 'string', 
                       title: 'Field Label',
                       description: 'The label displayed above the input field.',
                     },
-                    {
-                      name: 'placeholder',
-                      type: 'string',
+                    { 
+                      name: 'placeholder', 
+                      type: 'string', 
                       title: 'Placeholder Text',
                       description: 'Hint text shown inside the input field when it is empty.',
                     },
-                    {
-                      name: 'required',
-                      type: 'boolean',
+                    { 
+                      name: 'required', 
+                      type: 'boolean', 
                       title: 'Required',
                       description: 'Whether this field must be filled before submission.',
-                      initialValue: false,
+                      initialValue: false 
                     },
                   ],
                 },
@@ -301,24 +234,24 @@ export default defineType({
                   icon: () => '📄',
                   description: 'A medium-sized text input field for moderate-length responses.',
                   fields: [
-                    {
-                      name: 'label',
-                      type: 'string',
+                    { 
+                      name: 'label', 
+                      type: 'string', 
                       title: 'Field Label',
                       description: 'The label displayed above the input field.',
                     },
-                    {
-                      name: 'placeholder',
-                      type: 'string',
+                    { 
+                      name: 'placeholder', 
+                      type: 'string', 
                       title: 'Placeholder Text',
                       description: 'Hint text shown inside the input field when it is empty.',
                     },
-                    {
-                      name: 'required',
-                      type: 'boolean',
+                    { 
+                      name: 'required', 
+                      type: 'boolean', 
                       title: 'Required',
                       description: 'Whether this field must be filled before submission.',
-                      initialValue: false,
+                      initialValue: false 
                     },
                   ],
                 },
@@ -327,27 +260,26 @@ export default defineType({
                   name: 'small_input_box',
                   title: 'Small Input Box',
                   icon: () => '📋',
-                  description:
-                    'A small text input field for short responses or single-word answers.',
+                  description: 'A small text input field for short responses or single-word answers.',
                   fields: [
-                    {
-                      name: 'label',
-                      type: 'string',
+                    { 
+                      name: 'label', 
+                      type: 'string', 
                       title: 'Field Label',
                       description: 'The label displayed above the input field.',
                     },
-                    {
-                      name: 'placeholder',
-                      type: 'string',
+                    { 
+                      name: 'placeholder', 
+                      type: 'string', 
                       title: 'Placeholder Text',
                       description: 'Hint text shown inside the input field when it is empty.',
                     },
-                    {
-                      name: 'required',
-                      type: 'boolean',
+                    { 
+                      name: 'required', 
+                      type: 'boolean', 
                       title: 'Required',
                       description: 'Whether this field must be filled before submission.',
-                      initialValue: false,
+                      initialValue: false 
                     },
                   ],
                 },
@@ -356,8 +288,7 @@ export default defineType({
                   name: 'multiple_choice_single',
                   title: 'Multiple Choice (Single Answer)',
                   icon: () => '☑️',
-                  description:
-                    'A multiple choice question where users can select only one correct answer.',
+                  description: 'A multiple choice question where users can select only one correct answer.',
                   fields: [
                     {
                       name: 'question_text',
@@ -371,8 +302,7 @@ export default defineType({
                       name: 'options',
                       title: 'Answer Options',
                       type: 'array',
-                      description:
-                        'The answer choices for this question. Must have at least 2 options and exactly 1 correct answer.',
+                      description: 'The answer choices for this question. Must have at least 2 options and exactly 1 correct answer.',
                       of: [
                         {
                           type: 'object',
@@ -391,16 +321,14 @@ export default defineType({
                               name: 'value',
                               title: 'Option Value',
                               type: 'string',
-                              description:
-                                'A unique identifier for this option (e.g., "option_a", "option_1").',
+                              description: 'A unique identifier for this option (e.g., "option_a", "option_1").',
                               validation: (rule) => rule.required(),
                             },
                             {
                               name: 'is_correct',
                               title: '✓ Correct Answer',
                               type: 'boolean',
-                              description:
-                                'Mark this option as the correct answer. For single choice questions, exactly one option must be marked correct.',
+                              description: 'Mark this option as the correct answer. For single choice questions, exactly one option must be marked correct.',
                               initialValue: false,
                             },
                             {
@@ -408,24 +336,18 @@ export default defineType({
                               title: 'Explanation',
                               type: 'array',
                               of: [blockWithAlignment, checklistCheckboxBlock],
-                              description:
-                                'Optional explanation shown to users when they select this option (or after submission).',
+                              description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
                         },
                       ],
-                      validation: (rule) =>
-                        rule
-                          .required()
-                          .min(2)
-                          .custom((options: any) => {
-                            const correctOptions =
-                              options?.filter((opt: any) => opt.is_correct) || []
-                            if (correctOptions.length !== 1) {
-                              return 'Single choice questions must have exactly 1 correct answer'
-                            }
-                            return true
-                          }),
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Single choice questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
                     },
                   ],
                 },
@@ -434,8 +356,7 @@ export default defineType({
                   name: 'multiple_choice_multiple',
                   title: 'Multiple Choice (Multiple Answers)',
                   icon: () => '☑️☑️',
-                  description:
-                    'A multiple choice question where users can select multiple correct answers.',
+                  description: 'A multiple choice question where users can select multiple correct answers.',
                   fields: [
                     {
                       name: 'question_text',
@@ -449,8 +370,7 @@ export default defineType({
                       name: 'options',
                       title: 'Answer Options',
                       type: 'array',
-                      description:
-                        'The answer choices for this question. Must have at least 2 options and at least 1 correct answer.',
+                      description: 'The answer choices for this question. Must have at least 2 options and at least 1 correct answer.',
                       of: [
                         {
                           type: 'object',
@@ -469,16 +389,14 @@ export default defineType({
                               name: 'value',
                               title: 'Option Value',
                               type: 'string',
-                              description:
-                                'A unique identifier for this option (e.g., "option_a", "option_1").',
+                              description: 'A unique identifier for this option (e.g., "option_a", "option_1").',
                               validation: (rule) => rule.required(),
                             },
                             {
                               name: 'is_correct',
                               title: '✓ Correct Answer',
                               type: 'boolean',
-                              description:
-                                'Mark this option as a correct answer. For multiple choice questions, at least one option must be marked correct.',
+                              description: 'Mark this option as a correct answer. For multiple choice questions, at least one option must be marked correct.',
                               initialValue: false,
                             },
                             {
@@ -486,24 +404,18 @@ export default defineType({
                               title: 'Explanation',
                               type: 'array',
                               of: [blockWithAlignment, checklistCheckboxBlock],
-                              description:
-                                'Optional explanation shown to users when they select this option (or after submission).',
+                              description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
                         },
                       ],
-                      validation: (rule) =>
-                        rule
-                          .required()
-                          .min(2)
-                          .custom((options: any) => {
-                            const correctOptions =
-                              options?.filter((opt: any) => opt.is_correct) || []
-                            if (correctOptions.length < 1) {
-                              return 'Multiple choice questions must have at least 1 correct answer'
-                            }
-                            return true
-                          }),
+                      validation: (rule) => rule.required().min(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length < 1) {
+                          return 'Multiple choice questions must have at least 1 correct answer';
+                        }
+                        return true;
+                      }),
                     },
                   ],
                 },
@@ -512,8 +424,7 @@ export default defineType({
                   name: 'two_options_question',
                   title: 'Two Options Question',
                   icon: () => '⚖️',
-                  description:
-                    'A true/false or yes/no style question with exactly two answer options.',
+                  description: 'A true/false or yes/no style question with exactly two answer options.',
                   fields: [
                     {
                       name: 'question_text',
@@ -546,16 +457,14 @@ export default defineType({
                               name: 'value',
                               title: 'Option Value',
                               type: 'string',
-                              description:
-                                'A unique identifier for this option (e.g., "option_a", "option_1").',
+                              description: 'A unique identifier for this option (e.g., "option_a", "option_1").',
                               validation: (rule) => rule.required(),
                             },
                             {
                               name: 'is_correct',
                               title: '✓ Correct Answer',
                               type: 'boolean',
-                              description:
-                                'Mark this option as the correct answer. For two options questions, exactly one option must be marked correct.',
+                              description: 'Mark this option as the correct answer. For two options questions, exactly one option must be marked correct.',
                               initialValue: false,
                             },
                             {
@@ -563,24 +472,18 @@ export default defineType({
                               title: 'Explanation',
                               type: 'array',
                               of: [blockWithAlignment, checklistCheckboxBlock],
-                              description:
-                                'Optional explanation shown to users when they select this option (or after submission).',
+                              description: 'Optional explanation shown to users when they select this option (or after submission).',
                             },
                           ],
                         },
                       ],
-                      validation: (rule) =>
-                        rule
-                          .required()
-                          .length(2)
-                          .custom((options: any) => {
-                            const correctOptions =
-                              options?.filter((opt: any) => opt.is_correct) || []
-                            if (correctOptions.length !== 1) {
-                              return 'Two options questions must have exactly 1 correct answer'
-                            }
-                            return true
-                          }),
+                      validation: (rule) => rule.required().length(2).custom((options: any) => {
+                        const correctOptions = options?.filter((opt: any) => opt.is_correct) || [];
+                        if (correctOptions.length !== 1) {
+                          return 'Two options questions must have exactly 1 correct answer';
+                        }
+                        return true;
+                      }),
                     },
                   ],
                 },
@@ -589,8 +492,7 @@ export default defineType({
                   name: 'matching_question',
                   title: 'Matching Question',
                   icon: () => '🔗',
-                  description:
-                    'A matching question where users match items from two columns (e.g., terms with definitions).',
+                  description: 'A matching question where users match items from two columns (e.g., terms with definitions).',
                   fields: [
                     {
                       name: 'question_text',
@@ -604,8 +506,7 @@ export default defineType({
                       name: 'matching_pairs',
                       title: 'Matching Pairs',
                       type: 'array',
-                      description:
-                        'The pairs of items that should be matched. Must have at least 2 pairs.',
+                      description: 'The pairs of items that should be matched. Must have at least 2 pairs.',
                       of: [
                         {
                           type: 'object',
@@ -616,16 +517,14 @@ export default defineType({
                               name: 'left_item',
                               title: 'Left Item',
                               type: 'string',
-                              description:
-                                'The item that appears in the left column (e.g., a term or question).',
+                              description: 'The item that appears in the left column (e.g., a term or question).',
                               validation: (rule) => rule.required(),
                             },
                             {
                               name: 'right_item',
                               title: 'Right Item',
                               type: 'string',
-                              description:
-                                'The item that appears in the right column and matches the left item (e.g., a definition or answer).',
+                              description: 'The item that appears in the right column and matches the left item (e.g., a definition or answer).',
                               validation: (rule) => rule.required(),
                             },
                             {
@@ -633,8 +532,7 @@ export default defineType({
                               title: 'Explanation',
                               type: 'array',
                               of: [blockWithAlignment, checklistCheckboxBlock],
-                              description:
-                                'Optional explanation shown to users about this matching pair.',
+                              description: 'Optional explanation shown to users about this matching pair.',
                             },
                           ],
                         },
@@ -650,8 +548,7 @@ export default defineType({
               name: 'answer_box',
               title: 'Answer Box (Feedback)',
               type: 'object',
-              description:
-                'A feedback box that appears after users submit their answers. Use this to provide explanations, correct answers, or additional information.',
+              description: 'A feedback box that appears after users submit their answers. Use this to provide explanations, correct answers, or additional information.',
               fields: [
                 defineField({
                   name: 'title',
@@ -664,22 +561,111 @@ export default defineType({
                   title: 'Answer Box Content',
                   type: 'array',
                   of: [blockWithAlignment, checklistCheckboxBlock],
-                  description:
-                    'The feedback content shown to users. Can include text, explanations, and formatting.',
+                  description: 'The feedback content shown to users. Can include text, explanations, and formatting.',
                   validation: (rule) => rule.required(),
                 }),
                 defineField({
                   name: 'showAfterSubmit',
                   title: 'Show After Submit',
                   type: 'boolean',
-                  description:
-                    'If enabled, the answer box appears only after the user submits their answers. If disabled, it is always visible.',
+                  description: 'If enabled, the answer box appears only after the user submits their answers. If disabled, it is always visible.',
                   initialValue: true,
                 }),
               ],
             }),
           ],
+        })
+
+export default defineType({
+  name: 'lesson',
+  title: 'Lesson',
+  type: 'document',
+  fields: [
+    // Managed by @sanity/document-internationalization (hidden from editors).
+    defineField({
+      name: 'language',
+      type: 'string',
+      readOnly: true,
+      hidden: true,
+    }),
+    defineField({
+      name: 'title',
+      title: 'Lesson Title',
+      type: 'string',
+      description: 'The name of this lesson. This will be displayed in navigation and lesson lists.',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      description: 'A URL-friendly version of the title. Auto-generated from the title, but can be customized. Used in URLs.',
+      options: { source: 'title', maxLength: 96 },
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      description: 'A brief summary of what this lesson covers. Helps users understand the lesson content before starting.',
+    }),
+    defineField({
+      name: 'submodule',
+      title: 'Module',
+      type: 'reference',
+      to: [{type: 'submodule'}],
+      description: 'Select the module that this lesson belongs to.',
+      validation: (rule) => rule.required(),
+    }),
+
+
+    defineField({
+      name: 'content_blocks',
+      title: 'Content blocks',
+      type: 'array',
+      description: 'Add explanations, examples, visuals, activities, and knowledge checks in the order learners should see them. Drag blocks to change the sequence. Each block is one step in the lesson.',
+      validation: (rule) => rule.min(1),
+      of: [
+        defineArrayMember({
+          ...lessonPage,
+          name: 'lesson_content',
+          title: 'Explanation, example, or visual',
+          fields: lessonPage.fields.filter((field) => field.name !== 'order'),
         }),
+        defineArrayMember({
+          ...activityPage,
+          name: 'lesson_activity',
+          title: 'Activity or knowledge check',
+          fields: activityPage.fields.filter((field) => field.name !== 'order'),
+        }),
+      ],
+    }),
+
+    // Existing lessons keep their page fields until explicitly converted.
+    defineField({
+      name: 'pages',
+      deprecated: {reason: 'Use Content blocks for new lessons. Existing content is preserved.'},
+      hidden: ({value}) => value === undefined,
+      readOnly: ({document}) => Array.isArray(document?.content_blocks) && document.content_blocks.length > 0,
+      title: 'Lesson Pages',
+      type: 'array',
+      description: 'The main content pages of this lesson. These pages contain the educational content and are shown before activity pages.',
+      of: [
+        lessonPage,
+      ],
+    }),
+
+    // Activity pages for interactive content
+    defineField({
+      name: 'activity_pages',
+      deprecated: {reason: 'Use Content blocks for new lessons. Existing content is preserved.'},
+      hidden: ({value}) => value === undefined,
+      readOnly: ({document}) => Array.isArray(document?.content_blocks) && document.content_blocks.length > 0,
+      title: 'Activity Pages',
+      type: 'array',
+      description: 'Interactive activity pages with questions, input fields, and exercises. These pages appear after the lesson pages and allow users to practice what they learned.',
+      of: [
+        activityPage,
       ],
     }),
 
@@ -687,18 +673,19 @@ export default defineType({
       name: 'order',
       title: 'Display Order',
       type: 'number',
-      description:
-        'The order in which this lesson appears within its parent submodule. Lower numbers appear first. Note: always start from 1 and increment by 1 for different lessons (you will have to track this yourself for every lesson in a submodule).',
+      description: 'The order of this lesson within its module. Start at 1 and increase by 1. Lower numbers appear first.',
       initialValue: 0,
     }),
 
     // Ending pages shown after quizzes/activities
     defineField({
       name: 'ending_pages',
+      deprecated: {reason: 'Use Content blocks for new lessons. Existing content is preserved.'},
+      hidden: ({value}) => value === undefined,
+      readOnly: ({document}) => Array.isArray(document?.content_blocks) && document.content_blocks.length > 0,
       title: 'Ending Pages',
       type: 'array',
-      description:
-        'Conclusion pages shown after all lesson and activity pages. Use these to summarize, provide next steps, or wrap up the lesson.',
+      description: 'Conclusion pages shown after all lesson and activity pages. Use these to summarize, provide next steps, or wrap up the lesson.',
       of: [
         defineField({
           name: 'endingPage',
@@ -716,50 +703,43 @@ export default defineType({
               name: 'order',
               title: 'Page Order',
               type: 'number',
-              description:
-                'The order in which this ending page appears. Lower numbers appear first. Start from 0.',
+              description: 'The order in which this ending page appears. Lower numbers appear first. Start from 0.',
               validation: (rule) => rule.required().min(0),
             }),
             defineField({
               name: 'content',
-              title: 'Page Content',
+              title: 'Content blocks',
               type: 'array',
-              description:
-                'The main content of this ending page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
+              description: 'The main content of this ending page. You can add text, images, example boxes, notes, tips, and dropdown sections.',
               of: [
                 blockWithAlignment,
                 checklistCheckboxBlock,
                 {
                   type: 'image',
-                  fields: [
-                    {
-                      name: 'alt',
-                      type: 'string',
-                      title: 'Alt text',
-                      description:
-                        'Alternative text for the image. Important for accessibility and SEO.',
-                    },
-                  ],
+                  fields: [{ 
+                    name: 'alt', 
+                    type: 'string', 
+                    title: 'Alt text',
+                    description: 'Alternative text for the image. Important for accessibility and SEO.',
+                  }],
                 },
                 {
                   type: 'object',
                   name: 'dropdown',
                   title: 'Dropdown Section',
                   icon: () => 'DD',
-                  description:
-                    'A collapsible dropdown section that users can expand to see additional content.',
+                  description: 'A collapsible dropdown section that users can expand to see additional content.',
                   fields: [
-                    {
-                      name: 'label',
-                      type: 'string',
+                    { 
+                      name: 'label', 
+                      type: 'string', 
                       title: 'Label',
-                      description:
-                        'The text displayed on the dropdown button that users click to expand.',
+                      description: 'The text displayed on the dropdown button that users click to expand.',
                     },
-                    {
-                      name: 'content',
-                      type: 'array',
-                      of: [blockWithAlignment, checklistCheckboxBlock],
+                    { 
+                      name: 'content', 
+                      type: 'array', 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Dropdown Content',
                       description: 'The content that appears when the dropdown is expanded.',
                     },
@@ -772,13 +752,13 @@ export default defineType({
                   icon: () => 'Ex',
                   description: 'A highlighted box to display examples or sample content.',
                   fields: [
-                    {
-                      name: 'content',
-                      type: 'array',
-                      of: [blockWithAlignment, checklistCheckboxBlock],
+                    { 
+                      name: 'content', 
+                      type: 'array', 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Example Content',
                       description: 'The example content to display in the box.',
-                      validation: (rule) => rule.required(),
+                      validation: (rule) => rule.required() 
                     },
                   ],
                 },
@@ -789,13 +769,13 @@ export default defineType({
                   icon: () => 'T',
                   description: 'A highlighted box to display helpful tips or best practices.',
                   fields: [
-                    {
-                      name: 'content',
-                      type: 'array',
-                      of: [blockWithAlignment, checklistCheckboxBlock],
+                    { 
+                      name: 'content', 
+                      type: 'array', 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Tip Content',
                       description: 'The tip content to display in the box.',
-                      validation: (rule) => rule.required(),
+                      validation: (rule) => rule.required() 
                     },
                   ],
                 },
@@ -804,16 +784,15 @@ export default defineType({
                   name: 'note_box',
                   title: 'Note Box',
                   icon: () => 'N',
-                  description:
-                    'A highlighted box to display important notes or additional information.',
+                  description: 'A highlighted box to display important notes or additional information.',
                   fields: [
-                    {
-                      name: 'content',
-                      type: 'array',
-                      of: [blockWithAlignment, checklistCheckboxBlock],
+                    { 
+                      name: 'content', 
+                      type: 'array', 
+                      of: [blockWithAlignment, checklistCheckboxBlock], 
                       title: 'Note Content',
                       description: 'The note content to display in the box.',
-                      validation: (rule) => rule.required(),
+                      validation: (rule) => rule.required() 
                     },
                   ],
                 },

@@ -3,7 +3,7 @@ import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 export default defineType({
   name: 'submodule',
-  title: 'Submodule',
+  title: 'Module',
   type: 'document',
   fields: [
     // Managed by @sanity/document-internationalization (hidden from editors).
@@ -17,21 +17,21 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: 'Note: submodule terminology is only for the backend. In the frontend they are called sections.',
+      description: 'The name of this module within its parent course.',
       validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'description',
       title: 'Description',
       type: 'text',
-      description: 'A brief summary of what this submodule covers. Helps users understand the content before starting.',
+      description: 'A brief summary of what this module covers. Helps users understand the content before starting.',
     }),
     defineField({
       name: 'module',
-      title: 'Module',
+      title: 'Course',
       type: 'reference',
       to: [{type: 'module'}],
-      description: 'Select the parent module that this submodule belongs to. Submodules are organized under modules. You can search for it here.',
+      description: 'Select the course that this module belongs to.',
       validation: (rule) => rule.required(),
     }),
 
@@ -40,7 +40,7 @@ export default defineType({
       name: 'intro_pages',
       title: 'Intro Pages',
       type: 'array',
-      description: 'Introduction pages shown before the lessons in this submodule. Use these to provide context, overview, or prerequisites. They will be the first ones the be shown in the section.',
+      description: 'Introduction pages shown before this module\'s lessons. Use these to provide context, an overview, or prerequisites.',
       of: [
         defineField({
           name: 'intro_page',
@@ -162,7 +162,7 @@ export default defineType({
       name: 'order',
       title: 'Display Order',
       type: 'number',
-      description: 'The order in which this submodule appears within its parent module. Lower numbers appear first. Note: always start from 1 and increment by 1 for different submodules (you will have to track this yourself for every submodules in a module)',
+      description: 'The order of this module within its course. Start at 1 and increase by 1. Lower numbers appear first.',
       initialValue: 0,
     }),
   ],
