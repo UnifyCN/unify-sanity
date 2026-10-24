@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import {provinceField} from './fields/province'
 
 // Personas: must match Supabase / frontend persona slugs exactly (6 options)
 export const CHECKLIST_PERSONA_OPTIONS = [
@@ -47,6 +48,7 @@ export default defineType({
       readOnly: true,
       hidden: true,
     }),
+    provinceField,
     defineField({
       name: 'personas',
       title: 'Personas',
