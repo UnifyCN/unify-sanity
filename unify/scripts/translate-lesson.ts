@@ -21,11 +21,12 @@
  * Optional env overrides:
  *   SCHEMA_ID   (default "_.schemas.default")
  *   SOURCE_ID   (default the "Getting Support" English lesson)
- *   META_ID     (optional; if set, MUST reference SOURCE_ID — else the script errors)
+ *   META_ID     (optional; if set, MUST reference SOURCE_ID - else the script errors)
  *   LANGS       (default "vi,es,hi,ar")
  */
 import {getCliClient} from 'sanity/cli'
 import {createClient} from '@sanity/client'
+import {translatedLessonPages, type ContentRecord} from '../lib/lessonContent'
 
 const SCHEMA_ID = process.env.SCHEMA_ID || '_.schemas.default'
 const SOURCE_ID = process.env.SOURCE_ID || 'e749df70-fad4-479c-afd7-f1318e0c0d23'
@@ -35,6 +36,8 @@ const ALL_LANGS: Record<string, string> = {
   es: 'Spanish',
   hi: 'Hindi',
   ar: 'Arabic',
+  'fr-CA': 'Canadian French',
+  pa: 'Punjabi',
 }
 const TARGETS = (process.env.LANGS || 'vi,es,hi,ar')
   .split(',')
@@ -49,7 +52,9 @@ const STYLE_GUIDE =
   'Translate content for newcomers settling in Canada. Keep organization names, ' +
   'program names, helpline/service names, phone numbers, and URLs exactly as they ' +
   'appear in the source (do not translate or localize them). Use clear, simple, ' +
-  'warm, respectful language a newcomer can easily understand.'
+  'warm, respectful language a newcomer can easily understand. Keep page and block ' +
+  'keys, array order, type names, asset references, URLs, numbers, and correct-answer ' +
+  'booleans unchanged. Translate text in every lesson section. Do not add or remove sections.'
 
 const bare = (id: string) => id.replace(/^drafts\./, '')
 
@@ -93,9 +98,27 @@ async function main() {
   const source = await client.getDocument(SOURCE_ID)
   if (!source) throw new Error(`Source lesson ${SOURCE_ID} not found`)
   const sourceSlug: string | undefined = (source as any).slug?.current
+  const sourcePages = source.pages as ContentRecord[] | undefined
   console.log(
     `Source title: "${(source as any).title}"  slug: "${sourceSlug}"  lang: ${(source as any).language}\n`,
   )
+
+  async function prepareDraft(draftId: string) {
+    if (!draftId.startsWith('drafts.')) throw new Error('Refusing to patch a published translation')
+    // Structured sections are authoritative. Build the older reader's content
+    // from the translated sections instead of translating that copy separately.
+    const created = await raw.getDocument(draftId)
+    if (!created) throw new Error(`Translated draft ${draftId} was not readable`)
+    const changes: Record<string, unknown> = {}
+    if (sourcePages?.some((page) => page.contentVersion === 2)) {
+      if (!Array.isArray(created.pages)) throw new Error('Translated pages are missing')
+      changes.pages = translatedLessonPages(sourcePages, created.pages)
+    }
+    if (sourceSlug) changes['slug.current'] = sourceSlug
+    if (Object.keys(changes).length) {
+      await client.patch(draftId).ifRevisionId(created._rev).set(changes).commit()
+    }
+  }
 
   // --- Fix #1: resolve the metadata group FROM the source (never a hardcoded id). ---
   let metaId: string | undefined = process.env.META_ID
@@ -107,7 +130,7 @@ async function main() {
     if (!refCount) {
       throw new Error(
         `META_ID "${metaId}" is not a translation.metadata group that references source ` +
-          `${bareSource} — refusing to write to the wrong lesson's metadata group.`,
+          `${bareSource} - refusing to write to the wrong lesson's metadata group.`,
       )
     }
   } else {
@@ -134,7 +157,9 @@ async function main() {
     if (id === 'en') continue
     const title = ALL_LANGS[id]
     if (!title) {
-      console.warn(`! Skipping unknown language "${id}" (not in ${Object.keys(ALL_LANGS).join(',')})`)
+      console.warn(
+        `! Skipping unknown language "${id}" (not in ${Object.keys(ALL_LANGS).join(',')})`,
+      )
       continue
     }
 
@@ -146,7 +171,7 @@ async function main() {
     // to (keeps pre-existing translations, incl. legacy random-id drafts).
     const linked = existingRef(id)
     if (linked) {
-      console.log(`= ${id} (${title}): already linked in metadata (${linked}) — preserving`)
+      console.log(`= ${id} (${title}): already linked in metadata (${linked}) - preserving`)
       processed.set(id, bare(linked))
       continue
     }
@@ -158,7 +183,9 @@ async function main() {
       pub: targetBaseId,
     })
     if (exists) {
-      console.log(`= ${id} (${title}): draft ${targetDraftId} already exists — skipping translate`)
+      // A prior run may have stopped after creation but before validation/sync.
+      if (await raw.getDocument(targetDraftId)) await prepareDraft(targetDraftId)
+      console.log(`= ${id} (${title}): draft ${targetDraftId} already exists - skipping translate`)
       processed.set(id, targetBaseId)
       continue
     }
@@ -177,19 +204,12 @@ async function main() {
     const newId: string = res?._id || res?.document?._id || targetDraftId
     console.log(`  created draft ${newId}`)
 
-    // Keep the slug identical to English (doc-i18n convention: same slug, differ by language).
-    if (sourceSlug) {
-      const created: any = await client.getDocument(newId)
-      if (created?.slug?.current && created.slug.current !== sourceSlug) {
-        await client.patch(newId).set({'slug.current': sourceSlug}).commit({visibility: 'async'})
-        console.log(`  slug normalized "${created.slug.current}" -> "${sourceSlug}"`)
-      }
-    }
+    await prepareDraft(newId)
 
     processed.set(id, bare(newId))
   }
 
-  // --- Fix #3: additive metadata merge — never wipe languages not in this run. ---
+  // --- Fix #3: additive metadata merge - never wipe languages not in this run. ---
   const mergedByKey = new Map<string, TranslationRef>(
     existingTranslations.filter((t) => t?._key).map((t) => [t._key, t]),
   )
@@ -199,7 +219,7 @@ async function main() {
   const translations = [...mergedByKey.values()]
 
   if (!metaId) {
-    // No group existed (common for the rollout) — create one; the deterministic id
+    // No group existed (common for the rollout) - create one; the deterministic id
     // keeps re-runs idempotent (references($src) will then find it).
     metaId = `i18n-${bareSource}`
     await client.createIfNotExists({

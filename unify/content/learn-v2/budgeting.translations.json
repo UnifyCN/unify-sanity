@@ -1,0 +1,3371 @@
+{
+  "reviewedBatchSha256": "3d6e560bdb5433f997dc2c89ec02d021cef811a9474b014ff2dbc8ced47bd1d2",
+  "documents": [
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-ar",
+      "language": "ar",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "قسمة $1,200 على أربعة أشهر تساوي $300 شهريًا.",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$100"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$300"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$1,200"
+                }
+              ],
+              "question": "تريد ادخار 1,200 دولار خلال أربعة أشهر. ما المبلغ المستهدف ادخاره شهريًا؟"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "على سبيل المثال، يتطلب هدف شراء حاسوب محمول بقيمة $1,200 خلال أربعة أشهر ادخار $300 شهريًا. تحقّق مما إذا كان بإمكانك ادخار $300 بعد دفع النفقات الأساسية. إذا لم يكن ذلك ممكنًا، فعدّل المبلغ أو الموعد النهائي."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "يحدد هدف الادخار المفيد مبلغًا وموعدًا نهائيًا. اقسم المبلغ على عدد الأشهر لمعرفة المبلغ المستهدف ادخاره شهريًا."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "استخدم المبلغ الصافي المتاح للإنفاق. وأدرج أي دخل آخر تتوقع الحصول عليه."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل ينبغي أن أستخدم راتبي قبل الضريبة أم بعدها؟"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "غيّر المبلغ المستهدف أو الموعد النهائي أو النفقات التي يمكنك تقليلها. وأبقِ النفقات الأساسية ضمن الخطة."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ماذا لو كانت ميزانيتي لا تكفي لتحقيق هدفي؟"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "إعداد ميزانية",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "تحديد أهدافك المالية",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-es",
+      "language": "es",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$1,200 divididos entre cuatro meses son $300 al mes.",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$100"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$300"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$1,200"
+                }
+              ],
+              "question": "Quieres ahorrar $1,200 en cuatro meses. ¿Cuál es la meta de ahorro mensual?"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Por ejemplo, para alcanzar la meta de comprar una computadora portátil de $1,200 en cuatro meses, necesita ahorrar $300 al mes. Compruebe si puede apartar $300 después de cubrir los gastos esenciales. Si no puede, ajuste el monto o la fecha límite."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Un objetivo de ahorro útil indica una cantidad y una fecha límite. Divide la cantidad entre el número de meses para calcular cuánto debes ahorrar al mes."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Usa el importe neto que tienes disponible para gastar. Incluye otros ingresos que esperas recibir."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Debo usar mi salario antes o después de impuestos?"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Cambia la cantidad objetivo, la fecha límite o los gastos que puedes reducir. Mantén los gastos esenciales en el plan."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Qué pasa si mi objetivo no se ajusta a mi presupuesto?"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Cómo hacer un presupuesto",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "Cómo establecer tus metas financieras",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-fr-CA",
+      "language": "fr-CA",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "1 200 $ divisés par quatre mois donnent 300 $ par mois.",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "100 $"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "300 $"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "1 200 $"
+                }
+              ],
+              "question": "Vous voulez économiser 1 200 $ en quatre mois. Quel est votre objectif d’épargne mensuel?"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Par exemple, pour atteindre un objectif de 1 200 $ pour un ordinateur portable en quatre mois, vous devez épargner 300 $ par mois. Vérifiez si vous pouvez mettre de côté 300 $ après avoir payé vos dépenses essentielles. Sinon, modifiez le montant ou l’échéance."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Un bon objectif d’épargne précise un montant et une échéance. Divisez le montant par le nombre de mois pour déterminer la somme à épargner chaque mois."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Utilisez le montant net dont vous disposez pour vos dépenses. Incluez les autres revenus que vous prévoyez recevoir."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Dois-je utiliser mon salaire avant ou après impôt?"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Modifiez le montant cible, la date limite ou les dépenses que vous pouvez réduire. Conservez les dépenses essentielles dans le plan."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Que faire si mon objectif ne respecte pas mon budget?"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Établir un budget",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "Définir vos objectifs financiers",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-hi",
+      "language": "hi",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$1,200 को चार महीनों से भाग देने पर $300 प्रति माह होता है।",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$100"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$300"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$1,200"
+                }
+              ],
+              "question": "आप चार महीनों में $1,200 बचाना चाहते हैं। हर महीने कितनी बचत करने का लक्ष्य होना चाहिए?"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "उदाहरण के लिए, चार महीनों में $1,200 का लैपटॉप खरीदने का लक्ष्य पूरा करने के लिए हर महीने $300 बचाने होंगे। देखें कि जरूरी खर्चों के बाद $300 बचाना संभव है या नहीं। अगर नहीं, तो लक्ष्य राशि या समय-सीमा में बदलाव करें।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "बचत का एक उपयोगी लक्ष्य तय करते समय राशि और समय-सीमा निर्धारित की जाती है। मासिक लक्ष्य जानने के लिए राशि को महीनों की संख्या से भाग दें।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "खर्च करने के लिए उपलब्ध, कटौतियों के बाद मिलने वाली राशि का उपयोग करें। इसमें वह अन्य आय भी शामिल करें जो आपको मिलने की उम्मीद है।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या मुझे कर कटने से पहले या बाद की आय का उपयोग करना चाहिए?"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "लक्ष्य राशि, समय-सीमा या उन खर्चों को बदलें जिन्हें आप कम कर सकते हैं। ज़रूरी खर्चों को योजना में बनाए रखें।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "अगर मेरा लक्ष्य मेरे बजट में पूरा न हो सके, तो क्या करूँ?"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "बजट बनाना",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "अपने वित्तीय लक्ष्य तय करना",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-pa",
+      "language": "pa",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$1,200 ਨੂੰ ਚਾਰ ਮਹੀਨਿਆਂ ਨਾਲ ਵੰਡਣ 'ਤੇ $300 ਪ੍ਰਤੀ ਮਹੀਨਾ ਬਣਦਾ ਹੈ।",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$100"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$300"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$1,200"
+                }
+              ],
+              "question": "ਤੁਸੀਂ ਚਾਰ ਮਹੀਨਿਆਂ ਵਿੱਚ $1,200 ਬਚਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਹਰ ਮਹੀਨੇ ਕਿੰਨੀ ਰਕਮ ਬਚਾਉਣ ਦਾ ਟੀਚਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ?"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਉਦਾਹਰਨ ਲਈ, ਚਾਰ ਮਹੀਨਿਆਂ ਵਿੱਚ $1,200 ਦਾ ਲੈਪਟਾਪ ਖਰੀਦਣ ਦਾ ਟੀਚਾ ਪੂਰਾ ਕਰਨ ਲਈ ਹਰ ਮਹੀਨੇ $300 ਦੀ ਲੋੜ ਹੈ। ਜਾਂਚ ਕਰੋ ਕਿ ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਤੋਂ ਬਾਅਦ $300 ਤੁਹਾਡੇ ਬਜਟ ਵਿੱਚ ਫਿੱਟ ਹੁੰਦੇ ਹਨ ਜਾਂ ਨਹੀਂ। ਜੇ ਨਹੀਂ, ਤਾਂ ਰਕਮ ਜਾਂ ਸਮਾਂ-ਸੀਮਾ ਵਿੱਚ ਤਬਦੀਲੀ ਕਰੋ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਇੱਕ ਲਾਭਦਾਇਕ ਬੱਚਤ ਟੀਚੇ ਵਿੱਚ ਰਕਮ ਅਤੇ ਆਖਰੀ ਮਿਤੀ ਦੱਸੀ ਹੁੰਦੀ ਹੈ। ਮਹੀਨਾਵਾਰ ਟੀਚਾ ਪਤਾ ਕਰਨ ਲਈ ਰਕਮ ਨੂੰ ਮਹੀਨਿਆਂ ਦੀ ਗਿਣਤੀ ਨਾਲ ਵੰਡੋ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਖਰਚ ਕਰਨ ਲਈ ਉਪਲਬਧ ਘਰ ਲਿਜਾਣ ਵਾਲੀ ਰਕਮ ਵਰਤੋ। ਹੋਰ ਆਮਦਨ ਵੀ ਸ਼ਾਮਲ ਕਰੋ ਜੋ ਤੁਹਾਨੂੰ ਮਿਲਣ ਦੀ ਉਮੀਦ ਹੈ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਮੈਨੂੰ ਟੈਕਸ ਤੋਂ ਪਹਿਲਾਂ ਵਾਲੀ ਤਨਖਾਹ ਵਰਤਣੀ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਟੈਕਸ ਤੋਂ ਬਾਅਦ ਵਾਲੀ?"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਟੀਚੇ ਦੀ ਰਕਮ, ਸਮਾਂ-ਸੀਮਾ, ਜਾਂ ਉਹ ਖਰਚੇ ਬਦਲੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ ਘਟਾ ਸਕਦੇ ਹੋ। ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਨੂੰ ਯੋਜਨਾ ਵਿੱਚ ਰੱਖੋ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਜੇ ਮੇਰਾ ਟੀਚਾ ਮੇਰੇ ਬਜਟ ਵਿੱਚ ਪੂਰਾ ਨਾ ਹੋ ਸਕੇ ਤਾਂ ਕੀ ਕਰਾਂ?"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਬਜਟ ਬਣਾਉਣਾ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "ਆਪਣੇ ਵਿੱਤੀ ਟੀਚੇ ਨਿਰਧਾਰਤ ਕਰਨਾ",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168-vi",
+      "language": "vi",
+      "sourceId": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "pages": [
+        {
+          "_key": "fa27bde83d82",
+          "additions": [
+            {
+              "_key": "fa27bde83d82-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$1,200 chia cho bốn tháng bằng $300 mỗi tháng.",
+              "options": [
+                {
+                  "_key": "fa27bde83d82-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$100"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$300"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$1,200"
+                }
+              ],
+              "question": "Bạn muốn tiết kiệm $1,200 trong bốn tháng. Mục tiêu tiết kiệm mỗi tháng là bao nhiêu?"
+            },
+            {
+              "_key": "fa27bde83d82-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "fa27bde83d82-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ví dụ, để đạt mục tiêu mua một chiếc máy tính xách tay trị giá $1,200 trong bốn tháng, bạn cần tiết kiệm $300 mỗi tháng. Hãy kiểm tra xem bạn có thể dành ra $300 sau khi chi trả các khoản thiết yếu hay không. Nếu không, hãy điều chỉnh số tiền hoặc thời hạn."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "fa27bde83d82-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "fa27bde83d82-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Một mục tiêu tiết kiệm thiết thực cần nêu rõ số tiền và thời hạn. Hãy chia số tiền đó cho số tháng để xác định mục tiêu tiết kiệm hằng tháng."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "fa27bde83d82-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Hãy dùng số tiền thực nhận mà bạn có thể chi tiêu. Tính cả các khoản thu nhập khác mà bạn dự kiến sẽ nhận được."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Tôi nên dùng thu nhập trước hay sau thuế?"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "fa27bde83d82-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "fa27bde83d82-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Hãy thay đổi số tiền mục tiêu, thời hạn hoặc các khoản chi tiêu mà bạn có thể cắt giảm. Vẫn giữ các khoản chi thiết yếu trong kế hoạch."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Nếu mục tiêu của tôi không phù hợp với ngân sách thì sao?"
+                }
+              ]
+            },
+            {
+              "_key": "fa27bde83d82-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "fa27bde83d82-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Lập ngân sách",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                },
+                {
+                  "_key": "fa27bde83d82-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Office of the Superintendent of Bankruptcy Canada",
+                  "title": "Đặt mục tiêu tài chính của bạn",
+                  "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/setting-your-financial-goals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-ar",
+      "language": "ar",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "تعكس الميزانية المفيدة التكاليف الفعلية. فالنسب المئوية المقترحة لا تغيّر قيمة الفواتير التي يجب عليك دفعها.",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "تجاهل جزءًا من الإيجار"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "عدّل الخطة وفقًا للتكاليف الفعلية"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "توقّف عن تسجيل النفقات"
+                }
+              ],
+              "question": "تتجاوز تكاليفك الأساسية النسبة المئوية المقترحة في الميزانية. ماذا ينبغي أن تفعل؟"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "على سبيل المثال، إذا كان الإيجار يستهلك أكثر من نصف راتبك الصافي، فقد لا تناسبك قاعدة النسبة المئوية الثابتة. ابدأ بالتكاليف الأساسية الفعلية، ثم حدّد مبالغ واقعية للادخار والإنفاق الاختياري."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "تساعدك فئات الميزانية على معرفة أوجه إنفاق المال. والنسبة المئوية المقترحة هي نقطة بداية وليست شرطًا."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "لا. اختر طريقة يمكنك الاستمرار في اتباعها، وراجعها بمقارنتها بإنفاقك الفعلي."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل يجب أن أستخدم الطريقة نفسها التي يستخدمها شخص آخر؟"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "لا، فالظروف تختلف. حدّد ما هو ضروري في وضعك قبل أن تقرر ما الذي ستقلّله."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل الاحتياجات والرغبات متشابهة لدى الجميع؟"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "إعداد ميزانية",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-es",
+      "language": "es",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "Un presupuesto útil refleja los costos reales. Los porcentajes sugeridos no cambian las facturas que debe pagar.",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Ignorar parte del alquiler"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "Ajustar el plan a los costos reales"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Dejar de registrar los gastos"
+                }
+              ],
+              "question": "Tus gastos esenciales superan el porcentaje recomendado del presupuesto. ¿Qué deberías hacer?"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Por ejemplo, si el alquiler representa más de la mitad de tu sueldo neto, puede que una regla de porcentajes fijos no sea adecuada. Empieza por calcular tus gastos esenciales reales y, después, elige cantidades realistas para el ahorro y los gastos opcionales."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Las categorías del presupuesto te ayudan a ver en qué gastas el dinero. Un porcentaje sugerido es un punto de partida, no un requisito."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "No. Elige un método que puedas mantener y compáralo con tus gastos reales."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Debo usar el mismo método que otra persona?"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "No. Las circunstancias varían. Identifica qué es esencial en tu situación antes de decidir qué reducir."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Las necesidades y los deseos son iguales para todos?"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Cómo hacer un presupuesto",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-fr-CA",
+      "language": "fr-CA",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "Un budget utile tient compte des coûts réels. Les pourcentages suggérés ne changent pas les factures que vous devez payer.",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Ne pas tenir compte d’une partie du loyer"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "Ajuster le plan en fonction des coûts réels"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Cesser de consigner les dépenses"
+                }
+              ],
+              "question": "Vos dépenses essentielles dépassent le pourcentage recommandé de votre budget. Que devriez-vous faire?"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Par exemple, si le loyer représente plus de la moitié de votre salaire net, une règle fondée sur un pourcentage fixe pourrait ne pas convenir. Commencez par calculer vos dépenses essentielles réelles, puis choisissez des montants réalistes pour l’épargne et les dépenses facultatives."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Les catégories budgétaires vous aident à voir où va votre argent. Un pourcentage suggéré est un point de départ, et non une exigence."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Non. Choisissez une méthode que vous pouvez maintenir et comparez-la à vos dépenses réelles."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Dois-je utiliser la même méthode que quelqu’un d’autre?"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Non. Les circonstances varient. Déterminez ce qui est essentiel dans votre situation avant de choisir ce que vous pouvez réduire."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Les besoins et les désirs sont-ils les mêmes pour tout le monde?"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Établir un budget",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-hi",
+      "language": "hi",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "एक उपयोगी बजट वास्तविक खर्चों को दर्शाता है। सुझाए गए प्रतिशत उन बिलों की राशि नहीं बदलते जिन्हें आपको चुकाना है।",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "किराए के एक हिस्से को नज़रअंदाज़ करें"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "योजना को वास्तविक लागत के अनुसार समायोजित करें"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "खर्चों का रिकॉर्ड रखना बंद करें"
+                }
+              ],
+              "question": "आपके ज़रूरी खर्च सुझाए गए बजट प्रतिशत से ज़्यादा हैं। आपको क्या करना चाहिए?"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "उदाहरण के लिए, अगर किराया आपके हाथ में आने वाले वेतन के आधे से ज़्यादा है, तो तय प्रतिशत वाला नियम आपके लिए सही नहीं हो सकता। पहले वास्तविक ज़रूरी खर्चों का हिसाब लगाएँ, फिर बचत और वैकल्पिक खर्चों के लिए व्यावहारिक रकम तय करें।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "बजट की श्रेणियाँ आपको यह समझने में मदद करती हैं कि पैसा कहाँ खर्च होता है। सुझाया गया प्रतिशत केवल एक शुरुआती बिंदु है, कोई अनिवार्य नियम नहीं।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "नहीं। ऐसा तरीका चुनें जिसे आप लगातार अपना सकें और अपने वास्तविक खर्च से उसकी तुलना करके समीक्षा करें।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या मुझे किसी और के जैसा ही तरीका अपनाना ज़रूरी है?"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "नहीं। परिस्थितियाँ अलग-अलग होती हैं। क्या कम करना है, यह चुनने से पहले पहचानें कि आपकी स्थिति में क्या आवश्यक है।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या सभी लोगों की ज़रूरतें और इच्छाएँ एक जैसी होती हैं?"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "बजट बनाना",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-pa",
+      "language": "pa",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "ਇੱਕ ਲਾਭਦਾਇਕ ਬਜਟ ਅਸਲ ਖਰਚਿਆਂ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ। ਸੁਝਾਏ ਗਏ ਪ੍ਰਤੀਸ਼ਤ ਉਹਨਾਂ ਬਿੱਲਾਂ ਨੂੰ ਨਹੀਂ ਬਦਲਦੇ ਜੋ ਤੁਹਾਨੂੰ ਅਦਾ ਕਰਨੇ ਪੈਂਦੇ ਹਨ।",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "ਕਿਰਾਏ ਦੇ ਕੁਝ ਹਿੱਸੇ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰੋ"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "ਯੋਜਨਾ ਨੂੰ ਅਸਲ ਲਾਗਤਾਂ ਮੁਤਾਬਕ ਢਾਲੋ"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "ਖਰਚਿਆਂ ਨੂੰ ਦਰਜ ਕਰਨਾ ਬੰਦ ਕਰੋ"
+                }
+              ],
+              "question": "ਤੁਹਾਡੇ ਜ਼ਰੂਰੀ ਖਰਚੇ ਬਜਟ ਲਈ ਸੁਝਾਈ ਗਈ ਪ੍ਰਤੀਸ਼ਤ ਤੋਂ ਵੱਧ ਹਨ। ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਉਦਾਹਰਨ ਲਈ, ਜੇ ਕਿਰਾਇਆ ਤੁਹਾਡੀ ਟੈਕਸ ਕੱਟਣ ਤੋਂ ਬਾਅਦ ਮਿਲਣ ਵਾਲੀ ਤਨਖਾਹ ਦੇ ਅੱਧੇ ਤੋਂ ਵੱਧ ਹਿੱਸੇ ਵਿੱਚ ਚਲਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਨਿਸ਼ਚਿਤ ਪ੍ਰਤੀਸ਼ਤ ਵਾਲਾ ਨਿਯਮ ਸ਼ਾਇਦ ਢੁਕਵਾਂ ਨਾ ਹੋਵੇ। ਪਹਿਲਾਂ ਅਸਲ ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ, ਫਿਰ ਬੱਚਤ ਅਤੇ ਗੈਰ-ਜ਼ਰੂਰੀ ਖਰਚਿਆਂ ਲਈ ਹਕੀਕਤ ਅਨੁਸਾਰ ਰਕਮਾਂ ਚੁਣੋ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਬਜਟ ਦੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਤੁਹਾਨੂੰ ਇਹ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀਆਂ ਹਨ ਕਿ ਪੈਸਾ ਕਿੱਥੇ ਖਰਚ ਹੁੰਦਾ ਹੈ। ਸੁਝਾਈ ਗਈ ਪ੍ਰਤੀਸ਼ਤ ਦਰ ਸਿਰਫ਼ ਇੱਕ ਸ਼ੁਰੂਆਤੀ ਬਿੰਦੂ ਹੈ, ਕੋਈ ਲਾਜ਼ਮੀ ਨਿਯਮ ਨਹੀਂ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਨਹੀਂ। ਅਜਿਹਾ ਤਰੀਕਾ ਚੁਣੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਲਗਾਤਾਰ ਅਪਣਾ ਸਕੋ ਅਤੇ ਆਪਣੇ ਅਸਲ ਖਰਚਿਆਂ ਨਾਲ ਉਸ ਦੀ ਤੁਲਨਾ ਕਰਕੇ ਸਮੀਖਿਆ ਕਰੋ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਮੈਨੂੰ ਕਿਸੇ ਹੋਰ ਵਿਅਕਤੀ ਵਾਲਾ ਹੀ ਤਰੀਕਾ ਵਰਤਣਾ ਪਵੇਗਾ?"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਨਹੀਂ। ਹਾਲਾਤ ਵੱਖੋ-ਵੱਖਰੇ ਹੁੰਦੇ ਹਨ। ਕੀ ਘਟਾਉਣਾ ਹੈ, ਇਹ ਚੁਣਨ ਤੋਂ ਪਹਿਲਾਂ ਪਛਾਣੋ ਕਿ ਤੁਹਾਡੀ ਸਥਿਤੀ ਵਿੱਚ ਕੀ ਜ਼ਰੂਰੀ ਹੈ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਹਰ ਕਿਸੇ ਦੀਆਂ ਲੋੜਾਂ ਅਤੇ ਇੱਛਾਵਾਂ ਇੱਕੋ ਜਿਹੀਆਂ ਹੁੰਦੀਆਂ ਹਨ?"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਬਜਟ ਬਣਾਉਣਾ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce-vi",
+      "language": "vi",
+      "sourceId": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "pages": [
+        {
+          "_key": "f6b529cd8655",
+          "additions": [
+            {
+              "_key": "f6b529cd8655-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "Một ngân sách hữu ích phải phản ánh các chi phí thực tế. Các tỷ lệ phần trăm được đề xuất không làm thay đổi những hóa đơn bạn phải thanh toán.",
+              "options": [
+                {
+                  "_key": "f6b529cd8655-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Không trả một phần tiền thuê nhà"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "Điều chỉnh kế hoạch theo chi phí thực tế"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Ngừng ghi chép chi phí"
+                }
+              ],
+              "question": "Các chi phí thiết yếu của bạn vượt quá tỷ lệ ngân sách được đề xuất. Bạn nên làm gì?"
+            },
+            {
+              "_key": "f6b529cd8655-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "f6b529cd8655-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ví dụ, nếu tiền thuê nhà chiếm hơn một nửa thu nhập thực nhận của bạn, quy tắc phân bổ theo tỷ lệ phần trăm cố định có thể không phù hợp. Hãy bắt đầu với các chi phí thiết yếu thực tế, sau đó chọn mức hợp lý cho khoản tiết kiệm và chi tiêu không thiết yếu."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "f6b529cd8655-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f6b529cd8655-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Các hạng mục ngân sách giúp bạn biết tiền được chi vào đâu. Tỷ lệ phần trăm được đề xuất chỉ là điểm khởi đầu, không phải yêu cầu bắt buộc."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "f6b529cd8655-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Không. Hãy chọn một phương pháp mà bạn có thể duy trì và đối chiếu phương pháp đó với chi tiêu thực tế của mình."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Tôi có bắt buộc phải sử dụng cùng phương pháp với người khác không?"
+                },
+                {
+                  "_key": "f6b529cd8655-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "f6b529cd8655-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "f6b529cd8655-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Không. Hoàn cảnh của mỗi người là khác nhau. Hãy xác định điều gì là thiết yếu trong tình huống của bạn trước khi quyết định cắt giảm khoản nào."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Nhu cầu và mong muốn có giống nhau đối với tất cả mọi người không?"
+                }
+              ]
+            },
+            {
+              "_key": "f6b529cd8655-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "f6b529cd8655-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Lập ngân sách",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-ar",
+      "language": "ar",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "تبدأ السنة الثانية بمبلغ 1,050 دولارًا، ويشمل ذلك فائدة السنة الأولى.",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "أول 1,000 دولار فقط"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "الرصيد البالغ 1,050 دولارًا"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "الفائدة فقط، وقدرها 50 دولارًا"
+                }
+              ],
+              "question": "في المثال، ما المبلغ الذي تُحتسب عليه الفائدة في السنة الثانية؟"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "على سبيل المثال، يصبح مبلغ $1,000 الذي يحقق عائدًا سنويًا بنسبة 5% مبلغ $1,050 بعد سنة واحدة، و$1,102.50 بعد سنتين إذا بقيت الفائدة في الحساب. يفترض هذا المثال ثبات معدل الفائدة، واحتساب الفائدة المركبة سنويًا، وعدم وجود رسوم أو عمليات سحب."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "تُضاف الفائدة المركبة إلى الرصيد، بحيث يمكن حساب الفائدة لاحقًا على مبلغ أكبر."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "لا. ابدأ بمبلغ يمكنك تحمّله، ثم زِده بمرور الوقت."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل أحتاج إلى صندوق طوارئ مكتمل قبل أن أبدأ؟"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "لا. استمر في سداد الحد الأدنى المطلوب لجميع الديون. ويمكن أن تساعد الدفعات الإضافية لسداد دين ذي فائدة أعلى في خفض تكاليف الفائدة."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل يمكنني التوقف عن سداد الحد الأدنى للدفعات على الديون الأخرى بينما أسدد أحدها بالكامل؟"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "إنشاء صندوق للطوارئ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "حسابات التوفير",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "سداد ديونك",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-es",
+      "language": "es",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "El segundo año comienza con $1,050, incluidos los intereses del primer año.",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Solo los primeros $1,000"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "El saldo de $1,050"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Solo los $50 de intereses"
+                }
+              ],
+              "question": "En el ejemplo, ¿qué cantidad genera intereses en el segundo año?"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Por ejemplo, $1,000 que generan un 5% anual se convierten en $1,050 después de un año y en $1,102.50 después de dos años si los intereses permanecen en la cuenta. Este ejemplo supone una tasa constante, capitalización anual, ausencia de comisiones y ningún retiro."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "El interés compuesto suma los intereses al saldo, de modo que los intereses posteriores puedan calcularse sobre una cantidad mayor."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "No. Empieza con una cantidad que puedas permitirte y auméntala con el tiempo."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Necesito tener un fondo de emergencia completo antes de empezar?"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "No. Continúe haciendo los pagos mínimos requeridos de todas sus deudas. Hacer pagos adicionales para una deuda con una tasa de interés más alta puede reducir los costos por intereses."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Puedo dejar de hacer los pagos mínimos de otras deudas mientras termino de pagar una?"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Cómo crear un fondo de emergencia",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Cuentas de ahorro",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Pagar tu deuda",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-fr-CA",
+      "language": "fr-CA",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "La deuxième année commence avec 1 050 $, ce qui comprend les intérêts de la première année.",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Seulement les premiers 1 000 $"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "Le solde de 1 050 $"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Seulement les 50 $ d’intérêts"
+                }
+              ],
+              "question": "Dans l’exemple, quel montant rapporte des intérêts au cours de la deuxième année?"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Par exemple, un montant de 1 000 $ qui rapporte 5 % par année passe à 1 050 $ après un an, puis à 1 102,50 $ après deux ans si les intérêts restent dans le compte. Cet exemple suppose un taux constant, une capitalisation annuelle, aucuns frais et aucun retrait."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Les intérêts composés s’ajoutent au solde, de sorte que les intérêts suivants sont calculés sur un montant plus élevé."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Non. Commencez par un montant qui respecte votre budget, puis augmentez-le au fil du temps."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Ai-je besoin d’un fonds d’urgence complet avant de commencer?"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Non. Continuez à effectuer les paiements minimums requis sur toutes vos dettes. Faire des paiements supplémentaires sur une dette dont le taux d’intérêt est plus élevé peut réduire les frais d’intérêt."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Puis-je cesser de faire les paiements minimums sur mes autres dettes pendant que j’en rembourse une?"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Constituer un fonds d’urgence",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Comptes d’épargne",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Rembourser vos dettes",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-hi",
+      "language": "hi",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "दूसरे वर्ष की शुरुआत $1,050 से होती है, जिसमें पहले वर्ष का ब्याज शामिल है।",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "केवल पहले $1,000"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,050 की शेष राशि"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "केवल $50 का ब्याज"
+                }
+              ],
+              "question": "उदाहरण में, दूसरे वर्ष में किस राशि पर ब्याज मिलता है?"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "उदाहरण के लिए, सालाना 5% कमाने वाले $1,000 एक साल बाद $1,050 और दो साल बाद $1,102.50 हो जाते हैं, बशर्ते ब्याज खाते में ही रहे। इस उदाहरण में यह माना गया है कि ब्याज दर स्थिर है, ब्याज सालाना चक्रवृद्धि होता है, कोई शुल्क नहीं लगता और कोई निकासी नहीं की जाती।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "चक्रवृद्धि ब्याज में ब्याज को मूल शेष राशि में जोड़ दिया जाता है, ताकि आगे का ब्याज बड़ी राशि पर निकाला जा सके।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "नहीं। जितनी राशि आप बचा सकते हैं, उससे शुरुआत करें और समय के साथ इसे बढ़ाएँ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या मुझे शुरू करने से पहले पूरा आपातकालीन फंड तैयार करना ज़रूरी है?"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "नहीं। सभी कर्ज़ों पर आवश्यक न्यूनतम भुगतान जारी रखें। अधिक ब्याज वाले कर्ज़ पर अतिरिक्त भुगतान करने से ब्याज की लागत कम हो सकती है।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या मैं एक कर्ज़ चुकाते समय दूसरे कर्ज़ों की न्यूनतम किस्तें देना बंद कर सकता हूँ?"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "आपातकालीन निधि बनाना",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "बचत खाते",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "अपना कर्ज़ चुकाना",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-pa",
+      "language": "pa",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "ਦੂਜਾ ਸਾਲ $1,050 ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਪਹਿਲੇ ਸਾਲ ਦਾ ਵਿਆਜ ਵੀ ਸ਼ਾਮਲ ਹੈ।",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "ਸਿਰਫ਼ ਪਹਿਲੇ $1,000"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,050 ਦਾ ਬਕਾਇਆ"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "ਸਿਰਫ਼ $50 ਦਾ ਵਿਆਜ"
+                }
+              ],
+              "question": "ਉਦਾਹਰਨ ਵਿੱਚ, ਦੂਜੇ ਸਾਲ ਕਿਹੜੀ ਰਕਮ 'ਤੇ ਵਿਆਜ ਮਿਲਦਾ ਹੈ?"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਉਦਾਹਰਨ ਲਈ, ਜੇ $1,000 ਉੱਤੇ ਸਾਲਾਨਾ 5% ਵਿਆਜ ਮਿਲਦਾ ਹੈ ਅਤੇ ਵਿਆਜ ਖਾਤੇ ਵਿੱਚ ਹੀ ਰਹਿੰਦਾ ਹੈ, ਤਾਂ ਇਹ ਇੱਕ ਸਾਲ ਬਾਅਦ $1,050 ਅਤੇ ਦੋ ਸਾਲਾਂ ਬਾਅਦ $1,102.50 ਹੋ ਜਾਂਦਾ ਹੈ। ਇਸ ਉਦਾਹਰਨ ਵਿੱਚ ਇਹ ਮੰਨਿਆ ਗਿਆ ਹੈ ਕਿ ਵਿਆਜ ਦਰ ਸਥਿਰ ਰਹਿੰਦੀ ਹੈ, ਵਿਆਜ ਸਾਲਾਨਾ ਚੱਕਰਵਰਧੀ ਹੁੰਦਾ ਹੈ, ਕੋਈ ਫੀਸ ਨਹੀਂ ਲੱਗਦੀ ਅਤੇ ਕੋਈ ਰਕਮ ਨਹੀਂ ਕਢਵਾਈ ਜਾਂਦੀ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਚੱਕਰਵਰਤੀ ਵਿਆਜ ਬਕਾਇਆ ਰਕਮ ਵਿੱਚ ਵਿਆਜ ਜੋੜਦਾ ਹੈ, ਤਾਂ ਜੋ ਬਾਅਦ ਦਾ ਵਿਆਜ ਵੱਡੀ ਰਕਮ ਉੱਤੇ ਗਿਣਿਆ ਜਾ ਸਕੇ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਨਹੀਂ। ਉਸ ਰਕਮ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ ਜੋ ਤੁਸੀਂ ਆਸਾਨੀ ਨਾਲ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸਮੇਂ ਦੇ ਨਾਲ ਇਸ ਨੂੰ ਵਧਾਓ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਮੈਨੂੰ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਪੂਰਾ ਐਮਰਜੈਂਸੀ ਫੰਡ ਚਾਹੀਦਾ ਹੈ?"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਨਹੀਂ। ਸਾਰੇ ਕਰਜ਼ਿਆਂ ਲਈ ਲੋੜੀਂਦੇ ਘੱਟੋ-ਘੱਟ ਭੁਗਤਾਨ ਕਰਦੇ ਰਹੋ। ਵੱਧ ਵਿਆਜ ਦਰ ਵਾਲੇ ਕਰਜ਼ੇ ਲਈ ਵਾਧੂ ਭੁਗਤਾਨ ਕਰਨ ਨਾਲ ਵਿਆਜ ਦੀ ਲਾਗਤ ਘਟ ਸਕਦੀ ਹੈ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਮੈਂ ਇੱਕ ਕਰਜ਼ਾ ਚੁਕਾਉਂਦੇ ਸਮੇਂ ਹੋਰ ਕਰਜ਼ਿਆਂ ਦੀਆਂ ਘੱਟੋ-ਘੱਟ ਕਿਸ਼ਤਾਂ ਦੇਣੀਆਂ ਬੰਦ ਕਰ ਸਕਦਾ/ਸਕਦੀ ਹਾਂ?"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਐਮਰਜੈਂਸੀ ਫੰਡ ਬਣਾਉਣਾ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਬੱਚਤ ਖਾਤੇ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਆਪਣਾ ਕਰਜ਼ਾ ਵਾਪਸ ਕਰਨਾ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec-vi",
+      "language": "vi",
+      "sourceId": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "pages": [
+        {
+          "_key": "06dd09747cd5",
+          "additions": [
+            {
+              "_key": "06dd09747cd5-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "Năm thứ hai bắt đầu với $1,050, bao gồm cả tiền lãi của năm đầu tiên.",
+              "options": [
+                {
+                  "_key": "06dd09747cd5-v2-answer-0",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Chỉ $1.000 đầu tiên"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-1",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "Số dư $1,050"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "Chỉ khoản tiền lãi $50"
+                }
+              ],
+              "question": "Trong ví dụ, khoản tiền nào được tính lãi trong năm thứ hai?"
+            },
+            {
+              "_key": "06dd09747cd5-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "06dd09747cd5-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ví dụ, $1,000 với lãi suất 5% mỗi năm sẽ tăng lên $1,050 sau một năm và $1,102.50 sau hai năm nếu tiền lãi vẫn được giữ trong tài khoản. Ví dụ minh họa này giả định lãi suất không đổi, lãi được nhập gốc hằng năm, không có phí và không rút tiền."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "06dd09747cd5-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "06dd09747cd5-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Lãi kép cộng tiền lãi vào số dư, nhờ đó tiền lãi ở các kỳ sau được tính trên một số tiền lớn hơn."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "06dd09747cd5-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Không. Hãy bắt đầu với số tiền phù hợp với khả năng của bạn và tăng dần theo thời gian."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Tôi có cần chuẩn bị đủ quỹ khẩn cấp trước khi bắt đầu không?"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "06dd09747cd5-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "06dd09747cd5-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Không. Hãy tiếp tục thanh toán khoản tối thiểu bắt buộc cho tất cả các khoản nợ. Việc trả thêm cho khoản nợ có lãi suất cao hơn có thể giúp giảm chi phí lãi vay."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Tôi có thể tạm ngừng trả khoản tối thiểu cho các khoản nợ khác trong khi tập trung trả hết một khoản nợ không?"
+                }
+              ]
+            },
+            {
+              "_key": "06dd09747cd5-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "06dd09747cd5-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Lập quỹ dự phòng khẩn cấp",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/savings-investments/setting-up-emergency-funds.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-1",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Tài khoản tiết kiệm",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+                },
+                {
+                  "_key": "06dd09747cd5-v2-source-2",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Trả nợ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/debt/paying-debt.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-ar",
+      "language": "ar",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "يتبقى $1,200 بعد طرح $1,600 من $2,800. ولا يزال يتعين دفع النفقات الأخرى واقتطاع المدخرات من هذا المبلغ.",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,200"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$2,800"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$4,400"
+                }
+              ],
+              "question": "يبلغ صافي الدخل بعد الاستقطاعات $2,800، وتبلغ النفقات الثابتة $1,600. كم يتبقى قبل احتساب النفقات الأخرى والمدخرات؟"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "على سبيل المثال، يبلغ صافي الدخل بعد الاستقطاعات $2,800. وتبلغ النفقات الثابتة $1,600. ويتبقى بذلك $1,200 للاحتياجات الأخرى والادخار والإنفاق الاختياري. وهذا المبلغ ليس متاحًا بالكامل للترفيه."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "تقارن الميزانية بين الدخل المتاح والمصروفات والمدخرات المخطط لها. راجع الخطة وقارنها بما تنفقه فعليًا."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "لا. قارن الخطة بالإنفاق الفعلي وعدّلها."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "هل الميزانية الأولى نهائية؟"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "راجع الأرقام وحدد التكاليف التي يمكنك خفضها. يجب أن تراعي الخطة جميع النفقات الأساسية."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ماذا لو تجاوزت النفقات الدخل؟"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "إعداد ميزانية",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-es",
+      "language": "es",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "Al restar $1,600 de $2,800, quedan $1,200. De esta cantidad todavía deben salir otros gastos y ahorros.",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,200"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$2,800"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$4,400"
+                }
+              ],
+              "question": "Los ingresos netos son de $2,800 y los gastos fijos son de $1,600. ¿Cuánto queda antes de otros gastos y ahorros?"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Por ejemplo, los ingresos netos son de $2,800. Los gastos fijos son de $1,600. Eso deja $1,200 para otras necesidades, ahorros y gastos opcionales. No todo ese dinero está disponible para entretenimiento."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Un presupuesto compara los ingresos disponibles con los gastos y los ahorros previstos. Compara el plan con lo que realmente gastas."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "No. Compara el plan con los gastos reales y ajústalo."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿El primer presupuesto es definitivo?"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Revisa las cifras e identifica los costos que puedes reducir. El plan debe tener en cuenta todos los gastos esenciales."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "¿Qué ocurre si los gastos superan los ingresos?"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Cómo hacer un presupuesto",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-fr-CA",
+      "language": "fr-CA",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "2 800 $ moins 1 600 $ donne 1 200 $. Les autres dépenses et l’épargne doivent encore être payées à même ce montant.",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "1 200 $"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "2 800 $"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "4 400 $"
+                }
+              ],
+              "question": "Le revenu net est de 2 800 $ et les dépenses fixes sont de 1 600 $. Combien reste-t-il avant les autres dépenses et l’épargne?"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Par exemple, le revenu net est de 2 800 $. Les dépenses fixes sont de 1 600 $. Il reste donc 1 200 $ pour les autres besoins, l’épargne et les dépenses facultatives. Cette somme n’est pas entièrement disponible pour les loisirs."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Un budget compare le revenu disponible aux dépenses et à l’épargne prévue. Comparez le plan à vos dépenses réelles."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Non. Comparez le plan aux dépenses réelles et ajustez-le."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Le premier budget est-il définitif?"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Vérifiez les chiffres et repérez les coûts que vous pouvez réduire. Le plan doit tenir compte de toutes les dépenses essentielles."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Que se passe-t-il si les dépenses dépassent les revenus?"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Établir un budget",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-hi",
+      "language": "hi",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$2,800 में से $1,600 घटाने पर $1,200 बचते हैं। अन्य खर्च और बचत भी इसी राशि से करनी होगी।",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,200"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$2,800"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$4,400"
+                }
+              ],
+              "question": "घर ले जाने योग्य आय $2,800 है और तय खर्च $1,600 हैं। अन्य खर्चों और बचत से पहले कितनी राशि बचती है?"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "उदाहरण के लिए, घर ले जाने योग्य आय $2,800 है। तय खर्च $1,600 हैं। इससे अन्य ज़रूरतों, बचत और वैकल्पिक खर्चों के लिए $1,200 बचते हैं। यह पूरी राशि मनोरंजन के लिए उपलब्ध नहीं है।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "बजट में उपलब्ध आय की तुलना खर्चों और नियोजित बचत से की जाती है। योजना की तुलना अपने वास्तविक खर्च से करें।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "नहीं। योजना की तुलना वास्तविक खर्च से करें और उसमें ज़रूरत के अनुसार बदलाव करें।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "क्या पहला बजट अंतिम होता है?"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "आंकड़ों की जाँच करें और उन खर्चों की पहचान करें जिन्हें आप कम कर सकते हैं। योजना में सभी आवश्यक खर्चों को शामिल करना ज़रूरी है।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "अगर खर्च आय से ज़्यादा हो जाएँ तो क्या होगा?"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "बजट बनाना",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-pa",
+      "language": "pa",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$2,800 ਵਿੱਚੋਂ $1,600 ਘਟਾਉਣ 'ਤੇ $1,200 ਬਚਦੇ ਹਨ। ਹੋਰ ਖਰਚੇ ਅਤੇ ਬੱਚਤ ਵੀ ਇਸੇ ਰਕਮ ਵਿੱਚੋਂ ਕਰਨੇ ਹਨ।",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,200"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$2,800"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$4,400"
+                }
+              ],
+              "question": "ਘਰ ਲੈ ਜਾਣ ਵਾਲੀ ਆਮਦਨ $2,800 ਹੈ ਅਤੇ ਨਿਸ਼ਚਿਤ ਖਰਚੇ $1,600 ਹਨ। ਹੋਰ ਖਰਚਿਆਂ ਅਤੇ ਬੱਚਤ ਤੋਂ ਪਹਿਲਾਂ ਕਿੰਨੀ ਰਕਮ ਬਚਦੀ ਹੈ?"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਉਦਾਹਰਨ ਲਈ, ਘਰ ਲਿਜਾਣ ਵਾਲੀ ਆਮਦਨ $2,800 ਹੈ। ਨਿਸ਼ਚਿਤ ਖਰਚੇ $1,600 ਹਨ। ਇਸ ਨਾਲ ਹੋਰ ਲੋੜਾਂ, ਬੱਚਤ ਅਤੇ ਚੋਣਵੇਂ ਖਰਚਿਆਂ ਲਈ $1,200 ਬਚਦੇ ਹਨ। ਇਹ ਸਾਰੀ ਰਕਮ ਮਨੋਰੰਜਨ ਲਈ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "ਬਜਟ ਉਪਲਬਧ ਆਮਦਨ ਦੀ ਤੁਲਨਾ ਖਰਚਿਆਂ ਅਤੇ ਯੋਜਨਾਬੱਧ ਬੱਚਤਾਂ ਨਾਲ ਕਰਦਾ ਹੈ। ਯੋਜਨਾ ਦੀ ਤੁਲਨਾ ਆਪਣੇ ਅਸਲ ਖਰਚਿਆਂ ਨਾਲ ਕਰੋ।"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਨਹੀਂ। ਯੋਜਨਾ ਦੀ ਅਸਲ ਖਰਚ ਨਾਲ ਤੁਲਨਾ ਕਰੋ ਅਤੇ ਇਸ ਵਿੱਚ ਲੋੜ ਅਨੁਸਾਰ ਤਬਦੀਲੀ ਕਰੋ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਕੀ ਪਹਿਲਾ ਬਜਟ ਅੰਤਿਮ ਹੁੰਦਾ ਹੈ?"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "ਅੰਕੜਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਉਹ ਖਰਚੇ ਪਛਾਣੋ ਜਿਨ੍ਹਾਂ ਨੂੰ ਤੁਸੀਂ ਘਟਾ ਸਕਦੇ ਹੋ। ਯੋਜਨਾ ਵਿੱਚ ਸਾਰੇ ਜ਼ਰੂਰੀ ਖਰਚੇ ਸ਼ਾਮਲ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।"
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "ਜੇ ਖਰਚੇ ਆਮਦਨ ਤੋਂ ਵੱਧ ਹੋ ਜਾਣ ਤਾਂ ਕੀ ਹੋਵੇਗਾ?"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "ਬਜਟ ਬਣਾਉਣਾ",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8-vi",
+      "language": "vi",
+      "sourceId": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "pages": [
+        {
+          "_key": "d7c2bfbc5607",
+          "additions": [
+            {
+              "_key": "d7c2bfbc5607-v2-check",
+              "_type": "lessonQuickCheck",
+              "explanation": "$2,800 trừ $1,600 còn lại $1,200. Các khoản chi tiêu và tiết kiệm khác vẫn cần được trích từ số tiền này.",
+              "options": [
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-0",
+                  "_type": "answer",
+                  "correct": true,
+                  "text": "$1,200"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-1",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$2,800"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-answer-2",
+                  "_type": "answer",
+                  "correct": false,
+                  "text": "$4,400"
+                }
+              ],
+              "question": "Thu nhập thực nhận là $2,800 và các khoản chi phí cố định là $1,600. Còn lại bao nhiêu trước khi tính các chi phí khác và khoản tiết kiệm?"
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-example",
+              "_type": "lessonExample",
+              "practice": [
+                {
+                  "_key": "d7c2bfbc5607-v2-practice",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-practice-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ví dụ, thu nhập thực nhận là $2,800. Các khoản chi phí cố định là $1,600. Như vậy, bạn còn $1,200 cho các nhu cầu khác, tiết kiệm và chi tiêu không thiết yếu. Không phải toàn bộ số tiền này đều có thể dùng cho giải trí."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "theory": [
+                {
+                  "_key": "d7c2bfbc5607-v2-theory",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-theory-text",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Ngân sách giúp so sánh thu nhập hiện có với các khoản chi tiêu và tiết kiệm dự kiến. Hãy đối chiếu kế hoạch với số tiền bạn thực sự chi tiêu."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-faq",
+              "_type": "lessonFaq",
+              "items": [
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-0",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-0-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-0-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Không. Hãy so sánh kế hoạch với số tiền thực tế đã chi và điều chỉnh cho phù hợp."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Ngân sách đầu tiên có phải là ngân sách cuối cùng không?"
+                },
+                {
+                  "_key": "d7c2bfbc5607-v2-faq-1",
+                  "_type": "faqItem",
+                  "answer": [
+                    {
+                      "_key": "d7c2bfbc5607-v2-faq-1-answer",
+                      "_type": "block",
+                      "children": [
+                        {
+                          "_key": "d7c2bfbc5607-v2-faq-1-answer-text",
+                          "_type": "span",
+                          "marks": [],
+                          "text": "Kiểm tra các số liệu và xác định những khoản chi phí bạn có thể cắt giảm. Kế hoạch phải tính đến tất cả các khoản chi thiết yếu."
+                        }
+                      ],
+                      "markDefs": [],
+                      "style": "normal"
+                    }
+                  ],
+                  "question": "Điều gì xảy ra nếu chi phí vượt quá thu nhập?"
+                }
+              ]
+            },
+            {
+              "_key": "d7c2bfbc5607-v2-citations",
+              "_type": "lessonCitations",
+              "sources": [
+                {
+                  "_key": "d7c2bfbc5607-v2-source-0",
+                  "_type": "source",
+                  "publisher": "Financial Consumer Agency of Canada",
+                  "title": "Lập ngân sách",
+                  "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

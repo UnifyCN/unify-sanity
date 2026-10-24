@@ -1,0 +1,1878 @@
+{
+  "snapshot": "2026-10-21",
+  "englishLessons": 208,
+  "lessons": [
+    {
+      "id": "01af3354-d3b2-40c4-96f8-b4da9d62997b",
+      "title": "Funding Your SFU Journey",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "01f1cad6-14d1-4f95-90e8-f71c4646e907",
+      "title": "Lesson 2.2:  Banking Services",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "02cf83fa-3a5a-4c26-b7ca-4148021559c0",
+      "title": "Working While You Study",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "051dd468-57e4-4420-92f3-fb9ae0bca635",
+      "title": "Staying Organized & Renewals",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "083cd715-fe81-459f-a04d-b78a1c90a835",
+      "title": "Lesson 4.1:  Why Filing Taxes Matters",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "08f20296-f81c-45c5-a776-bdf86c4fcc46",
+      "title": "Managing Your Health Records",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "0998478b-0c4f-4576-b0ce-9f572fceb566",
+      "title": "Lesson 3.4: Credit Score",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "09dfa259-5474-40f7-8330-84d3f3c86423",
+      "title": "Key Parts of Rental Agreements",
+      "pages": 3,
+      "existingExamples": 3,
+      "existingDisclosures": 6,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "0b8bffe0-8aef-4274-9789-bcd1f42007fc",
+      "title": "Navigating Transit Efficiently",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "0dd0d654-90d3-43d1-93f9-369b092bca8e",
+      "title": "Getting Around: Transit & Parking",
+      "pages": 5,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "0e0eca20-3d96-4d1f-8609-cbf821284b50",
+      "title": "Multiculturalism & Diversity",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "0e590bf2-fb70-4dec-ab23-1d71a503e142",
+      "title": "Lesson 3.6: Checking Your Credit",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "102c8cb1-4fbe-426c-b4c5-13bc15bf9364",
+      "title": "Lesson 2.3: Appealing a PR Decision or Giving up PR",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "10e4825a-2570-48f3-9edb-fc3768fd947b",
+      "title": "Road Safety and Winter Driving",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "139e6f76-d674-4675-aa82-6094ab0c254a",
+      "title": "Documents Needed to Enter Canada",
+      "pages": 3,
+      "existingExamples": 2,
+      "existingDisclosures": 2,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "165e8062-0876-4e41-bb64-cb96cdf59533",
+      "title": "Strengthen Your Connections",
+      "pages": 1,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "16b8e4a9-19b3-44f9-9cbd-7ef861b8d9de",
+      "title": "Lesson 3.4: Health Coverage",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "172223a5-4add-4891-b9a2-ddd81d89a64a",
+      "title": "Culture Shocks",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "1cda2f61-606f-4433-bef0-69d443e5d6b5",
+      "title": "Lesson 7.3: Common Mistakes & Fixes",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "1dc9c664-f19c-4c13-80f0-f2d28a8c0656",
+      "title": "Overcoming Anxiety & Building Genuine Connections",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "1e741084-0609-4574-8abd-cc45bfdb893a",
+      "title": "Lesson 6.2: Red Flags of a Scam",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "1ed69546-641d-45ca-9beb-d439cee1c38b",
+      "title": "Lesson 3.2: Language & CLB",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "1f1cabea-72d8-412f-ada3-0b4b19c0d01e",
+      "title": "Lesson 6.6: Resources if You’re in Financial Difficulty",
+      "pages": 2,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "1f3ef6ad-d077-4a1b-a29c-b12e02ebfa40",
+      "title": "Lesson 2.4: Mina's Story - Did she keep PR?",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2198b6ed-a28e-41de-ac53-91f76c2072e9",
+      "title": "Food Around Campus",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2320120f-0cf1-4c95-823d-da850005d7da",
+      "title": "Lesson 9.5: Work as a PR",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2358c68c-4f85-4f11-aee2-193f8d78b3f0",
+      "title": "Lesson 3.3:  Credit Report",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "2645d621-09bd-450d-8068-7c0e9481edc2",
+      "title": "Additional Out-of-Pocket Costs",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "29c69cb4-9412-41c4-b899-b83977a6ade9",
+      "title": "LinkedIn Profile Essentials",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2a9b87d2-1736-4b0b-9ef1-d6e2760c2add",
+      "title": "Child & Family Benefits",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2abcefa6-7785-4e71-bbc7-7d1a8ba95539",
+      "title": "Small Talk",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2ad44e66-8e89-4f55-b3eb-62973002d83a",
+      "title": "Canada Dental Benefit (eligibility-based)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2b9d86be-a179-45a6-81e1-ed2cf7b0e7c9",
+      "title": "What Are Information Scams?",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2d51d1c4-0720-4ce4-9560-ac6f4774dcf1",
+      "title": "Handling Rejection ",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2d66f217-64ed-4391-923d-8298ecaa83c2",
+      "title": "Coffee Chats & Outreach",
+      "pages": 1,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "2da9cb2d-7281-46cc-a09b-0c0adc1093ac",
+      "title": "Who Can Get MSP? ",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "2f012355-a381-420c-a84d-1e69caeb6da5",
+      "title": "5-step Elevator Pitch",
+      "pages": 1,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "30faffb9-ee35-48e3-9e54-7417296a55d0",
+      "title": "Private Insurance Options",
+      "pages": 3,
+      "existingExamples": 1,
+      "existingDisclosures": 4,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "31a21e62-c941-4b28-b0a5-3f6f103340ce",
+      "title": "Staying Organized & Connected",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "357cc664-c88e-4fb1-ae6b-671063c82657",
+      "title": "Secondary School",
+      "pages": 6,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "3a3e8a5d-3e24-4eaa-bf80-4a3524bbcaa5",
+      "title": "Common Information Scams and Red Flags",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "3c182c32-66ff-46d3-b81e-bf579be9f885",
+      "title": "BC Child Opportunity Benefit",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "3d734317-409f-4fc4-97e1-f838506eaaca",
+      "title": "Lesson 4.4: GST, PST, and HST",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "3ed87ad7-b579-4797-bd6b-f9dc10298890",
+      "title": "Lesson 2.4: Opening a Bank Account",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 5,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "3fe78ba4-b085-4aeb-850b-070152cb7eca",
+      "title": "Resume Structure",
+      "pages": 1,
+      "existingExamples": 5,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "401ce6bd-6d02-4a5f-9103-998a0fb41151",
+      "title": "Canada Learning Bond & RESP Grants",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "4092a094-9460-4b10-999c-48014273e57f",
+      "title": "Lesson 7.1: Complete Application & Core Documents",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "40dd6463-c527-478a-9781-0332d40d55e3",
+      "title": "Disputes and the RTB",
+      "pages": 5,
+      "existingExamples": 5,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "410c864b-95ec-4716-9566-6c737ac1e3ed",
+      "title": "How Clubs (Generally) Work at SFU",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "427eb17f-5d41-4220-9226-6904654136ca",
+      "title": "Gathering Testimonials ",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "435fa866-8e3f-472f-bf60-6c7999185f0c",
+      "title": "Lesson 4.5:  Everyday Examples of Sales Tax",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "4607be98-4f97-4a7d-97e4-994f9174cd0c",
+      "title": "Lesson 1.2: What to Check",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 5,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "4e228b33-752e-47cc-9cb7-ec7c89b29002",
+      "title": "Renting in Practice",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 4,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "4e4d6ca6-7891-443e-9cbd-df43f0f0501a",
+      "title": "Financial Setup in Alberta",
+      "pages": 9,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "4e93539f-5329-4a24-a103-2aa7882c9fbd",
+      "title": "Lesson 8.2: Understanding Process Times",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "50b82f0a-ebf1-4305-b894-045f5bf517fd",
+      "title": "Why a Cover Letter Matters?",
+      "pages": 2,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "515b2ef9-d153-4d34-bbc5-4c752e98ec39",
+      "title": "Asking Questions as a Candidate",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "516f2fc5-8a1b-48cb-9dfe-d8b854a38b5a",
+      "title": "Welcome to SFU Life",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "52c95a7c-c2b5-43e6-84b0-5b56fbc3e729",
+      "title": "Your First Week at SFU",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "5308417e-6f58-46bb-b691-0645e4ded908",
+      "title": "Hierarchy & Decision-Making",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "534e9c61-6b06-41d9-923b-0370273e71c8",
+      "title": "Personal Space",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "55d76ff2-08a9-4305-ad9e-924a788c114c",
+      "title": "Protecting and Recovering Your Identity",
+      "pages": 3,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "56987b26-5355-48b3-ab1e-33225408ac20",
+      "title": "Car Ownership Basics: Buying vs. Leasing",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "5a1fc81f-929a-4240-8e4d-0e921830aae8",
+      "title": "Lesson 3.7: Protecting Your Credit",
+      "pages": 2,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "5b4ce2de-cd15-40dc-9598-8c9fa455a41d",
+      "title": "Types of Identification in Canada ",
+      "pages": 5,
+      "existingExamples": 2,
+      "existingDisclosures": 15,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "5c8cd3c4-2ffe-4700-a6a2-d876aaedee64",
+      "title": "Lesson 3.1: Core Documents You'll See",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "5d557797-19c1-48bb-a623-3670588dfda2",
+      "title": "Employment Insurance (EI) & Parental Benefits",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "5d6a2fa5-1645-4b31-8d74-044176668eb3",
+      "title": "Lesson 5.2: Getting Started with Investing",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "5f5bb7b5-9419-4a0f-a8d7-cf3d46932c19",
+      "title": "Indigenous Peoples & Cultures",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "62ad2611-288d-44a1-bd63-3d17a1d515a0",
+      "title": "Staying Safe and Verifying Information",
+      "pages": 3,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "6391c6da-0907-44c0-9af8-a6c966bfdbe9",
+      "title": "Incentives, House Hunting & Realtors",
+      "pages": 3,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "63dbd2f7-077b-4979-9ec3-9e710cde85f8",
+      "title": "References",
+      "pages": 1,
+      "existingExamples": 4,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "651cbec3-4ede-463d-b351-8971d9c31d9b",
+      "title": "Lesson 8.4: Webforms. Deadlines & Travel",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "65897258-6b29-432a-b3ff-77508a6d2878",
+      "title": "Lesson 5.1: Key Investment Tools and Accounts in Canada",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 2,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "6752c738-e964-47f5-bddc-37a2b292d1d9",
+      "title": "Lesson 9.3: Keep your PR Status",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "68162ab2-d0af-4310-94c2-5f4183785ca5",
+      "title": "Lesson 4.3: Family & Caregiver Pathways",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "6b6114a2-f2f9-4524-a113-68f86dcb7505",
+      "title": "Permanent Residency (PR)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "6b8826ee-8a02-42cd-8d51-98503c5ee5c6",
+      "title": "Lesson 3.3: CRS Basics (Express Entry)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "6d9a08fd-c832-45d7-a5d2-d9ead147fd71",
+      "title": "Getting Your Education Credentials Recognized in Canada",
+      "pages": 6,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "6e292c36-bb75-4246-a077-10acaf0a143b",
+      "title": "Lesson 3.5: What Shapes Your Score?",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "6f2dca9b-bd41-45b4-a73b-e6c88218fd66",
+      "title": "Tailoring Your Resume",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7107be6f-27de-414f-b34b-15500e06361f",
+      "title": "Lesson 1.1: PR vs. TR vs. Citizen",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7277fa7d-f24f-4faa-8c21-49dfb25b2a5e",
+      "title": "Day-to-Day Life in Edmonton",
+      "pages": 10,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "72d2145a-bea1-4f35-a1db-a8cf27531a0c",
+      "title": "Mandatory Insurance and Costs",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "73ed4f3f-9658-494b-95a9-3f9a35853168",
+      "title": "Income, Expenses and Goal Setting",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "74edf31e-4b4b-4031-befa-7a7d65dcb862",
+      "title": "Low-Income Transit Passes / Discounted Fares",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7554d097-048b-438b-a516-5d761481ad8f",
+      "title": "Preapproval, Lenders & Brokers",
+      "pages": 3,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "755c0362-0818-4f4b-ad56-852ba72b6e9b",
+      "title": "Writing Strong Bullet Points",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7581663b-76de-46a6-91d5-53de1bd38289",
+      "title": "Building Your SFU Network",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "76111d18-fc65-4430-992e-90bf6ba212fc",
+      "title": "Professional Etiquette",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "77a5d8a9-4d74-449f-a959-ea2189f233c7",
+      "title": "Course Planning at Langara",
+      "pages": 6,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "79708c29-04fb-49c8-a2e8-51057264a551",
+      "title": "Utility Bill Support",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "7d4aa59d-edcc-4cca-aefb-1af816783cb4",
+      "title": "Lesson 5.3: Investing for Long-Term Success",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7d97a53d-5e10-42dd-943b-0f0b56447919",
+      "title": "Lesson 7.5: Final Checklist!",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "7e6f0bfd-dee9-407d-a073-ee94286242d8",
+      "title": "Down Payments, Mortgage Insurance & Saving",
+      "pages": 3,
+      "existingExamples": 2,
+      "existingDisclosures": 1,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "7fd6099f-18c4-471c-b92e-610fb5ba30f5",
+      "title": "Citizenship",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "82275c7d-26a0-407c-b320-2d3082463c18",
+      "title": "Regional Differences You Should Know",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "8266aca6-e72b-4982-ab76-5c78f2875ea3",
+      "title": "Recreation & Community Centre Subsidy Programs",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "82a1e57c-a38d-4684-b1db-7aa18dc7853c",
+      "title": "Finding a Place to Live",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "830c4e0e-32be-4093-a595-3b4e2f39a005",
+      "title": "Post-Secondary",
+      "pages": 6,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "87bc2f71-5285-42a2-adb6-05226c4815ce",
+      "title": "Lesson 1.2:  Budgeting Methods and Categories",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 3,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "88c1e4f3-01bf-4d4b-8266-2bbc788178e9",
+      "title": "Finding Your People",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "88fbf09d-100a-4ced-9ced-471b17d11872",
+      "title": "Lesson 1.3: First Steps Toward PR - Ali",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "8926e4c9-c2e7-4734-a221-e7115c479677",
+      "title": "Things to Know Before Your First Semester",
+      "pages": 8,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "8c99ddc1-74cf-4d9c-b8cd-0c8b558fe9a2",
+      "title": "Smart Goals Framework",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "8d9dc7af-4671-47ae-b693-b7001d875902",
+      "title": "Overview of Healthcare in Canada & BC",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "8e851f27-6d47-488c-9c14-e53ca3919692",
+      "title": "Lesson 6.5: Identity Theft & Credit",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "8f47fb52-ce90-4dd0-978d-c9ec226877be",
+      "title": "Direct but Polite Communication",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9102b3da-9118-4ba3-bc73-63736062137f",
+      "title": "Lesson 3.5: Work, Licensing Reality & Taxes",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "92224fef-4dfe-440f-aa1d-dbf1177498e0",
+      "title": "Getting a Driver’s Licence in Canada",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "926e7221-6836-4b24-bf22-c02239791d3d",
+      "title": "Workers: Work Permits",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9362c203-9c49-423c-bb75-cd971863ff8d",
+      "title": "Respect & Politeness",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "93c68137-5e93-46aa-8ad2-28ea402c1a41",
+      "title": "Lesson 4.1: Skilled Worker & Provincial Pathways",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "945efa67-9da0-4333-ae5b-8a37214ecf06",
+      "title": "After the Interview ",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9663015f-ef2b-4f5a-b885-548f6089cc61",
+      "title": "Respect for Rules & Laws",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "99c475d3-e624-453d-9650-0bdbe6a434c9",
+      "title": "Cost-Saving Tips and Common Mistakes",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9b5e07b9-4b83-4a07-b695-c5c569404041",
+      "title": "Tuition Tax Credits",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9c02afc7-bde2-40c3-8a95-ba1f55e6bb8c",
+      "title": "Lesson 8.1: What you'll see in your account",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9c17e68a-f4d8-4a38-889f-702ba5fb28ad",
+      "title": "Retirees & Visitors",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "9d919085-dea2-411c-b6ea-3ecaccc06cec",
+      "title": "Practical Tips for Newcomers",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "9e284691-36eb-4ffa-bb76-c5a6e6f69d0e",
+      "title": "Mental Health & Well-Being",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "9e708330-92b7-4565-8112-37706d1fdf20",
+      "title": "Newcomer Scholarships or Grants",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a087b8fd-3161-4861-9f56-b99a548a0bec",
+      "title": "Lesson 1.4: Saving, Interest, and Debt",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 4,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a26647a7-cb75-4801-b51b-af9a9cbe8259",
+      "title": "Common Identity Scams and Red Flags",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "a29a81a9-884e-4143-929c-11ab2e42e879",
+      "title": "Lesson 9.4: Health, SIN, Taxes & Everyday Setup",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a3584573-51db-4c69-b0cd-bcddb3aaaa16",
+      "title": "Academics at the University of Alberta",
+      "pages": 10,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a46b96d0-c7e2-4521-b0db-53911d77d1df",
+      "title": "Lesson 2.2: PR Travel",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a6a0dfa7-6fce-4a5d-b306-ed0b6af36bc7",
+      "title": "Equality & Inclusion",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "a7a41eb4-0cc7-4b64-a36f-1a43fbd143bf",
+      "title": "Lesson 9.1: eCOPR & PR Confirmation Portal",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "abffb79d-5d14-41af-bb78-d50969f6cf1d",
+      "title": "Lesson 2.1:  Key Terms & Common Account Types",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ac95bd31-b02a-4202-8dab-acd2b331055a",
+      "title": "Lesson 3.2: Resources for Credit Cards in Canada",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 2,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "aeb673a7-e6b3-4955-8f08-1598b30f9af5",
+      "title": "Lesson 9.2: Travel Documents: PR Card vs PRTD",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "af14d02c-70a3-4058-89f2-94c7b1ef9d36",
+      "title": "Making Your Money Go Further",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "af6ca041-88ba-49d6-9537-8c6c6b75140d",
+      "title": "What a Resume Is and How to Choose the Right Format",
+      "pages": 2,
+      "existingExamples": 5,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "b0493ad7-73a3-43b4-af5e-36b1da0be094",
+      "title": "Lesson 6.1: Common Scams Targeting Newcomers",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "b508386d-2749-4455-abf7-5ae7699e071a",
+      "title": "Planning for the Future",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "b55bf778-d854-49ee-bf18-8464a38d5e24",
+      "title": "Alternatives to Owning a Car",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "b6faf6d6-806d-49bb-9422-4b2f54aa7b23",
+      "title": "Lesson 2.1: Keeping Your PR: Time in Canada and Time Abroad",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "b7be5d10-c103-4905-b923-d95a0b9db616",
+      "title": "Public Behaviour",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "b84006b6-7356-41f9-9e94-8d91dbb3591c",
+      "title": "Urban vs. Suburban vs. Rural: How Location Shapes Your Choice",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "b9d7be33-f233-40c8-8ecc-8a1c1165a549",
+      "title": "Accessibility, Safety, and Etiquette",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "ba68cd13-8d75-43b3-980a-5fb426e7ca2f",
+      "title": "Digital Branding",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ba943340-2a0a-4ac0-89ca-b6a6529bb4c6",
+      "title": "Finances at Langara",
+      "pages": 10,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "baba2e5f-cc21-4d3d-a0d9-4fbdafc57e71",
+      "title": "Private Health Insurance ",
+      "pages": 2,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "bd32a1b1-a4e8-45cd-833e-84dfe779e82e",
+      "title": "What Are Identity Scams?",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "bef29df4-c67e-4955-8301-14aabeb15c3a",
+      "title": "GST/HST Credit",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "c139ff82-a76a-436c-a7dc-938e021b573c",
+      "title": "Lesson 6.3: Protecting Yourself",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "c333317c-3e85-40a8-8f6d-3cf5f43c51a4",
+      "title": "Lesson 6.4: What To Do If You’re Targeted",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "c3c9ff30-70dd-48bd-b30e-727d5c491343",
+      "title": "Lesson 4.3: Try the Tax Calculator",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "c4ff8c56-509b-4dde-9c0e-ba6e937caeb2",
+      "title": "Understanding Financial Scams in Canada",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "c8bafa7b-8656-423d-8509-d78c096270c6",
+      "title": "Self-Assessment with SWOT",
+      "pages": 1,
+      "existingExamples": 4,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "c90972bf-5b5f-435d-ab55-5964ecf88562",
+      "title": "Lesson 1.2: Your Rights, Limits & Mobility",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "c90b029f-97ad-4f17-9a93-2543d1c841ca",
+      "title": "Lesson 3.7: Your Toolkit Recap",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "cd285195-3e3a-40d7-8093-4ea27adf2967",
+      "title": "Climate Action Incentive Payment (CAIP)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ce0d1b25-91a3-4ca7-96c5-e8f0862910fa",
+      "title": "Language & Cultural Supports",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ce883751-bb42-4e6c-a23e-ff3e3e82b917",
+      "title": "Lesson 4.2: Filing Your Return",
+      "pages": 1,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "cfb01396-025d-4d95-9ade-563752a56f04",
+      "title": "Lesson 2.5: Your Responsibilities & PR Cheat Sheet",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d0e9d404-77f4-4531-87b9-cfc2dbe42d79",
+      "title": "Cost Comparison: Transit vs. Car Ownership",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d14cbf1c-1c2b-4710-a6f8-f00c4ba08990",
+      "title": "Language & Bilingualism",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d197b161-9e75-46ca-b76d-c44c1ac0d7c0",
+      "title": "Social Insurance Number ",
+      "pages": 6,
+      "existingExamples": 2,
+      "existingDisclosures": 2,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d19ff8db-99dc-4960-9398-f8c41ef9f7c8",
+      "title": "Celebrations & Traditions",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d24fd960-eb5b-4060-b746-551cc3de40fb",
+      "title": "Your Unique Value Proposition (UVP)",
+      "pages": 1,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d34d48f2-91d5-468b-a46f-4cc06268c211",
+      "title": "Canada Workers Benefit (CWB)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d3952586-e6e6-4bee-836a-133ad5af7ce7",
+      "title": "Common Interview Questions ",
+      "pages": 1,
+      "existingExamples": 4,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d4df6bd4-2e3c-4b22-a63e-5b8bd8b5d518",
+      "title": "Lesson 3.1:  Credit Cards in Canada",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 2,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d4f04b22-7b9b-434e-a668-f840525af1c8",
+      "title": "Lesson 1.3: Building Your First Budget",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d5a31fe1-a336-4a35-86a4-8824dc62ef87",
+      "title": "STAR Method for Answers",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d5d1d2db-98f6-48c2-aee4-c103fc9c01da",
+      "title": "Lesson 7.2: Step Order & File Prep",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d718b7e0-2d20-4f98-85ef-ebb55abf80ef",
+      "title": "Refugees & Protected Persons",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d74ae7b9-cf20-4518-890e-b4a0df3cd830",
+      "title": "Preschool",
+      "pages": 5,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d785be67-1b42-4df2-95eb-607d50a7f290",
+      "title": "Expanding Your Network",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d7c6df4a-29c1-485b-92a9-41245ffcf4cd",
+      "title": "Families: Sponsorship Documents",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d80cf2bc-f2a4-4e89-993f-195e62772aed",
+      "title": "Elementary School",
+      "pages": 7,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d8aed071-e2b0-45d6-8c70-4723a206c7b9",
+      "title": "Preparing for an Interview",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "d98c0e39-e3c5-4e64-9c7b-c428b7cbdba0",
+      "title": "Health Insurance Introduction",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "d9aa6c72-9184-4954-9bb7-ba70f6e1e460",
+      "title": "Community Involvement",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "dc0b2f5a-0187-47d3-8e3f-15374c536187",
+      "title": "Building a Portfolio",
+      "pages": 1,
+      "existingExamples": 1,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "dc63543d-aae4-4a2b-afe6-26963c1cc425",
+      "title": "Key Differences for Newcomers",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "dda3057b-f471-42b2-9b29-81a6ad2f9673",
+      "title": "Lesson 2.3:  Types of Banks",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 6,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "de4e5825-f6cb-4072-819e-3f541a1c737a",
+      "title": "Getting Involved at Langara",
+      "pages": 6,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "df60a8dc-dd0b-4b2f-bf50-b648ae91aa80",
+      "title": "Types of Care",
+      "pages": 4,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "df642ee9-8295-4e36-81cf-3313683598a6",
+      "title": "Day-to-Day Life at Langara",
+      "pages": 7,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "e043c91a-c6a9-4127-a9fa-d55dd71b2665",
+      "title": "Fair PharmaCare (BC)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "e1ed9b49-c0e8-4a2c-aaec-05dac63b67cf",
+      "title": "Payment Methods and Transit Cards",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "e212affb-e270-4198-a7f4-d52cb4ff1b12",
+      "title": "Getting Involved Beyond Clubs",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "e3e3da30-e382-460c-88ae-2a83c4758c65",
+      "title": "Mortgage Basics & Payment Options",
+      "pages": 3,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "e4945609-dbae-4c12-8dfc-ed61967caacc",
+      "title": "Recognizing Mental Health & Understanding the Basics",
+      "pages": 4,
+      "existingExamples": 4,
+      "existingDisclosures": 4,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "e749df70-fad4-479c-afd7-f1318e0c0d23",
+      "title": "Getting Support: Help & Resources",
+      "pages": 6,
+      "existingExamples": 5,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "ec4ee4d6-fc5b-4009-bce4-bb73b664fd17",
+      "title": "Work-Life Balance",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "edee86c0-2d84-42e7-9616-267a95f8a8db",
+      "title": "Student U-Pass (university students)",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ee341b7d-df9c-44e3-a140-3fe1d93fa09a",
+      "title": "Common Financial Scams and Red Flags",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "f0ffe2da-3718-438e-8946-28f48a55c3bd",
+      "title": "Students: Study Permits ",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "f1127c88-65e1-4f45-94fd-aaaf397748f3",
+      "title": "Lesson 9.6: Citizenship",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f14145f9-19a5-49ae-9bfb-61f1f5e6e1f5",
+      "title": "Lesson 8.3: Updates & Life Changes",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f1a68b5e-ede8-4c32-97ab-3fb3d0add43d",
+      "title": "Preparing Before Arrival",
+      "pages": 8,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f25fe4c9-76f2-403f-a27a-14cdede5e28d",
+      "title": "Study Spots",
+      "pages": 4,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f2c78ea0-77b6-426f-946b-0ac224176797",
+      "title": "Protecting Your Finances and Taking Action",
+      "pages": 3,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "f33e1404-389e-45d3-a1ac-5c47f0f79d94",
+      "title": "Getting Feedback",
+      "pages": 1,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f41d40f0-2d7f-491b-84dd-c6ff6b90a5af",
+      "title": "Emergency vs. Non-Emergency",
+      "pages": 3,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f7fd8227-35f0-4c5b-b861-1f1bbf652cbe",
+      "title": "Lesson 4.2: Entrepreneur & Self-Employed Pathways",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "f92a1358-59a1-4bda-bd78-baad87c86c47",
+      "title": "Fuel, Parking, and Maintenance Costs",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "fa340abf-c8e4-4396-b0b0-acf925026cae",
+      "title": "Lesson 4.4: Humanitarian & Protection Pathways",
+      "pages": 1,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "fbd3f62d-5d20-4a9d-a362-13fb8d4986ec",
+      "title": "Provincial Health Insurance (MSP in BC)",
+      "pages": 4,
+      "existingExamples": 1,
+      "existingDisclosures": 2,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "fd276058-fcd7-4dd3-bcd2-3d0379fa8c56",
+      "title": "Interview Tips ",
+      "pages": 1,
+      "existingExamples": 3,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "ff237cf7-dc55-4188-93c3-45df74fb7c82",
+      "title": "What is a Rental Agreement?",
+      "pages": 2,
+      "existingExamples": 2,
+      "existingDisclosures": 0,
+      "hasLinks": true,
+      "structured": false
+    },
+    {
+      "id": "ff5bb26f-f7aa-4176-aa61-844d92b7c43c",
+      "title": "Closing, Ownership & Long-Term Costs",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "ffbaa631-966e-499f-9028-c69d90900853",
+      "title": "Course Planning Made Simple",
+      "pages": 2,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    },
+    {
+      "id": "fff76cd0-3f64-462e-b6a4-959794e40276",
+      "title": "Getting Involved on Campus",
+      "pages": 10,
+      "existingExamples": 0,
+      "existingDisclosures": 0,
+      "hasLinks": false,
+      "structured": false
+    }
+  ]
+}
