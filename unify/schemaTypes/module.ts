@@ -1,5 +1,6 @@
 import {defineType} from 'sanity'
 import {IconSelector} from '../components/IconSelector'
+import {provinceField} from './fields/province'
 
 export default defineType({
   name: 'module',
@@ -13,6 +14,7 @@ export default defineType({
       readOnly: true,
       hidden: true,
     },
+    provinceField,
     {
       name: 'title',
       title: 'Title',
