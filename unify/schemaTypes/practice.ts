@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import { defineField, defineType, type ValidationContext } from 'sanity'
 import { checklistCheckboxBlock } from './portableText/checklistCheckbox'
 
 // Block configuration with separate text alignment (same as quiz/lesson)
@@ -309,6 +309,26 @@ const activityInstructionsOf = [
     title: 'Multiple Choice (Multiple Answers)',
     icon: () => '☑️☑️',
     fields: [
+      defineField({
+        name: 'gradingMode',
+        title: 'Grading Mode',
+        type: 'string',
+        initialValue: 'knowledge',
+        description:
+          'Reflection questions show the selected explanation without correct or incorrect feedback. Correct-answer flags are ignored.',
+        options: {
+          list: [
+            { title: 'Knowledge check', value: 'knowledge' },
+            { title: 'Personal reflection', value: 'reflection' },
+          ],
+        },
+        validation: (rule) => rule.custom((value) =>
+          value === undefined ||
+          value === 'knowledge' ||
+          value === 'reflection' ||
+          'Select a supported grading mode.',
+        ),
+      }),
       {
         name: 'question_text',
         title: 'Question Text',
@@ -322,10 +342,19 @@ const activityInstructionsOf = [
         type: 'array',
         of: [optionObject],
         validation: (rule: any) =>
-          rule.required().min(2).custom((options: any[]) => {
-            const correct = options?.filter((o: any) => o.is_correct) || []
-            return correct.length >= 1 ? true : 'Multiple choice must have at least 1 correct answer'
-          }),
+          rule.required().min(2).custom(
+            (options: { is_correct?: boolean }[] | undefined, context: ValidationContext) => {
+              const parent = context.parent
+              if (
+                parent &&
+                typeof parent === 'object' &&
+                'gradingMode' in parent &&
+                parent.gradingMode === 'reflection'
+              ) return true
+              const correct = options?.filter((option) => option.is_correct) || []
+              return correct.length >= 1 ? true : 'Multiple choice must have at least 1 correct answer'
+            },
+          ),
       },
     ],
   },
